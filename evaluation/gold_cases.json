@@ -1,0 +1,409 @@
+[
+  {
+    "case_id": "E001",
+    "review": "The picture quality is excellent, with natural colors that stay clear even in a dark room.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The picture quality is excellent, with natural colors that stay clear even in a dark room"
+      }
+    ]
+  },
+  {
+    "case_id": "E002",
+    "review": "The sound is not good; dialogue is thin and hard to hear even after I raise the volume.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "The sound is not good"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "dialogue is thin and hard to hear even after I raise the volume"
+      }
+    ]
+  },
+  {
+    "case_id": "E003",
+    "review": "Setup was not difficult, and I finished the installation in under ten minutes without calling support.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "Setup was not difficult, and I finished the installation in under ten minutes"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "Setup was not difficult"
+      }
+    ]
+  },
+  {
+    "case_id": "E004",
+    "review": "I never had connection problems; Wi-Fi stayed linked upstairs and Bluetooth paired on the first try.",
+    "expected_aspects": [
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "I never had connection problems"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "Wi-Fi stayed linked upstairs"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "Bluetooth paired on the first try"
+      }
+    ]
+  },
+  {
+    "case_id": "E005",
+    "review": "The picture is excellent in bright rooms, but the remote feels cheap and its volume button often sticks.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The picture is excellent in bright rooms"
+      },
+      {
+        "aspect": "Remote Control",
+        "sentiment": "negative",
+        "evidence": "the remote feels cheap and its volume button often sticks"
+      }
+    ]
+  },
+  {
+    "case_id": "E006",
+    "review": "Delivery took a full week, but the television itself has worked perfectly every day since it arrived.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "Delivery took a full week"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "the television itself has worked perfectly every day since it arrived"
+      }
+    ]
+  },
+  {
+    "case_id": "E007",
+    "review": "The television looks elegant on the wall, yet the plastic frame bends when I attach the stand.",
+    "expected_aspects": [
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "The television looks elegant on the wall"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "negative",
+        "evidence": "the plastic frame bends when I attach the stand"
+      }
+    ]
+  },
+  {
+    "case_id": "E008",
+    "review": "Music sounds full and detailed, however the home screen lags whenever I switch between apps.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "Music sounds full and detailed"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "the home screen lags whenever I switch between apps"
+      }
+    ]
+  },
+  {
+    "case_id": "E009",
+    "review": "The screen is bright and crisp in daylight, but dark scenes look washed out at night.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "mixed",
+        "evidence": [
+          "The screen is bright and crisp in daylight",
+          "dark scenes look washed out at night"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "E010",
+    "review": "The remote is okay; its layout is ordinary and neither especially helpful nor annoying.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "neutral",
+        "evidence": "The remote is okay; its layout is ordinary and neither especially helpful nor annoying"
+      }
+    ]
+  },
+  {
+    "case_id": "E011",
+    "review": "The package uses a plain cardboard box with two foam inserts.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "neutral",
+        "evidence": "The package uses a plain cardboard box with two foam inserts"
+      }
+    ]
+  },
+  {
+    "case_id": "E012",
+    "review": "It cost $399, exactly the price listed on the product page when I ordered it.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "neutral",
+        "evidence": "It cost $399, exactly the price listed on the product page when I ordered it"
+      }
+    ]
+  },
+  {
+    "case_id": "E013",
+    "review": "The picture is good, but not amazing enough to justify calling it premium.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The picture is good, but not amazing enough to justify calling it premium"
+      }
+    ]
+  },
+  {
+    "case_id": "E014",
+    "review": "The menus are a little sluggish, though they remain usable for basic streaming.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "The menus are a little sluggish"
+      }
+    ]
+  },
+  {
+    "case_id": "E015",
+    "review": "Great!",
+    "expected_aspects": []
+  },
+  {
+    "case_id": "E016",
+    "review": "Exactly what I expected.",
+    "expected_aspects": []
+  },
+  {
+    "case_id": "E017",
+    "review": "The unit was defective out of the box and would not power on, even with a different outlet.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "The unit was defective out of the box and would not power on"
+      }
+    ]
+  },
+  {
+    "case_id": "E018",
+    "review": "It worked flawlessly for six months, then stopped turning on yesterday without any warning.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "mixed",
+        "evidence": [
+          "It worked flawlessly for six months",
+          "stopped turning on yesterday without any warning"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "E019",
+    "review": "Customer service answered within five minutes and explained the warranty process clearly.",
+    "expected_aspects": [
+      {
+        "aspect": "Customer Service",
+        "sentiment": "positive",
+        "evidence": "Customer service answered within five minutes and explained the warranty process clearly"
+      }
+    ]
+  },
+  {
+    "case_id": "E020",
+    "review": "Delivery arrived on the promised day, but customer service never replied to my request for a replacement.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "Delivery arrived on the promised day"
+      },
+      {
+        "aspect": "Customer Service",
+        "sentiment": "negative",
+        "evidence": "customer service never replied to my request for a replacement"
+      }
+    ]
+  },
+  {
+    "case_id": "E021",
+    "review": "The outer box was crushed and one corner had split open before the courier reached my door.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "The outer box was crushed and one corner had split open"
+      }
+    ]
+  },
+  {
+    "case_id": "E022",
+    "review": "Compared with similar televisions at this price, the picture is sharper and the speakers are clearer.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "Compared with similar televisions at this price, the picture is sharper and the speakers are clearer"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "the picture is sharper"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "the speakers are clearer"
+      }
+    ]
+  },
+  {
+    "case_id": "E023",
+    "review": "It costs more than last year's model while offering the same features and no extra accessories.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "negative",
+        "evidence": "It costs more than last year's model while offering the same features and no extra accessories"
+      }
+    ]
+  },
+  {
+    "case_id": "E024",
+    "review": "My parents found the controls easier to use than those on their previous television.",
+    "expected_aspects": [
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "My parents found the controls easier to use than those on their previous television"
+      }
+    ]
+  },
+  {
+    "case_id": "E025",
+    "review": "Installation took over an hour because the stand screws would not align with the mounting holes.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "negative",
+        "evidence": "Installation took over an hour because the stand screws would not align with the mounting holes"
+      }
+    ]
+  },
+  {
+    "case_id": "E026",
+    "review": "The old television held Wi-Fi reliably, whereas this one drops the connection whenever a video starts.",
+    "expected_aspects": [
+      {
+        "aspect": "Connectivity",
+        "sentiment": "negative",
+        "evidence": "this one drops the connection whenever a video starts"
+      }
+    ]
+  },
+  {
+    "case_id": "E027",
+    "review": "The remote fits comfortably in my hand, and the buttons are clearly labeled even in low light.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "The remote fits comfortably in my hand"
+      },
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "the buttons are clearly labeled even in low light"
+      }
+    ]
+  },
+  {
+    "case_id": "E028",
+    "review": "Voices are clear at normal volume, but the bass becomes muddy during action scenes.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "mixed",
+        "evidence": [
+          "Voices are clear at normal volume",
+          "the bass becomes muddy during action scenes"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "E029",
+    "review": "The stand feels solid, the interface responds instantly, and HDMI devices connect on the first try.",
+    "expected_aspects": [
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "The stand feels solid"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "the interface responds instantly"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "HDMI devices connect on the first try"
+      }
+    ]
+  },
+  {
+    "case_id": "E030",
+    "review": "The slim design looks elegant, setup took only ten minutes, and the daily controls are intuitive.",
+    "expected_aspects": [
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "The slim design looks elegant"
+      },
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "setup took only ten minutes"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "the daily controls are intuitive"
+      }
+    ]
+  }
+]

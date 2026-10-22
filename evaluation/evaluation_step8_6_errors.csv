@@ -1,0 +1,3 @@
+timestamp,model,case_id,error_type,review,expected_aspect,actual_aspect,expected_sentiment,actual_sentiment,expected_evidence,actual_evidence,similarity,message
+2026-09-26T05:06:27.287599+00:00,qwen3:8b,E004,MISS_ASPECT,I never had connection problems; Wi-Fi stayed linked upstairs and Bluetooth paired on the first try.,Connectivity,,positive,,I never had connection problems,,,Expected aspect mention was not predicted.
+2026-09-26T05:06:27.287599+00:00,qwen3:8b,E010,EXTRA_ASPECT,The remote is okay; its layout is ordinary and neither especially helpful nor annoying.,,Remote Control,,neutral,,its layout is ordinary and neither especially helpful nor annoying,,Predicted aspect mention has no gold match.

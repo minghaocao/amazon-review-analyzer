@@ -1,0 +1,6 @@
+{
+  "dataset": "holdout_cases.json",
+  "case_count": 50,
+  "sha256": "a368c34b48bf5e6dfcbdb3afa521e2bd7fbd3ab08a85a53c0f1b2b9837d5862a",
+  "created_before_evaluation": true
+}

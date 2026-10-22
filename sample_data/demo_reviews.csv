@@ -1,0 +1,16 @@
+review_id,rating,title,content,date,verified_purchase
+R001,5,Excellent picture,"The picture is sharp, the colors are accurate, and the screen looks excellent in a bright room.",2026-08-01,true
+R002,1,Very disappointing,"The speakers distort at normal volume and the plastic frame feels poorly made.",2026-08-03,true
+R003,4,Great image but weak controls,"The picture quality is excellent, but the remote feels cheap and the menu is slow.",2026-08-05,true
+R004,5,Excellent TV despite delivery,"The TV itself is excellent and easy to set up, but delivery was four days late and the box arrived damaged.",2026-08-08,false
+R005,2,Screen keeps flickering,"Delivery arrived on time and the package was intact, but the screen flickers every few minutes and makes the product hard to use.",2026-08-11,true
+R006,5,Quick verdict,Great!,2026-08-14,true
+R007,4,,"The stand is sturdy and installation took less than ten minutes.",2026-08-17,false
+R008,3,No written review,,2026-08-20,false
+R009,4,Good value,"The price is reasonable for the picture quality and the design looks modern.",2026-08-22,true
+R009,2,Feels cheaply made,"The casing creaks, the buttons feel loose, and the included cable is too short.",2026-08-24,false
+R011,6,Impossible rating,"This row intentionally uses a rating above the valid five-star maximum.",2026-08-26,true
+R012,0,Invalid zero rating,"This row intentionally uses a rating below the valid one-star minimum.",2026-08-28,false
+R013,3,Average overall,"The display is fine for casual viewing, the sound is average, and the price feels slightly high.",2026-08-30,true
+R014,4,Detailed experience,"Setup instructions were clear and the slim design fits the room well. Movies look crisp with deep colors, and dialogue is easy to understand at medium volume. The built-in apps cover the major services, although switching between apps sometimes pauses for several seconds and the remote buttons are difficult to identify in the dark.",2026-09-02,true
+R015,2,Product issue with normal packaging,"The package arrived sealed and undamaged, but the device overheats after an hour and restarts without warning.",2026-09-04,false

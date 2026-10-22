@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Amazon Review Analyzer v1.0.0 中文系统说明书</title>
+  <style>
+:root {
+  color-scheme: light;
+  --ink: #172033;
+  --muted: #5f6b7a;
+  --line: #dce3eb;
+  --surface: #ffffff;
+  --surface-soft: #f5f8fb;
+  --blue: #285d8f;
+  --blue-dark: #173f68;
+  --blue-soft: #eaf2f9;
+  --cyan: #4f839f;
+  --warning: #9a5b12;
+  --warning-bg: #fff7e8;
+  --success: #286b52;
+  --shadow: 0 16px 45px rgba(24, 47, 73, .08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #edf2f6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+}
+.page { width: min(1120px, calc(100% - 36px)); margin: 30px auto 72px; }
+.document {
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border: 1px solid #e1e7ed;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.hero {
+  padding: 72px 76px 54px;
+  color: #fff;
+  background: #1a4268;
+  border-bottom: 8px solid #6f9fba;
+}
+.eyebrow { font-size: .75rem; font-weight: 750; letter-spacing: .16em; opacity: .78; }
+h1 { margin: 12px 0 4px; font-size: clamp(2.45rem, 6vw, 4.5rem); line-height: 1.02; letter-spacing: -.035em; }
+.subtitle { margin: 10px 0 28px; font-size: clamp(1.08rem, 2.1vw, 1.5rem); font-weight: 520; color: #dceaf5; }
+.hero p { max-width: 830px; color: #e7f0f7; font-size: 1.08rem; }
+.hero strong { color: #fff; }
+.hero .table-wrap { margin: 28px 0 0; border: 1px solid rgba(255,255,255,.22); box-shadow: none; }
+.hero table { color: #fff; background: rgba(255,255,255,.07); }
+.hero th { background: rgba(255,255,255,.12); color: #fff; }
+.hero td, .hero th { border-color: rgba(255,255,255,.18); }
+.hero tbody tr:nth-child(even) { background: rgba(255,255,255,.045); }
+.hero h3 { color: #dceaf5; }
+.hero ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 28px; padding-left: 22px; }
+.hero .callout { background: rgba(255,255,255,.1); color: #fff; border-color: #a9c4d7; }
+.toc, .doc-section { padding: 46px 76px; }
+.toc { background: var(--surface-soft); border-bottom: 1px solid var(--line); }
+.toc h2 { margin-top: 0; }
+.toc ol { columns: 2; column-gap: 56px; padding-left: 23px; }
+.toc li { break-inside: avoid; margin: 5px 0; }
+.toc a { color: var(--blue-dark); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.doc-section { border-bottom: 1px solid #e8edf2; }
+.doc-section:last-child { border-bottom: 0; }
+h2, h3, h4 { color: var(--blue-dark); line-height: 1.28; scroll-margin-top: 18px; }
+.doc-section > h2 { margin: 0 0 26px; font-size: 1.82rem; padding-bottom: 12px; border-bottom: 2px solid #d9e5ee; }
+h3 { margin: 34px 0 12px; font-size: 1.25rem; }
+h4 { margin: 26px 0 10px; font-size: 1.05rem; }
+p { margin: 10px 0 16px; }
+strong { color: #122b45; }
+a { color: var(--blue); }
+ul, ol { margin: 12px 0 18px; padding-left: 26px; }
+li { margin: 5px 0; }
+code {
+  padding: .12em .38em;
+  color: #163d61;
+  background: #edf3f8;
+  border: 1px solid #dbe5ed;
+  border-radius: 5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: .89em;
+}
+.code-block { position: relative; margin: 18px 0 24px; }
+.code-block pre {
+  margin: 0;
+  padding: 20px 22px;
+  overflow-x: auto;
+  color: #eaf2f8;
+  background: #16283b;
+  border: 1px solid #223d58;
+  border-radius: 10px;
+  line-height: 1.55;
+}
+.code-block pre code { padding: 0; color: inherit; background: none; border: 0; font-size: .88rem; }
+.code-label { position: absolute; right: 12px; top: 8px; z-index: 1; color: #a9bfd2; font-size: .7rem; text-transform: uppercase; }
+.table-wrap { margin: 18px 0 26px; overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 7px 22px rgba(37, 69, 98, .05); }
+table { width: 100%; border-collapse: collapse; background: #fff; font-size: .94rem; }
+thead { display: table-header-group; }
+th { padding: 11px 13px; text-align: left; color: var(--blue-dark); background: #edf3f8; border-bottom: 1px solid #ccd8e3; }
+td { padding: 10px 13px; vertical-align: top; border-bottom: 1px solid #e5ebf0; }
+tr:last-child td { border-bottom: 0; }
+tbody tr:nth-child(even) { background: #fafcfd; }
+.callout { margin: 20px 0 26px; padding: 17px 20px; border-left: 5px solid var(--blue); border-radius: 8px; background: var(--blue-soft); color: #263d52; }
+.callout.warning { border-color: #d18a2f; background: var(--warning-bg); color: #5e421f; }
+.section-rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+.architecture-flow { display: flex; align-items: stretch; gap: 8px; overflow-x: auto; margin: 22px 0 30px; padding: 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-soft); }
+.flow-node { min-width: 150px; max-width: 180px; padding: 14px; border: 1px solid #c9d8e4; border-radius: 9px; background: #fff; color: var(--blue-dark); font-size: .86rem; font-weight: 680; line-height: 1.35; box-shadow: 0 5px 15px rgba(42,73,102,.05); }
+.flow-node span { display: block; margin-bottom: 7px; color: var(--cyan); font-size: .67rem; letter-spacing: .12em; }
+.flow-arrow { display: flex; align-items: center; color: #6f8ea5; font-size: 1.3rem; }
+.footer { padding: 28px 76px 40px; color: var(--muted); background: var(--surface-soft); font-size: .82rem; border-top: 1px solid var(--line); }
+.back-top { position: fixed; right: 22px; bottom: 20px; padding: 8px 11px; color: #fff; background: var(--blue-dark); border-radius: 7px; text-decoration: none; box-shadow: var(--shadow); font-size: .8rem; }
+@media (max-width: 760px) {
+  .page { width: 100%; margin: 0; }
+  .document { border: 0; border-radius: 0; }
+  .hero, .toc, .doc-section, .footer { padding-left: 24px; padding-right: 24px; }
+  .hero { padding-top: 50px; }
+  .hero ul { grid-template-columns: 1fr; }
+  .toc ol { columns: 1; }
+  table { min-width: 620px; }
+  .back-top { display: none; }
+}
+@page { size: A4; margin: 15mm 14mm 17mm; }
+@media print {
+  html { scroll-behavior: auto; }
+  body { background: #fff; font-size: 10.3pt; line-height: 1.5; }
+  .page { width: auto; margin: 0; }
+  .document { border: 0; border-radius: 0; box-shadow: none; }
+  .hero { padding: 26mm 13mm 18mm; min-height: 235mm; break-after: page; background: #fff !important; color: var(--ink); border: 0; }
+  .hero h1, .hero strong { color: var(--blue-dark); }
+  .hero .subtitle, .hero p { color: var(--muted); }
+  .hero .table-wrap { border-color: var(--line); }
+  .hero table { color: var(--ink); background: #fff; }
+  .hero th { color: var(--blue-dark); background: var(--surface-soft); }
+  .hero td, .hero th { border-color: var(--line); }
+  .hero .callout { color: var(--ink); background: var(--surface-soft); }
+  .toc { padding: 8mm 4mm; break-after: page; }
+  .doc-section { padding: 9mm 4mm; }
+  .doc-section > h2 { break-after: avoid; }
+  h3, h4 { break-after: avoid; }
+  .table-wrap, table, .callout, .code-block, .architecture-flow { break-inside: avoid; }
+  .table-wrap { overflow: visible; box-shadow: none; }
+  table { min-width: 0 !important; font-size: 8.5pt; }
+  th, td { padding: 5px 6px; }
+  .architecture-flow { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .flow-node { max-width: none; min-width: 0; }
+  .flow-arrow { display: none; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .back-top { display: none; }
+  a[href^="#"]::after { content: ""; }
+}
+</style>
+</head>
+<body id="top">
+  <main class="page">
+    <article class="document">
+      <header class="hero"><div class="eyebrow">PRODUCT USER GUIDE · 简体中文</div><h1 id="amazon-review-analyzer">Amazon Review Analyzer</h1>
+<h2 class="subtitle" id="ai-powered-review-intelligence-competitive-analysis">AI-powered Review Intelligence &amp; Competitive Analysis</h2>
+<p><strong>版本：v1.0.0</strong> · <strong>发布状态：Stable Release</strong></p>
+<p><strong>产品定位：基于本地大语言模型的商品评论分析、商业洞察与竞品比较工具</strong></p>
+<p>Amazon Review Analyzer 将消费者原始评论转换为可追溯的 <strong>Aspect、Sentiment、Evidence、Customer Language、Business Insights、Competitor Comparison</strong> 和可导出的独立报告。系统默认使用本机 Ollama 与 <code>qwen3:8b</code> 推理，分析结果、历史快照与报告均保存在本地。</p>
+<div class="table-wrap"><table><thead><tr><th>发布验收项</th><th>状态</th></tr></thead><tbody><tr><td>Product Release Acceptance</td><td><strong>PASS</strong></td></tr><tr><td>Automated Tests</td><td><strong>1077 / 1077 passed</strong></td></tr><tr><td>BLOCKER</td><td><strong>0</strong></td></tr><tr><td>MAJOR</td><td><strong>0</strong></td></tr></tbody></table></div>
+<aside class="callout info"><strong>说明</strong>：自动测试数量用于说明软件工程验证范围，不代表模型准确率。模型质量指标见“模型质量与评估”。</aside>
+<h3 id="核心特性">核心特性</h3>
+<ul><li><strong>Local AI</strong>：默认在本机通过 Ollama 运行 <code>qwen3:8b</code>。</li><li><strong>Evidence-grounded</strong>：每个分析结论可回到评论原文证据。</li><li><strong>Bilingual</strong>：Dashboard 与报告支持 English / 简体中文。</li><li><strong>Saved Analysis</strong>：分析可保存为带 SHA-256 完整性检查的本地快照。</li><li><strong>Competitive Intelligence</strong>：支持两款商品的标准化 Aspect 对比。</li><li><strong>Standalone Reports</strong>：可导出无需 Python、Streamlit 或网络的独立 HTML 报告。</li></ul>
+<hr class="section-rule">
+<nav class="toc" aria-label="目录"><h2 id="目录">目录</h2>
+<ol><li><a href="#section-1">系统简介</a></li><li><a href="#section-2">系统运行环境</a></li><li><a href="#section-3">启动系统</a></li><li><a href="#section-4">English / 简体中文</a></li><li><a href="#section-5">数据输入方式</a></li><li><a href="#section-6">AI Review Analysis</a></li><li><a href="#section-7">Dashboard</a></li><li><a href="#section-8">Business Intelligence</a></li><li><a href="#section-9">Analysis Library</a></li><li><a href="#section-10">Competitor Comparison</a></li><li><a href="#section-11">Business Reports</a></li><li><a href="#section-12">Runtime &amp; Reliability</a></li><li><a href="#section-13">Performance</a></li><li><a href="#section-14">Model Quality &amp; Evaluation</a></li><li><a href="#section-15">Privacy &amp; Data</a></li><li><a href="#section-16">Known Limitations</a></li><li><a href="#section-17">Frequently Asked Questions</a></li><li><a href="#section-18">Troubleshooting</a></li><li><a href="#section-19">Glossary</a></li><li><a href="#section-20">Recommended Workflow</a></li><li><a href="#section-21">Best Practices</a></li><li><a href="#section-22">Version Information</a></li><li><a href="#appendix-a">附录 A — Technical Architecture</a></li><li><a href="#appendix-b">附录 B — Data &amp; Output Structure</a></li><li><a href="#appendix-c">附录 C — v1.0 Release Validation</a></li></ol>
+<hr class="section-rule">
+</nav>
+<section class="doc-section"><h2 id="section-1">1. 系统简介</h2>
+<h3 id="1-1-解决的问题">1.1 解决的问题</h3>
+<p>电商评论通常数量多、表达方式不统一，而且同一条评论可能同时包含优点、缺点、物流体验和售后反馈。仅看平均星级或简单词频，难以回答以下问题：</p>
+<ul><li>消费者最关心产品的哪些方面？</li><li>哪些优势被不同顾客反复认可？</li><li>哪些问题影响产品体验，哪些只是购物体验问题？</li><li>结论能否追溯到顾客原话？</li><li>两款商品在相同评价维度上有何差异？</li></ul>
+<p>Amazon Review Analyzer 将评论逐条结构化，再通过确定性的聚合规则形成商业洞察。它不是简单的整条评论正负面分类器，也不是只统计 <code>good</code>、<code>product</code> 等通用词的词频工具。</p>
+<h3 id="1-2-端到端流程">1.2 端到端流程</h3>
+<div class="architecture-flow" role="img" aria-label="系统架构流程"><div class="flow-node"><span>01</span>Demo / Amazon / CSV / Paste</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>02</span>Validation &amp; Cleaner</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>03</span>Local qwen3:8b</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>04</span>Aspect + Sentiment + Evidence</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>05</span>Aggregator + Keywords</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>06</span>Business Intelligence</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>07</span>Dashboard</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>08</span>Saved Analysis</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>09</span>Competitor Comparison</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node"><span>10</span>Standalone Report</div></div>
+<p>纯文本回退表示：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>Reviews
+→ Validation &amp; Cleaning
+→ Local AI Analysis
+→ Structured Evidence
+→ Business Intelligence
+→ Dashboard
+→ Saved Analysis
+→ Competitor Comparison
+→ Business Report</code></pre></div>
+<h3 id="1-3-核心能力概览">1.3 核心能力概览</h3>
+<div class="table-wrap"><table><thead><tr><th>模块</th><th>当前能力</th></tr></thead><tbody><tr><td>Review Input</td><td>Demo Dataset、Amazon Quick Scan、CSV Upload、Paste Reviews</td></tr><tr><td>AI Analysis</td><td>Summary、Aspect、Aspect-level Sentiment、原文 Evidence</td></tr><tr><td>Business Intelligence</td><td>Selling Points、Pain Points、Opportunity Ranking、Priority Matrix、Rating Insights</td></tr><tr><td>Customer Language</td><td>unigram、bigram、trigram、正负短语、Aspect-specific language</td></tr><tr><td>Dashboard</td><td>Overview、Product Insights、Customer Language、Aspect Deep Dive、Review Explorer</td></tr><tr><td>Saved Analysis</td><td>本地持久化快照、版本兼容检查、SHA-256 完整性校验</td></tr><tr><td>Competitor Comparison</td><td>Product A vs Product B、固定 15 Aspect 对齐、Evidence 对比</td></tr><tr><td>Reports</td><td>单商品与竞品对比的 English / 中文独立 HTML 报告</td></tr><tr><td>Localization</td><td>English / 简体中文展示层切换</td></tr><tr><td>Runtime</td><td>Stable 1-worker、Progress、ETA、Checkpoint、Resume、Retry Failed Reviews</td></tr></tbody></table></div>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-2">2. 系统运行环境</h2>
+<h3 id="2-1-已验证环境">2.1 已验证环境</h3>
+<p>v1.0.0 的正式桌面验收环境为 macOS。本次发布环境使用：</p>
+<div class="table-wrap"><table><thead><tr><th>组件</th><th>当前发布信息</th></tr></thead><tbody><tr><td>Operating System</td><td>macOS</td></tr><tr><td>Python</td><td>3.13.14（项目建议 Python 3.11 或更高版本）</td></tr><tr><td>Local AI runtime</td><td>Ollama 0.34.2</td></tr><tr><td>Default model</td><td><code>qwen3:8b</code></td></tr><tr><td>Web UI</td><td>Streamlit 1.64.0（项目约束 <code>&gt;=1.50,&lt;2</code>）</td></tr><tr><td>Data processing</td><td>pandas 3.0.6（项目要求 <code>&gt;=2.2</code>）</td></tr><tr><td>Amazon browser import</td><td>Playwright 1.63.0 + Chromium</td></tr></tbody></table></div>
+<h3 id="2-2-资源建议">2.2 资源建议</h3>
+<ul><li>为 Python 虚拟环境、Playwright Chromium 和本地模型预留约 10 GB 或以上磁盘空间。</li><li><code>qwen3:8b</code> 适合在具备足够内存的本地设备上运行；发布验收设备为 16 GiB Apple Silicon Mac。</li><li>Demo Dashboard、Saved Analyses 和已生成报告不依赖实时模型；只有分析新评论时需要 Ollama 与模型。</li><li>Amazon Quick Scan 还需要网络和普通可见 Chromium，但不会自动绕过 Amazon 的访问控制。</li></ul>
+<aside class="callout info"><strong>Tip</strong>：面试或演示前先启动 Ollama，并确认 <code>qwen3:8b</code> 已在本地，以减少首次分析的冷启动时间。</aside>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-3">3. 启动系统</h2>
+<h3 id="3-1-推荐方式-macos-桌面启动器">3.1 推荐方式：macOS 桌面启动器</h3>
+<p>双击桌面的：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>~/Desktop/Amazon Review Analyzer.command</code></pre></div>
+<p>启动器会依次：</p>
+<ol><li>进入项目目录并激活 <code>.venv</code>。</li><li>检查 Ollama 命令与本地服务。</li><li>Ollama 已安装但未运行时，有限次尝试打开 Ollama 应用。</li><li>检查本地是否存在 <code>qwen3:8b</code>，但不会自动下载大型模型。</li><li>检查本项目的 Streamlit 是否已经运行；若已运行，只打开已有页面。</li><li>启动 Dashboard，并在浏览器打开 <code>http://localhost:8501</code>。</li></ol>
+<p>即使 Ollama 未安装、未运行或模型不存在，启动器仍会打开 Demo Dashboard；此时仅“新 AI 分析”暂不可用。</p>
+<p>在启动器 Terminal 窗口按 <code>Ctrl+C</code> 会停止本次启动的 Streamlit，不会删除数据、checkpoint 或快照，也不会停止 Ollama。</p>
+<aside class="callout info"><strong>macOS 安全提示</strong>：首次运行若被系统拦截，可在 Finder 中右键该文件并选择“打开”。不要关闭系统安全检查。</aside>
+<h3 id="3-2-手动启动">3.2 手动启动</h3>
+<p>在项目父目录打开 Terminal：</p>
+<div class="code-block"><div class="code-label">bash</div><pre><code>cd amazon_review_analyzer
+source .venv/bin/activate
+streamlit run app.py</code></pre></div>
+<p>浏览器通常会自动打开。若没有自动打开，请访问：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>http://localhost:8501</code></pre></div>
+<h3 id="3-3-首次环境准备">3.3 首次环境准备</h3>
+<p>仅在虚拟环境尚未创建时执行：</p>
+<div class="code-block"><div class="code-label">bash</div><pre><code>cd amazon_review_analyzer
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+cp .env.example .env
+ollama pull qwen3:8b
+python main.py --check-ollama</code></pre></div>
+<p>如需使用 Amazon Quick Scan，再安装 Chromium runtime：</p>
+<div class="code-block"><div class="code-label">bash</div><pre><code>playwright install chromium</code></pre></div>
+<p>启动应用本身不会自动分析评论，也不会自动访问 Amazon。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-4">4. English / 简体中文</h2>
+<p>侧边栏顶部的 <strong>Language / 语言</strong> 支持：</p>
+<ul><li>English</li><li>简体中文</li></ul>
+<p>语言切换属于展示层操作：</p>
+<ul><li>不会调用 Ollama。</li><li>不会重新分析、重新聚合或重新生成关键词。</li><li>不会改变当前 Dataset Mode 或已完成结果。</li><li>不会修改原始评论、Evidence、canonical Aspect、CSV 列名或 JSON key。</li><li>Original Review、Evidence 与 Customer Language 始终保留原语言。</li><li>报告语言可与 Dashboard 语言分别选择。</li></ul>
+<p>这保证了中英文界面共享同一份底层结果，且原始证据不会因翻译而失真。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-5">5. 数据输入方式</h2>
+<p>侧边栏 <strong>Dataset Mode</strong> 提供四个顶层工作区：</p>
+<ol><li><strong>Demo Dataset</strong></li><li><strong>Analyze New Dataset</strong></li><li><strong>Saved Analyses</strong></li><li><strong>Compare Products</strong></li></ol>
+<p>其中 <strong>Amazon Quick Scan、Upload Dataset、Paste Reviews</strong> 是 <strong>Analyze New Dataset</strong> 内的三个输入源，而不是三个额外的顶层模式。</p>
+<h3 id="5-1-demo-dataset">5.1 Demo Dataset</h3>
+<p>Demo Dataset 是应用启动后的默认数据，用于体验系统、查看所有 Dashboard 页面和进行稳定演示。</p>
+<div class="table-wrap"><table><thead><tr><th>指标</th><th>冻结值</th></tr></thead><tbody><tr><td>Total Reviews</td><td>15</td></tr><tr><td>Successfully Analyzed</td><td>14</td></tr><tr><td>Skipped</td><td>1</td></tr><tr><td>Coverage</td><td>93.3%</td></tr></tbody></table></div>
+<p>Demo 为冻结数据，不需要 Ollama 或网络。分析新数据、Amazon 导入、Comparison 或 Report Export 都不会覆盖它。</p>
+<h3 id="5-2-paste-reviews">5.2 Paste Reviews</h3>
+<p>路径：<strong>Analyze New Dataset → Paste Reviews</strong>。</p>
+<ul><li>每个非空行被视为一条独立评论。</li><li>空行会被忽略。</li><li>系统自动生成 <code>PASTE_0001</code>、<code>PASTE_0002</code> 等 Review ID。</li><li>预览、验证和清洗完成后，用户点击 <strong>Analyze Reviews</strong> 才会调用模型。</li><li>分析完成后选择 <strong>View Results</strong> 进入当前结果。</li></ul>
+<aside class="callout info"><strong>注意</strong>：如果一条评论本身含有换行，请先把它整理成一行；否则每一行会被识别成不同评论。</aside>
+<p>适用场景：少量快速测试、Amazon 访问受限时的替代方式、访谈文本或其他合法评论来源。</p>
+<h3 id="5-3-upload-dataset">5.3 Upload Dataset</h3>
+<p>路径：<strong>Analyze New Dataset → Upload Dataset</strong>。</p>
+<p>界面接受最大 10 MiB 的 CSV，尝试使用 UTF-8-SIG、UTF-8 和 CP1252 解码。上传后通过 <strong>Column Mapping</strong> 将用户列映射到标准字段。</p>
+<div class="table-wrap"><table><thead><tr><th>标准字段</th><th>UI 要求</th><th>说明</th></tr></thead><tbody><tr><td><code>content</code></td><td><strong>必需</strong></td><td>对应 <strong>Review Content</strong>；评论正文</td></tr><tr><td><code>review_id</code></td><td>可选</td><td>缺失或为空时生成 <code>UPLOAD_0001</code> 等稳定 ID</td></tr><tr><td><code>rating</code></td><td>可选</td><td>有值时应可转换为 1–5；缺失时相关评分洞察隐藏</td></tr><tr><td><code>title</code></td><td>可选</td><td>空标题允许</td></tr><tr><td><code>date</code></td><td>可选</td><td>保留输入值</td></tr><tr><td><code>verified_purchase</code></td><td>可选</td><td>仅作为 metadata，不是可信度分数</td></tr></tbody></table></div>
+<p>交互式导入最终统一为六列：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>review_id, rating, title, content, date, verified_purchase</code></pre></div>
+<p>缺少可选列不会让整个文件失败；单行正文为空时会在 Cleaner 阶段标记为不可分析。界面不会因为内部兼容代码而自动截断为 50 条，当前 Upload / Paste 会处理用户确认的完整数据集。</p>
+<h3 id="5-4-amazon-quick-scan">5.4 Amazon Quick Scan</h3>
+<p>路径：<strong>Analyze New Dataset → Amazon Quick Scan</strong>。</p>
+<p>标准流程：</p>
+<ol><li>在 <strong>Amazon Product URL</strong> 输入商品或评论页面 URL。</li><li>点击 <strong>Open Amazon Product</strong>，打开普通可见 Chromium。</li><li>如果 Amazon 要求登录或人工验证，由用户本人在浏览器中完成，然后点击 <strong>Continue After Verification</strong>；也可选择 <strong>Cancel Amazon Import</strong>。</li><li>点击 <strong>Scan Available Reviews</strong>，读取当前浏览器会话可访问的评论。</li><li>在 <strong>Review Preview</strong> 检查 <code>review_id</code>、<code>rating</code>、<code>title</code>、<code>content</code>、<code>date</code> 和 <code>verified_purchase</code>。此时不会调用模型。</li><li>确认后点击 <strong>Analyze Available Reviews</strong>，才会保存 Amazon 原始评论并开始本地分析。</li></ol>
+<p>Quick Scan 使用有界扫描：最多检查 3 页并保留最多 100 条唯一评论。这是安全上限，不是“保证获得 100 条”。</p>
+<h4 id="支持的-marketplace">支持的 marketplace</h4>
+<ul><li><code>amazon.com</code></li><li><code>amazon.co.uk</code></li><li><code>amazon.de</code></li><li><code>amazon.fr</code></li><li><code>amazon.it</code></li><li><code>amazon.es</code></li></ul>
+<h4 id="支持的-url-path">支持的 URL path</h4>
+<ul><li><code>/dp/{ASIN}</code></li><li><code>/gp/product/{ASIN}</code></li><li><code>/gp/aw/d/{ASIN}</code></li><li><code>/product-reviews/{ASIN}</code></li><li><code>/portal/customer-reviews/{ASIN}</code></li></ul>
+<p>ASIN 为 10 位字母或数字，解析后统一为大写。复杂 query 参数与 fragment 不影响 path 中的 ASIN；系统不会从 query 参数或非 Amazon 域名中猜测 ASIN。标准化结果使用对应 marketplace 的：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>https://www.amazon.&lt;marketplace&gt;/dp/&lt;ASIN&gt;</code></pre></div>
+<aside class="callout warning"><strong>⚠ Amazon Access Notice</strong><br>Amazon 可能要求登录、人工验证，返回 challenge，限制评论页面访问，或只向当前会话提供部分评论。本系统不会绕过 CAPTCHA、Robot Check、登录或任何 Amazon 访问控制，也不会使用 stealth、指纹伪装、验证码服务或自动账户登录。</aside>
+<h4 id="available-reviews-与-coverage">Available Reviews 与 Coverage</h4>
+<p>Quick Scan 采用 <strong>Available Reviews</strong> 语义：以当前普通浏览器会话实际暴露并去重后的评论数为准，而不是 Amazon 页面显示的总评论数。</p>
+<p>例如，商品页显示 1,000 条评论，但当前会话只能访问 8 条：</p>
+<ul><li>Imported Reviews = 8</li><li>若 8 条全部分析成功，Coverage = 100%</li><li>Coverage 不是 <code>8 / 1000</code></li></ul>
+<p>Amazon 访问受限并不代表分析系统失败。用户可以在 <strong>Choose Analysis Source</strong> 中切换至 <strong>Paste Reviews</strong> 或 <strong>Upload Dataset</strong>；系统会保留已输入的 Amazon URL，方便稍后返回。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-6">6. AI Review Analysis</h2>
+<h3 id="6-1-默认引擎">6.1 默认引擎</h3>
+<div class="table-wrap"><table><thead><tr><th>配置</th><th>默认值</th></tr></thead><tbody><tr><td>Provider</td><td>Ollama</td></tr><tr><td>Model</td><td><code>qwen3:8b</code></td></tr><tr><td>Inference</td><td>本地串行推理</td></tr><tr><td>Context</td><td>4096 tokens</td></tr><tr><td>Keep-alive</td><td>30 minutes</td></tr></tbody></table></div>
+<p>当前 v1.0 默认流程不需要 OpenAI API key，也不会调用 OpenAI。项目保留可选 provider 架构，但只有用户明确重新配置并选择后才会使用其他 provider。</p>
+<h3 id="6-2-单条评论输出">6.2 单条评论输出</h3>
+<p>一条成功评论的结构化结果包括：</p>
+<div class="table-wrap"><table><thead><tr><th>字段</th><th>含义</th></tr></thead><tbody><tr><td>Summary</td><td>对评论主要观点的简短概括</td></tr><tr><td>Aspect</td><td>被评价的产品或购物体验属性</td></tr><tr><td>Sentiment</td><td>针对该 Aspect 的 positive / negative / neutral</td></tr><tr><td>Evidence</td><td>原评论中的连续原文片段</td></tr></tbody></table></div>
+<p>系统保留原始 <code>aspects</code> mentions，也生成 review-level <code>unique_aspects</code> 供聚合使用。同一评论中的相同 Aspect + 相同 sentiment 只计算为一位顾客提及，但原始多次 mention 与各自 Evidence 不会丢失。</p>
+<h3 id="6-3-15-个-canonical-aspects">6.3 15 个 canonical Aspects</h3>
+<div class="table-wrap"><table><thead><tr><th>Business Category</th><th>Canonical Aspect</th><th>中文显示</th></tr></thead><tbody><tr><td>PRODUCT</td><td>Picture Quality</td><td>画质</td></tr><tr><td>PRODUCT</td><td>Sound Quality</td><td>音质</td></tr><tr><td>PRODUCT</td><td>Price / Value</td><td>价格 / 性价比</td></tr><tr><td>PRODUCT</td><td>Remote Control</td><td>遥控器</td></tr><tr><td>PRODUCT</td><td>System Performance</td><td>系统性能</td></tr><tr><td>PRODUCT</td><td>Ease of Use</td><td>易用性</td></tr><tr><td>PRODUCT</td><td>Design</td><td>外观设计</td></tr><tr><td>PRODUCT</td><td>Build Quality</td><td>做工质量</td></tr><tr><td>PRODUCT</td><td>Reliability</td><td>可靠性</td></tr><tr><td>PRODUCT</td><td>Connectivity</td><td>连接性</td></tr><tr><td>PRODUCT</td><td>Setup / Installation</td><td>设置 / 安装</td></tr><tr><td>EXPERIENCE</td><td>Delivery</td><td>配送</td></tr><tr><td>EXPERIENCE</td><td>Packaging</td><td>包装</td></tr><tr><td>EXPERIENCE</td><td>Customer Service</td><td>客户服务</td></tr><tr><td>OTHER</td><td>Other</td><td>其他</td></tr></tbody></table></div>
+<p><strong>PRODUCT</strong> 表示产品本身或使用体验；<strong>EXPERIENCE</strong> 表示购物、配送和服务体验；<strong>OTHER</strong> 保留有效但无法安全归入标准类别的观点。这样，“配送很慢但电视很好”不会被误解为产品质量差。</p>
+<h3 id="6-4-aspect-level-sentiment">6.4 Aspect-level Sentiment</h3>
+<ul><li><strong>positive</strong>：对特定 Aspect 的明确正面评价。</li><li><strong>negative</strong>：对特定 Aspect 的明确负面评价。</li><li><strong>neutral</strong>：描述该 Aspect，但没有明确正负判断。</li><li><strong>mixed</strong>：聚合层表示同一评论对相同 Aspect 同时存在正、负 mention；它不是模型随意生成的整条评论标签。</li></ul>
+<p>Sentiment 不是整体星级预测。一条 5 星评论仍可能包含 Remote Control 的 negative Evidence；一条 2 星评论也可能认可 Picture Quality。</p>
+<h3 id="6-5-evidence-原文证据">6.5 Evidence 原文证据</h3>
+<p>Evidence 必须是原评论中的连续 substring。验证器不会接受模型改写、翻译或凭空生成的 Evidence。</p>
+<p><strong>示例</strong></p>
+<div class="code-block"><div class="code-label">text</div><pre><code>Review:
+The picture is excellent but the remote feels cheap.
+
+Picture Quality — positive
+Evidence: The picture is excellent
+
+Remote Control — negative
+Evidence: the remote feels cheap</code></pre></div>
+<p>如果某个 Aspect 的 Evidence 无效，系统只对该 Evidence 做最多一次有限修复；其他已验证 Aspect 继续保留。第二次仍无效时，只丢弃该 Aspect 并记录 warning，不会让整条评论的正确结果一起失败。</p>
+<h3 id="6-6-为什么-evidence-重要">6.6 为什么 Evidence 重要</h3>
+<p>Evidence 让运营、产品和研究人员能够：</p>
+<ul><li>从统计结论回到顾客原话；</li><li>判断模型是否正确理解上下文；</li><li>区分相似但不同的 Aspect；</li><li>在报告和竞品比较中保留可解释性；</li><li>避免把 AI 总结当成不可验证的事实。</li></ul>
+<p>同一 Aspect 可以在一条评论中出现多个独立观点。例如 “dialogue is clear, but bass is weak” 会保留两条 Sound Quality mention，而不是强行压缩为一条模糊结论。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-7">7. Dashboard</h2>
+<p>Dashboard 由五个分析页面组成。各页面只读取当前已完成输出，不会因浏览、筛选或语言切换重新调用模型。</p>
+<h3 id="7-1-overview">7.1 Overview</h3>
+<p>用于快速掌握数据质量与主要结论，包含：</p>
+<ul><li>Total Reviews、Successful、Failed、Skipped、Coverage 等 KPI；</li><li>Executive Summary；</li><li>Aspect Mention Sentiment；</li><li>Product Selling Points；</li><li>Product Pain Points；</li><li>Customer Concerns；</li><li>Product 与 Shopping Experience 的概览。</li></ul>
+<aside class="callout info"><strong>截图位置：Overview Dashboard</strong><br>当前项目未随说明书分发正式截图资产，此处保留真实界面截图位置。</aside>
+<h3 id="7-2-product-insights">7.2 Product Insights</h3>
+<p>面向产品与运营决策，包含：</p>
+<ul><li>Customer Priority Matrix；</li><li>Opportunity Ranking；</li><li>Business Recommendations；</li><li>Aspect by Star Rating；</li><li>Hidden Complaints in Positive Reviews；</li><li>Strengths Even in Negative Reviews；</li><li>Shopping Experience Issues；</li><li>Aspect Sentiment Breakdown。</li></ul>
+<aside class="callout info"><strong>截图位置：Product Insights — Priority Matrix 与 Opportunity Ranking</strong></aside>
+<h3 id="7-3-customer-language">7.3 Customer Language</h3>
+<p>展示消费者实际使用的语言：</p>
+<ul><li>unigram、bigram、trigram；</li><li>Review Count、Occurrences 与 Review Share；</li><li>Positive Phrases 与 Negative Phrases；</li><li>按 Aspect 查看关键词和短语。</li></ul>
+<p>这些词来自已导入评论和已验证 Evidence，不是营销文案生成器，也不会再次调用 AI 推断 sentiment。</p>
+<h3 id="7-4-aspect-deep-dive">7.4 Aspect Deep Dive</h3>
+<p>选择一个 Aspect 后，可查看：</p>
+<ul><li>Reviews Mentioning 与 Review Share；</li><li>Mention Count；</li><li>positive / negative / neutral / mixed rates；</li><li>Average Rating（有评分时）；</li><li>Evidence Level；</li><li>关键词、短语及不同 sentiment 的 Evidence；</li><li>Show More 展开更多代表性评论。</li></ul>
+<h3 id="7-5-review-explorer">7.5 Review Explorer</h3>
+<p>用于回到每条原始评论，支持：</p>
+<ul><li>搜索 Review ID、标题或正文；</li><li>Rating、Analysis Status、Aspect、Sentiment、Verified Purchase 筛选；</li><li>Positive Evidence、Negative Evidence、1–2 Star、4–5 Star 快速筛选；</li><li>Product Issues 与 Shopping Experience 快速筛选；</li><li>查看 Original Review、Summary、Aspect、Sentiment 和 Evidence。</li></ul>
+<p><code>verified_purchase</code> 只作为筛选 metadata，不是评论真实性评分。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-8">8. Business Intelligence</h2>
+<p>Business Intelligence 将 review-level 结果通过透明、确定性的规则聚合为商业决策信息。它不会在 Dashboard 阶段重新询问模型。</p>
+<h3 id="8-1-review-count-mention-count-与-review-share">8.1 Review Count、Mention Count 与 Review Share</h3>
+<div class="table-wrap"><table><thead><tr><th>指标</th><th>定义</th></tr></thead><tbody><tr><td>Review Count</td><td>至少一次提到该 Aspect 的成功评论数量</td></tr><tr><td>Mention Count</td><td>该 Aspect 的原始 mention 总数</td></tr><tr><td>Review Share</td><td><code>Review Count / Successfully Analyzed Reviews × 100%</code></td></tr></tbody></table></div>
+<p>例如，同一条评论三次提到 Picture Quality：Mention Count 可以是 3，但 Review Count 仍是 1。这样既保留表达强度，也不会把一位顾客误算成三位顾客。</p>
+<h3 id="8-2-customer-concerns">8.2 Customer Concerns</h3>
+<p>持久化聚合结果中的 <code>top_customer_concerns</code> 按独立 Review Count 展示 PRODUCT 与 EXPERIENCE 的高频关注项，不设置正式排行的最小样本门槛。当前 Overview 页面名为 <strong>Customer Concerns</strong> 的交互表则使用 Opportunity Ranking：要求达到最小 Review Count、至少存在一条 negative review，并按 Opportunity Score 排序；可切换 All、Product 与 Shopping Experience。</p>
+<p>Delivery 可以成为高关注项，但它不会因此自动成为“产品卖点”或“产品痛点”。<code>Other</code> 默认不进入正式商业榜单。</p>
+<h3 id="8-3-product-selling-points">8.3 Product Selling Points</h3>
+<p>正式 Selling Point 必须：</p>
+<ul><li>属于 PRODUCT；</li><li>Review Count 达到最小样本要求（当前默认 3）；</li><li>positive Review Count 大于 negative Review Count。</li></ul>
+<p>排序综合考虑 Review Share 与 Positive Rate，并显示样本数、正负面计数、各 sentiment rate 和 Evidence Level。一个只有 1 条正面、2 条负面的 Aspect 不会被称为 Selling Point。</p>
+<h3 id="8-4-product-pain-points">8.4 Product Pain Points</h3>
+<p>正式 Pain Point 必须：</p>
+<ul><li>属于 PRODUCT；</li><li>Review Count 达到最小样本要求（当前默认 3）；</li><li>negative Review Count 大于 positive Review Count。</li></ul>
+<p>排序综合考虑 Review Share 与 Negative Rate。一个 4 条正面、1 条负面的 Aspect 不会因为存在一条抱怨就进入主要 Pain Points。</p>
+<p>Delivery、Packaging、Customer Service 单独进入 Shopping Experience 的正负洞察，不与产品质量榜单混合。</p>
+<h3 id="8-5-opportunity-score">8.5 Opportunity Score</h3>
+<p>当前公式：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>Opportunity Score = Review Share × Negative Rate / 100</code></pre></div>
+<p>它用于识别“很多顾客提到，且负面比例较高”的改进方向。</p>
+<div class="table-wrap"><table><thead><tr><th>Opportunity Score</th><th>Priority</th></tr></thead><tbody><tr><td><code>&lt; 8</code></td><td>Low</td></tr><tr><td><code>8 – &lt;20</code></td><td>Medium</td></tr><tr><td><code>&gt;= 20</code></td><td>High</td></tr></tbody></table></div>
+<aside class="callout warning"><strong>重要</strong>：Opportunity Score 是 business prioritization heuristic，不是统计显著性检验、置信区间或未来销量预测。</aside>
+<h3 id="8-6-customer-priority-matrix">8.6 Customer Priority Matrix</h3>
+<div class="table-wrap"><table><thead><tr><th>视觉编码</th><th>含义</th></tr></thead><tbody><tr><td>X 轴</td><td>Net Sentiment Direction = Positive Rate − Negative Rate</td></tr><tr><td>Y 轴</td><td>Review Share</td></tr><tr><td>气泡大小</td><td>Review Count</td></tr></tbody></table></div>
+<p>Priority Matrix 包含正式 PRODUCT 与 EXPERIENCE Aspect，但不要求每个气泡都达到榜单的最小 3-review 门槛。当前区域解释：</p>
+<ul><li><strong>Strength</strong>：高关注、净正面。</li><li><strong>Improvement Priority</strong>：高关注、净负面。</li><li><strong>Emerging Concern</strong>：关注度较低但净负面。</li><li><strong>Minor Positive</strong>：关注度较低但净正面。</li><li><strong>Balanced / Monitor</strong>：正负方向平衡，建议继续观察。</li></ul>
+<p>当前高关注阈值为 Review Share <code>&gt;= 20%</code>。矩阵用于排序注意力，不代表因果关系。</p>
+<h3 id="8-7-evidence-level">8.7 Evidence Level</h3>
+<p>Evidence Level 表示该 Aspect 的 review sample support：</p>
+<div class="table-wrap"><table><thead><tr><th>Review Count</th><th>Evidence Level</th></tr></thead><tbody><tr><td><code>&lt; 3</code></td><td>Low</td></tr><tr><td><code>3–9</code></td><td>Medium</td></tr><tr><td><code>&gt;= 10</code></td><td>High</td></tr></tbody></table></div>
+<p>它不是统计置信度。High 只表示有较多独立评论支持该 Aspect。</p>
+<h3 id="8-8-sample-level">8.8 Sample Level</h3>
+<div class="table-wrap"><table><thead><tr><th>成功评论数</th><th>Sample Level</th><th>使用建议</th></tr></thead><tbody><tr><td><code>0–9</code></td><td>Quick Scan / Early Signals</td><td>仅作为方向性信号</td></tr><tr><td><code>10–29</code></td><td>Limited Sample</td><td>可观察重复模式，仍需谨慎</td></tr><tr><td><code>&gt;= 30</code></td><td>Full Insight View</td><td>可使用完整洞察视图，仍不等于市场代表性</td></tr></tbody></table></div>
+<h3 id="8-9-rating-insights-与-hidden-complaints">8.9 Rating Insights 与 Hidden Complaints</h3>
+<p>输入包含有效评分时，系统可展示：</p>
+<ul><li>Average Rating 与 Rating Distribution；</li><li>Aspect × Star Rating；</li><li>4–5 星评论中的 negative Aspect，即 Hidden Complaints；</li><li>1–2 星评论中的 positive Aspect，即低分评论中的产品优势。</li></ul>
+<p>Hidden Complaints 能揭示“整体满意但局部不满”的问题。例如用户给出 5 星，但仍认为 Remote Control 设计差。评分缺失时，相关区域会隐藏，而不是伪造数值。</p>
+<h3 id="8-10-business-recommendations">8.10 Business Recommendations</h3>
+<p>建议由现有聚合指标和规则模板确定性生成，不是第二次 AI 生成。它们提供可追溯的决策支持，不会覆盖原始数据，也不会替代人工判断。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-9">9. Analysis Library</h2>
+<h3 id="9-1-保存分析">9.1 保存分析</h3>
+<p>完整分析完成后，可点击 <strong>Save Analysis / 保存分析结果</strong> 将当前结果保存为按不可变语义使用、受 hash 保护的本地 snapshot。它不是操作系统层面的只读文件，因此不应手工修改。保存内容包括：</p>
+<ul><li>Product name 与 source type；</li><li>Review count、Coverage 与分析时间；</li><li>Provider、model、analysis version 与 taxonomy metadata；</li><li>Dashboard 所需的七个已生成输出；</li><li>每个内容文件的 SHA-256 与组合完整性信息。</li></ul>
+<p>Snapshot 保存在本地磁盘，Streamlit 重启后仍可在 <strong>Saved Analyses</strong> 中读取。</p>
+<h3 id="9-2-analysis-id">9.2 Analysis ID</h3>
+<p>每次保存生成稳定格式的 ID：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>AN_YYYYMMDD_HHMMSS_xxxx</code></pre></div>
+<p>它用于唯一识别一次分析，而不是商品 ASIN 或用户账号。</p>
+<h3 id="9-3-完整性与兼容性">9.3 完整性与兼容性</h3>
+<p>在加载、Comparison 或 Report Export 前，系统检查：</p>
+<ul><li>snapshot schema；</li><li>analysis candidate/version；</li><li>taxonomy version；</li><li>文件是否齐全；</li><li>SHA-256 是否匹配。</li></ul>
+<p>文件被手动修改、损坏、缺失或版本不兼容时，系统会安全停止，不会忽略错误继续生成不可信结论，也不会为修复 snapshot 自动重新调用模型。</p>
+<aside class="callout info"><strong>Tip</strong>：若需要修正数据，请回到可信的原始评论重新分析并保存新的 snapshot，不要直接编辑 Library 文件。</aside>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-10">10. Competitor Comparison</h2>
+<h3 id="10-1-使用前提">10.1 使用前提</h3>
+<p>在 <strong>Compare Products / 竞品对比</strong> 中选择两个不同且兼容的 Saved Analyses：</p>
+<ul><li>Product A 与 Product B 必须不同；</li><li>analysis version 必须兼容；</li><li>taxonomy 必须兼容；</li><li>两个 snapshot 均须通过完整性检查。</li></ul>
+<p>Comparison 使用已保存结果，<strong>不调用 Qwen、不重新聚合、不重跑 Keyword Analyzer</strong>。</p>
+<h3 id="10-2-15-aspect-alignment">10.2 15 Aspect Alignment</h3>
+<p>A/B 固定按 15 个 canonical Aspects 对齐。即使某个产品没有某 Aspect 的证据，该行仍保留，并显示 <strong>No Evidence / 暂无证据</strong>。</p>
+<aside class="callout warning"><strong>No Evidence ≠ 0%</strong><br>如果 Product A 为 80% positive，而 Product B 为 No Evidence，不能得出“A 比 B 好 80%”。B 只是没有足够数据可比较。</aside>
+<h3 id="10-3-比较内容">10.3 比较内容</h3>
+<ul><li>Competitive Advantages：某一方在有支持的数据上呈现的潜在优势；</li><li>Competitive Weaknesses：某一方相对明显的消费者问题；</li><li>White-Space Opportunities：双方都存在的消费者痛点，可能代表共同市场机会；</li><li>Product Experience 与 Shopping Experience 分开比较；</li><li>Rating 与 Aspect Rating 对比；</li><li>Shared Phrases、Product A distinctive phrases、Product B distinctive phrases；</li><li>两侧 Representative Evidence。</li></ul>
+<p>所有结论均保留 Review Count、Review Share、rate 和 Evidence Level。小样本或样本量明显不均衡时会显示警告。</p>
+<h3 id="10-4-为什么不提供-overall-winner">10.4 为什么不提供 Overall Winner</h3>
+<p>v1.0 不输出“Product A is better overall”。不同产品可能在画质、可靠性、价格或配送体验上各有优劣，而数据来源、样本量和时间范围也可能不同。系统只提供可追溯的 Aspect-level directional comparison，不声称统计显著性或绝对产品胜负。</p>
+<h3 id="10-5-标准流程">10.5 标准流程</h3>
+<div class="code-block"><div class="code-label">text</div><pre><code>Analyze Product A → Save Analysis
+Analyze Product B → Save Analysis
+Saved Analyses → Compare Products
+Select A / B → Generate Comparison
+Review Evidence → Export Comparison Report</code></pre></div>
+<aside class="callout info"><strong>截图位置：Competitor Comparison — 15 Aspect Head-to-Head</strong></aside>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-11">11. Business Reports</h2>
+<h3 id="11-1-报告类型">11.1 报告类型</h3>
+<ul><li><strong>Single Product Report</strong></li><li><strong>Competitor Comparison Report</strong></li></ul>
+<p>每种报告均可独立选择 English 或简体中文，不要求与当前 UI 语言相同。</p>
+<h3 id="11-2-standalone-html">11.2 Standalone HTML</h3>
+<p>报告为 self-contained HTML：</p>
+<ul><li>全部样式内嵌；</li><li>不依赖 Streamlit、Python、localhost、CDN、外部字体、图片或 JavaScript；</li><li>应用关闭后仍可双击打开；</li><li>可发送给同事；</li><li>支持浏览器 <strong>Print → Save as PDF</strong>；</li><li>动态内容统一转义，商品名或 Evidence 中的 HTML 标签只按文本显示。</li></ul>
+<p>报告生成只读取已验证输出，不会调用 Ollama、Amazon、Aggregator 或 Keyword Analyzer。</p>
+<h3 id="11-3-单产品报告内容">11.3 单产品报告内容</h3>
+<ul><li>Cover 与 Dataset Information；</li><li>Executive Summary 与 Dataset Quality；</li><li>Aspect Mention Sentiment；</li><li>Selling Points 与 Pain Points；</li><li>Product Experience 与 Shopping Experience 的组合章节；</li><li>Priority Matrix 与 Aspect Performance；</li><li>Rating Insights；</li><li>Customer Language；</li><li>Representative Evidence；</li><li>Business Recommendations；</li><li>Methodology 与 Analysis Metadata。</li></ul>
+<h3 id="11-4-竞品报告内容">11.4 竞品报告内容</h3>
+<ul><li>A/B Overview 与 Sample Quality；</li><li>Competitive Advantages / Weaknesses；</li><li>White-Space Opportunities；</li><li>15 Aspect Head-to-Head；</li><li>Product / Shopping Experience；</li><li>Customer Language Comparison；</li><li>Side-by-side Evidence；</li><li>Methodology 与 Metadata。</li></ul>
+<p>中文报告会本地化标题、标签与确定性结论，但 Evidence、Customer Language 和 Review Title 保留原文。</p>
+<h3 id="11-5-小样本提示">11.5 小样本提示</h3>
+<p>成功评论少于 10 条时，报告会把结果标识为 Early Signals。它们适合发现方向，不应被描述为整个市场或所有买家的代表性结论。</p>
+<aside class="callout info"><strong>截图位置：Standalone Single Product Report 与 Chrome Print Preview</strong></aside>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-12">12. Runtime &amp; Reliability</h2>
+<h3 id="12-1-stable-mode">12.1 Stable Mode</h3>
+<p>v1.0 正式运行模式固定为 <strong>Stable / 1 worker</strong>，对本地 Ollama 请求进行串行处理。该选择来自真实吞吐与稳定性基准，而不是简单假设“并发越多越快”。</p>
+<h3 id="12-2-进度与-eta">12.2 进度与 ETA</h3>
+<p>运行期间可看到：</p>
+<ul><li>当前 Stage 与进度百分比；</li><li>Current Review；</li><li>Success / Failed / Skipped；</li><li>Elapsed time；</li><li>动态 ETA。</li></ul>
+<p>ETA 需要积累足够的近期成功样本后才能估算；前期显示 <strong>Estimating...</strong> 是正常状态。</p>
+<h3 id="12-3-checkpoint-与-resume">12.3 Checkpoint 与 Resume</h3>
+<p>生产模式在每次实际分析尝试后频繁更新 checkpoint，并在正常结束或中断时保存当前状态。不可分析的 skipped 行不会单独触发一次中途写盘，但会包含在后续或最终保存中。发生以下情况时可安全继续：</p>
+<ul><li>用户按 <code>Ctrl+C</code>；</li><li>Streamlit 或 Terminal 关闭；</li><li>本地模型短暂不可用；</li><li>进程意外中断。</li></ul>
+<p>Resume 会校验输入签名、模型与分析版本，不会重复处理已有 <code>success</code> 或 <code>skipped</code>。若评论内容、顺序或配置发生不兼容变化，系统会拒绝混用旧 checkpoint。</p>
+<h3 id="12-4-retry-failed-reviews">12.4 Retry Failed Reviews</h3>
+<p><strong>Retry Failed Reviews</strong> 只重新分析 <code>failed</code> 行：</p>
+<ul><li><code>success</code> 不会重复调用模型；</li><li><code>skipped</code> 不会重复处理；</li><li>成功后重新生成 Aggregate、Keywords 和 Dashboard outputs。</li></ul>
+<h3 id="12-5-provider-retry-边界">12.5 Provider retry 边界</h3>
+<p>明确的瞬时 Ollama/provider 连接错误会等待短暂固定时间并最多自动重试一次。例如 connection timeout、connection reset 或 temporary unavailable。</p>
+<p>以下错误不会被当作连接问题无限重试：</p>
+<ul><li>Evidence validation failure；</li><li>schema/content validation failure；</li><li>普通模型质量错误；</li><li>用户输入问题。</li></ul>
+<p>第二次 provider 尝试仍失败时，该评论记为 <code>failed</code>，批次继续处理后续评论。</p>
+<h3 id="12-6-结构化事件日志">12.6 结构化事件日志</h3>
+<p>运行事件日志只记录必要 metadata，例如 Review ID、status、elapsed/latency、retry count 和 error type，不写入完整 review body。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-13">13. Performance</h2>
+<p>本地推理性能取决于：</p>
+<ul><li>Mac 硬件与可用内存；</li><li>评论长度与观点复杂度；</li><li>模型是否已加载；</li><li>同时运行的其他高负载程序；</li><li>Ollama 与系统状态。</li></ul>
+<h3 id="13-1-冻结的-20-review-性能参考">13.1 冻结的 20-review 性能参考</h3>
+<p>该 benchmark 只衡量 throughput 与稳定性，不衡量准确率：</p>
+<div class="table-wrap"><table><thead><tr><th>模式</th><th>Success</th><th>Total Runtime</th><th>Mean</th><th>Median</th><th>P90</th><th>Throughput</th><th>Retry</th></tr></thead><tbody><tr><td>Stable / 1 worker</td><td>20 / 20</td><td>294.67 s</td><td>14.72 s/review</td><td>12.14 s</td><td>24.05 s</td><td>4.07 reviews/min</td><td>0</td></tr><tr><td>2 workers</td><td>20 / 20</td><td>541.12 s</td><td>52.29 s/review</td><td>50.42 s</td><td>67.92 s</td><td>2.22 reviews/min</td><td>1</td></tr></tbody></table></div>
+<p>在该设备与该样本上，2 workers 使吞吐下降约 45.6%，同时显著增加 latency，因此 v1.0 选择 1 worker。这个结果不是所有设备的速度保证。</p>
+<p>按 1-worker benchmark 线性估算，100 条评论约 24.5 分钟；真实数据可能更快或更慢。Progress、ETA、Checkpoint 与 Resume 让用户不必一次完成整个大数据集。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-14">14. Model Quality &amp; Evaluation</h2>
+<p>模型逻辑经历了 development evaluation、holdout 与 blind evaluation。最终质量必须通过具体冻结数据集和指标理解，而不能概括成一个“系统准确率”。</p>
+<h3 id="14-1-frozen-blind-v2">14.1 Frozen Blind V2</h3>
+<div class="table-wrap"><table><thead><tr><th>指标</th><th>冻结结果</th></tr></thead><tbody><tr><td>Cases</td><td>150</td></tr><tr><td>Aspect + Sentiment Precision</td><td>84.29%</td></tr><tr><td>Aspect + Sentiment Recall</td><td>87.08%</td></tr><tr><td>Aspect + Sentiment F1</td><td><strong>85.66%</strong></td></tr><tr><td>Aspect-only F1</td><td><strong>87.11%</strong></td></tr><tr><td>Sentiment Accuracy</td><td><strong>98.33%</strong></td></tr><tr><td>Evidence Validity</td><td><strong>100.00%</strong></td></tr><tr><td>Evidence Match</td><td><strong>100.00%</strong></td></tr><tr><td>Strict Exact Case Accuracy</td><td><strong>66.67%</strong></td></tr></tbody></table></div>
+<p>准确表述应为：</p>
+<aside class="callout info"><code>Aspect + Sentiment F1 = 85.66% on the frozen 150-case Blind V2 evaluation set.</code></aside>
+<p>不应表述为“系统通用准确率为 85.66%”。它不代表任意商品、任意语言、任意评论长度或真实 Amazon 数据集上的保证。</p>
+<h3 id="14-2-evidence-指标解释">14.2 Evidence 指标解释</h3>
+<p>Evidence Validity 100% 表示：在该冻结 150-case evaluation 中，已输出 Evidence 均通过原文 span 有效性验证。Evidence Match 100% 表示该评估定义下参与对比的 Evidence 与 Gold 要求匹配。</p>
+<p>这两个结果不能扩大解释为未来所有数据上永远 100%。运行时仍保留 Evidence Validator 与有限修复机制。</p>
+<h3 id="14-3-strict-exact">14.3 Strict Exact</h3>
+<p>Strict Exact 要求 Aspect、sentiment、mention 数量和 Evidence 全部符合 Gold，mention 顺序不同不单独判错。因此它比单独的 Aspect F1 或 sentiment accuracy 更严格。</p>
+<p>冻结的 blind 资产只用于记录发布质量；日常启动与自动测试不会重新运行旧评估，也不会根据这些结果继续调参。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-15">15. Privacy &amp; Data</h2>
+<h3 id="15-1-默认本地边界">15.1 默认本地边界</h3>
+<ul><li><code>qwen3:8b</code> 通过本机 Ollama 推理。</li><li>原始评论、checkpoint、Current Analysis、Saved Analyses、Comparisons 与 Reports 均保存在本地项目工作区。</li><li>Dashboard 浏览、筛选、语言切换、Saved Analysis 加载、Comparison 与 Report Export 不触发隐藏模型调用。</li><li>当前 v1.0 默认不会调用 OpenAI API，也不需要 OpenAI API key。</li><li><code>.env</code> 不应提交到版本控制，任何 provider key 都不得写入代码。</li></ul>
+<h3 id="15-2-amazon-网络边界">15.2 Amazon 网络边界</h3>
+<p>Amazon Quick Scan / Browser Import 会访问 Amazon 网站，因此它不是完全离线功能。Demo、Upload、Paste、Dashboard、Saved Analysis、Comparison 和已生成报告不需要访问 Amazon。</p>
+<p>浏览器 session 中的 cookie、密码和 token 不写入 Analysis Library、Comparison 或报告。</p>
+<h3 id="15-3-数据管理建议">15.3 数据管理建议</h3>
+<ul><li>在分析含个人或敏感内容的数据前，确认数据来源和使用权限。</li><li>分享 HTML 报告前检查其中的 Original Evidence 是否适合外发。</li><li>备份 <code>outputs/library/</code> 与 <code>outputs/reports/</code>，不要依赖浏览器 session 作为唯一副本。</li><li>删除本地数据时应先确认目标目录，避免误删冻结 Demo 或历史 snapshot。</li></ul>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-16">16. Known Limitations</h2>
+<h3 id="amazon-access">Amazon Access</h3>
+<p>Amazon 可能要求登录或人工验证、返回 challenge、限制页面，或只提供部分评论。Quick Scan 无法保证导入页面显示的全部评论，也不绕过访问控制。</p>
+<h3 id="local-model-speed">Local Model Speed</h3>
+<p><code>qwen3:8b</code> 在本地运行，长评论和大量评论可能耗时较长；速度取决于硬件、模型状态与评论复杂度。</p>
+<h3 id="small-sample">Small Sample</h3>
+<p>少量评论只代表 Early Signals。正式排行榜可能因未达到最小样本而为空，这是正常的安全行为。</p>
+<h3 id="statistical-significance">Statistical Significance</h3>
+<p>Opportunity Score、Priority Matrix 与 competitor comparison 是透明的业务启发式，不是统计显著性检验、因果分析或市场份额预测。</p>
+<h3 id="taxonomy-coverage">Taxonomy Coverage</h3>
+<p>当前 taxonomy 固定为 15 个 canonical Aspects。特定品类的细粒度特征可能被归入 Other，或需要未来扩展 taxonomy。</p>
+<h3 id="two-product-comparison">Two-product Comparison</h3>
+<p>v1.0 仅支持 Product A 与 Product B，不支持多产品矩阵或自动 overall winner。</p>
+<h3 id="local-application">Local Application</h3>
+<p>当前版本没有 Cloud Sync、User Account、Mobile App 或 Database Service。Saved Analyses 和 Reports 默认只在当前电脑上。</p>
+<h3 id="evidence-language">Evidence Language</h3>
+<p>Evidence、Original Review 与 Customer Language 保留原始语言；切换中文不会自动翻译客户原话。</p>
+<h3 id="pdf-output">PDF Output</h3>
+<p>项目导出独立 HTML；PDF 通过浏览器 Print / Save as PDF 生成，不提供原生 PDF 文件生成器。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-17">17. Frequently Asked Questions</h2>
+<h3 id="q1-为什么-amazon-显示很多评论-但系统只导入了-8-条">Q1：为什么 Amazon 显示很多评论，但系统只导入了 8 条？</h3>
+<p>因为 Quick Scan 统计当前普通浏览器会话实际可访问并去重后的 Available Reviews，而不是页面声明的总评论数。登录状态、marketplace、商品页面结构和 Amazon 访问策略都会影响可访问数量。</p>
+<h3 id="q2-为什么不能指定-10-条并保证拿到-10-条">Q2：为什么不能指定 10 条并保证拿到 10 条？</h3>
+<p>系统不会把用户期望数量当作 Amazon 必须返回的数量。Quick Scan 分析实际可获得的评论，并显示准确的 Imported Reviews 与 Coverage。</p>
+<h3 id="q3-为什么系统不能绕过-amazon-验证">Q3：为什么系统不能绕过 Amazon 验证？</h3>
+<p>系统明确遵守正常访问边界，不解决 CAPTCHA，不绕过登录、Robot Check 或其他访问控制。需要验证时由用户本人在可见浏览器完成。</p>
+<h3 id="q4-amazon-没有提供评论怎么办">Q4：Amazon 没有提供评论怎么办？</h3>
+<p>使用 <strong>Paste Reviews</strong> 或 <strong>Upload Dataset</strong>。这两条路径复用同一 validation、cleaner、AI、aggregation、keyword 和 Dashboard 流程。</p>
+<h3 id="q5-为什么分析速度较慢">Q5：为什么分析速度较慢？</h3>
+<p><code>qwen3:8b</code> 在本机逐条进行结构化语义分析，并验证 Evidence。系统以可解释性和稳定性优先，而不是以牺牲质量换取最高吞吐。</p>
+<h3 id="q6-为什么不使用-2-workers">Q6：为什么不使用 2 workers？</h3>
+<p>冻结的 20-review benchmark 中，2 workers 的总耗时、平均 latency 和 P90 均更差，吞吐下降。因此正式模式使用 1 worker。</p>
+<h3 id="q7-为什么有些-aspect-显示-no-evidence">Q7：为什么有些 Aspect 显示 No Evidence？</h3>
+<p>样本中可能没有相关观点，或没有足够的有效 Evidence。No Evidence 不等于 0%，也不代表该产品一定没有这个特性。</p>
+<h3 id="q8-为什么-selling-points-或-pain-points-为空">Q8：为什么 Selling Points 或 Pain Points 为空？</h3>
+<p>可能是样本不足，或没有 PRODUCT Aspect 同时满足最小 Review Count 与正负方向规则。系统宁可显示 Insufficient Evidence，也不强行制造榜单。</p>
+<h3 id="q9-为什么报告和-dashboard-结果一致">Q9：为什么报告和 Dashboard 结果一致？</h3>
+<p>报告直接读取已有 deterministic outputs，不重新询问模型，不重算业务规则，因此与同一可信来源的 Dashboard 保持一致。</p>
+<h3 id="q10-切换中文会重新分析吗">Q10：切换中文会重新分析吗？</h3>
+<p>不会。语言切换仅改变 UI 显示，不改变数据、Evidence 或分析结果。</p>
+<h3 id="q11-saved-analysis-重启后还在吗">Q11：Saved Analysis 重启后还在吗？</h3>
+<p>是。它是保存在 <code>outputs/library/</code> 的磁盘 snapshot，而不是仅存在于当前浏览器 session。</p>
+<h3 id="q12-如何停止并稍后继续分析">Q12：如何停止并稍后继续分析？</h3>
+<p>在运行 Terminal 中按 <code>Ctrl+C</code>。生产 checkpoint 已按评论保存；重新启动后使用 Resume。已成功和已跳过评论不会重复分析。</p>
+<h3 id="q13-verified-purchase-会提高评论权重吗">Q13：Verified Purchase 会提高评论权重吗？</h3>
+<p>不会。它在 v1.0 中是 metadata 和筛选条件，不是可信度评分，也不会自动改变 sentiment 或排行榜。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-18">18. Troubleshooting</h2>
+<h3 id="18-1-python-virtual-environment-was-not-found">18.1 Python virtual environment was not found</h3>
+<p>在项目目录中重新创建环境：</p>
+<div class="code-block"><div class="code-label">bash</div><pre><code>python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt</code></pre></div>
+<p>桌面启动器不会自动重建虚拟环境。</p>
+<h3 id="18-2-local-ai-model-is-unavailable">18.2 Local AI model is unavailable</h3>
+<p>依次检查：</p>
+<div class="code-block"><div class="code-label">bash</div><pre><code>open -a Ollama
+ollama list
+ollama pull qwen3:8b
+python main.py --check-ollama</code></pre></div>
+<p>确认 <code>qwen3:8b</code> 出现在本地列表后刷新页面。Demo Dashboard 在模型不可用时仍可运行。</p>
+<h3 id="18-3-port-8501-is-already-in-use">18.3 Port 8501 is already in use</h3>
+<p>先打开 <code>http://localhost:8501</code>，检查是否已经是本项目。桌面启动器会复用本项目已有实例；若端口属于其他应用，请正常关闭该应用后再启动。</p>
+<h3 id="18-4-amazon-browser-cannot-start">18.4 Amazon browser cannot start</h3>
+<p>激活虚拟环境后运行：</p>
+<div class="code-block"><div class="code-label">bash</div><pre><code>playwright install chromium</code></pre></div>
+<p>仍失败时使用 Upload Dataset 或 Paste Reviews。不要关闭 TLS certificate verification。</p>
+<h3 id="18-5-amazon-login-or-manual-verification-required">18.5 Amazon login or manual verification required</h3>
+<p>在程序打开的可见浏览器中由用户本人登录或完成验证，然后点击 <strong>Continue After Verification</strong>。若仍受限，取消导入并在 <strong>Choose Analysis Source</strong> 切换至 Paste 或 Upload。</p>
+<h3 id="18-6-csv-cannot-be-imported">18.6 CSV cannot be imported</h3>
+<p>检查：</p>
+<ul><li>文件扩展名为 <code>.csv</code>，大小不超过 10 MiB；</li><li>文件可使用 UTF-8-SIG、UTF-8 或 CP1252 解码；</li><li>Column Mapping 中选择了有效的 <strong>Review Content</strong>；</li><li>至少一行包含非空正文；</li><li>rating 若存在，应能转换为 1–5。</li></ul>
+<h3 id="18-7-analysis-is-slow">18.7 Analysis is slow</h3>
+<ul><li>保持 Ollama 运行，减少反复冷启动；</li><li>不要并行启动多个 <code>qwen3:8b</code> 分析；</li><li>查看 Progress 与 ETA；</li><li>需要中断时依赖 Checkpoint / Resume；</li><li>对大型数据先用小样本验证字段和输出。</li></ul>
+<h3 id="18-8-resume-is-rejected">18.8 Resume is rejected</h3>
+<p>Checkpoint 与输入签名、模型和分析版本绑定。评论被增删、换序、正文改变或版本不兼容时，旧 checkpoint 不可安全复用。请开始新的分析，不要手工改 metadata 绕过校验。</p>
+<h3 id="18-9-saved-analysis-or-report-integrity-check-failed">18.9 Saved Analysis or report integrity check failed</h3>
+<p>Snapshot 文件缺失、被修改或 hash 不一致时，加载、Comparison 和 Report Export 会被阻止。请从可信的完整结果重新保存，不要手动修改 manifest。</p>
+<h3 id="18-10-comparison-cannot-start">18.10 Comparison cannot start</h3>
+<p>确认：</p>
+<ul><li>A 与 B 是两个不同 Saved Analyses；</li><li>两者 analysis version 和 taxonomy 兼容；</li><li>两个 snapshot 均完整且 hash 有效；</li><li>不是临时或不完整的 Current Analysis。</li></ul>
+<h3 id="18-11-dashboard-has-no-ranking-or-keywords">18.11 Dashboard has no ranking or keywords</h3>
+<p>通常表示样本低于阈值、没有符合方向规则的 Aspect，或有效词组未达到最小 review support。这不是程序错误；Review Explorer 与原始 Evidence 仍可查看。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-19">19. Glossary</h2>
+<div class="table-wrap"><table><thead><tr><th>术语</th><th>定义</th></tr></thead><tbody><tr><td>Aspect</td><td>评论所评价的产品属性或购物体验维度</td></tr><tr><td>Canonical Aspect</td><td>taxonomy 中统一、稳定的标准 Aspect 名称</td></tr><tr><td>Sentiment</td><td>针对某个 Aspect 的 positive / negative / neutral 评价方向</td></tr><tr><td>Evidence</td><td>原评论中直接支持 Aspect + Sentiment 的连续原文片段</td></tr><tr><td>Mention</td><td>一次独立的 Aspect 观点表达；同一评论可有多个 mention</td></tr><tr><td>Review Count</td><td>至少一次提到某 Aspect 的独立评论数量</td></tr><tr><td>Mention Count</td><td>某 Aspect 的原始观点 mention 总数</td></tr><tr><td>Review Share</td><td>提到某 Aspect 的成功评论占全部成功评论的比例</td></tr><tr><td>Coverage</td><td>成功分析评论数除以实际导入评论数</td></tr><tr><td>Evidence Level</td><td>基于独立 Review Count 的 Low / Medium / High 样本支持标签</td></tr><tr><td>Opportunity Score</td><td><code>Review Share × Negative Rate / 100</code> 的改进优先级启发式</td></tr><tr><td>Saved Analysis</td><td>保存到本地 Analysis Library 的完整只读分析快照</td></tr><tr><td>Snapshot</td><td>一组分析输出、metadata 与 hash 的持久化副本</td></tr><tr><td>Quick Scan</td><td>从当前可见 Amazon 浏览器会话读取 Available Reviews 的有界导入流程</td></tr><tr><td>Blind Evaluation</td><td>在冻结、未用于当前优化的 Gold 数据上进行的模型评估</td></tr><tr><td>Checkpoint</td><td>批处理中按评论保存的可恢复运行状态</td></tr><tr><td>No Evidence</td><td>当前样本没有足够该 Aspect 证据；不等于 0%</td></tr></tbody></table></div>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-20">20. Recommended Workflow</h2>
+<h3 id="20-1-快速单产品分析">20.1 快速单产品分析</h3>
+<div class="code-block"><div class="code-label">text</div><pre><code>Choose Input
+→ Preview &amp; Validate
+→ Analyze
+→ Overview
+→ Product Insights
+→ Verify Evidence
+→ Save Analysis
+→ Export Single Product Report</code></pre></div>
+<h3 id="20-2-竞品分析">20.2 竞品分析</h3>
+<div class="code-block"><div class="code-label">text</div><pre><code>Analyze Product A → Verify → Save
+Analyze Product B → Verify → Save
+Compare Products
+→ Review Advantages / Weaknesses / White-Space
+→ Check Side-by-side Evidence
+→ Export Comparison Report</code></pre></div>
+<h3 id="20-3-amazon-访问受限场景">20.3 Amazon 访问受限场景</h3>
+<div class="code-block"><div class="code-label">text</div><pre><code>Amazon URL
+→ Open Amazon Product
+→ Manual login / verification if requested
+→ Scan Available Reviews
+
+If access remains limited:
+→ Paste Reviews
+or
+→ Upload Dataset</code></pre></div>
+<h3 id="20-4-正式研究建议">20.4 正式研究建议</h3>
+<ol><li>先用 5–10 条验证字段映射与分析方向。</li><li>确认 Evidence 与原文一致。</li><li>再扩大样本，并保持数据来源与时间范围清楚。</li><li>保存 snapshot，记录 Product name 与 source。</li><li>对关键结论同时查看比例、Review Count、Evidence Level 与原文。</li><li>生成报告前检查小样本与 Amazon availability 提示。</li></ol>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-21">21. Best Practices</h2>
+<ul><li>正式商业结论尽量使用更多、来源明确的评论。</li><li>A/B 比较尽量保持相近样本量、相近时间范围和相同来源条件。</li><li>不只看 rate，也看 Review Count、Review Share、Evidence Level 和原文。</li><li>始终区分 Product 与 Shopping Experience；物流差不等于产品差。</li><li>小样本只作为 Early Signal，不把一次性抱怨当成普遍问题。</li><li>优先关注由多位消费者独立提到的问题。</li><li>重要结论在 Review Explorer 或报告 Evidence 中复核上下文。</li><li>将 No Evidence 保持为未知，不把它转换成 0%。</li><li>定期备份 Saved Analyses 与 Reports，不手动修改 snapshot 内容。</li></ul>
+<aside class="callout warning"><strong>⚠ Interpretation Notice</strong><br>Amazon Review Analyzer 提供 Decision Support，而不是自动商业决策。不要只根据一个指标自动决定定价、广告预算、库存、产品停售或供应商处理。应结合业务目标、样本代表性、时间范围、销量、退货、成本及人工复核共同判断。</aside>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="section-22">22. Version Information</h2>
+<div class="table-wrap"><table><thead><tr><th>项目</th><th>v1.0.0</th></tr></thead><tbody><tr><td>Product</td><td>Amazon Review Analyzer</td></tr><tr><td>Release Status</td><td>Stable Release</td></tr><tr><td>Default Provider</td><td>Ollama</td></tr><tr><td>Default Model</td><td><code>qwen3:8b</code></td></tr><tr><td>Runtime</td><td>Stable / 1 worker</td></tr><tr><td>UI Languages</td><td>English / 简体中文</td></tr><tr><td>Storage</td><td>Local project workspace</td></tr><tr><td>Automated Tests</td><td>1077 / 1077 passed</td></tr></tbody></table></div>
+<h3 id="v1-0-feature-summary">v1.0 Feature Summary</h3>
+<ul><li>✅ Local AI</li><li>✅ Amazon Quick Scan</li><li>✅ CSV Upload</li><li>✅ Paste Reviews</li><li>✅ Evidence-grounded Analysis</li><li>✅ 15 canonical Aspects</li><li>✅ Business Intelligence</li><li>✅ Five-tab Bilingual Dashboard</li><li>✅ Saved Analyses with SHA-256 integrity</li><li>✅ Two-product Competitor Comparison</li><li>✅ Exportable Standalone Reports</li><li>✅ Checkpoint / Resume / Retry Failed Reviews</li><li>✅ Release-tested</li></ul>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="appendix-a">Appendix A — Technical Architecture</h2>
+<h3 id="a-1-模块职责">A.1 模块职责</h3>
+<div class="table-wrap"><table><thead><tr><th>模块</th><th>职责</th></tr></thead><tbody><tr><td><code>app.py</code></td><td>Streamlit UI、Dataset Mode、输入编排、Dashboard 与用户操作</td></tr><tr><td><code>input_loader.py</code></td><td>原始 CSV 读取、基础 schema 验证和数据质量报告</td></tr><tr><td><code>cleaner.py</code></td><td>保留原文、基础文本清洗、<code>is_analyzable</code> 与 skip reason</td></tr><tr><td><code>llm_client.py</code></td><td>Ollama / optional provider 的集中客户端与结构化请求</td></tr><tr><td><code>review_analyzer.py</code></td><td>单评论 Aspect + Sentiment + Evidence 分析、验证与后处理</td></tr><tr><td><code>aspect_taxonomy.py</code></td><td>15 canonical Aspects、别名与 business category</td></tr><tr><td><code>batch_analyzer.py</code></td><td>串行批处理、单条隔离、CSV 结果与有限 provider retry</td></tr><tr><td><code>analysis_runtime.py</code></td><td>Progress、ETA、checkpoint、Resume、Retry Failed、事件日志</td></tr><tr><td><code>aggregator.py</code></td><td>review-level Aspect 聚合、Evidence 索引与商业榜单基础统计</td></tr><tr><td><code>keyword_analyzer.py</code></td><td>离线 unigram / bigram / trigram 与 sentiment / Aspect phrases</td></tr><tr><td><code>business_intelligence.py</code></td><td>Opportunity、Priority Matrix、样本等级与确定性建议</td></tr><tr><td><code>visualization.py</code></td><td>Dashboard 数据准备与可视化辅助</td></tr><tr><td><code>analysis_library.py</code></td><td>Saved Analysis、manifest、版本与 SHA-256 完整性</td></tr><tr><td><code>competitor_comparison.py</code></td><td>确定性的两产品比较与 15 Aspect 对齐</td></tr><tr><td><code>comparison_ui.py</code></td><td>Comparison 交互界面与报告操作</td></tr><tr><td><code>report_generator.py</code></td><td>安全、独立、中英文 HTML 报告</td></tr><tr><td><code>amazon_url.py</code></td><td>Amazon marketplace 校验、ASIN 提取和 canonical URL</td></tr><tr><td><code>browser_amazon_import.py</code></td><td>普通可见 Chromium 的合规评论扫描与 availability 状态</td></tr><tr><td><code>amazon_analysis.py</code></td><td>Amazon 数据隔离、原始评论保存与分析 session 编排</td></tr><tr><td><code>i18n.py</code></td><td>English / 简体中文显示层资源</td></tr><tr><td><code>config.py</code></td><td>版本、路径、模型、阈值和运行配置集中管理</td></tr></tbody></table></div>
+<h3 id="a-2-数据流与职责边界">A.2 数据流与职责边界</h3>
+<div class="code-block"><div class="code-label">text</div><pre><code>Input adapters
+    ↓ standard six-column DataFrame
+Validation + Cleaner
+    ↓ original_content + cleaned_content + analyzable status
+Review Analyzer
+    ↓ structured mentions with validated Evidence
+Batch Runtime
+    ↓ success / failed / skipped + checkpoint
+Aggregator + Keyword Analyzer
+    ↓ deterministic output files
+Business Intelligence
+    ↓ transparent heuristics and recommendations
+Dashboard / Analysis Library / Comparison / Reports</code></pre></div>
+<p>关键边界：</p>
+<ul><li>Cleaner 不做 Aspect 或 sentiment 推理。</li><li>LLM 只承担需要语义理解的 Summary 与 Aspect mentions。</li><li>positive/negative points、review-level 去重、聚合、关键词和商业指标由 Python 后处理产生。</li><li>Comparison 与 Reports 使用已验证结果，不重新调用模型。</li><li>Amazon import 与评论分析解耦；Amazon 不可访问时仍可使用 Paste / Upload。</li></ul>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="appendix-b">Appendix B — Data &amp; Output Structure</h2>
+<p>以下均为项目相对路径：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>data/
+    raw_reviews.csv
+
+outputs/
+    analyzed_reviews.csv               # frozen Demo analyzed rows
+    aspect_summary.csv                 # frozen Demo Aspect summary
+    aspect_evidence.json               # frozen Demo Evidence index
+    business_summary.json              # frozen Demo business summary
+    keyword_summary.csv                # frozen Demo keyword summary
+    sentiment_keywords.json            # frozen Demo sentiment phrases
+    aspect_keywords.json               # frozen Demo Aspect phrases
+
+    session/
+        current/                       # current Upload / Paste analysis
+
+    amazon/
+        current/                       # current Amazon Quick Scan analysis
+
+    library/
+        &lt;product&gt;_&lt;analysis-id&gt;/       # persistent Saved Analyses
+
+    comparison/
+        current/                       # current deterministic A/B comparison
+
+    reports/
+        &lt;report-id&gt;/
+            report.html
+            report_metadata.json
+
+    performance/                       # frozen performance benchmark
+    evaluation/                        # frozen evaluation artifacts</code></pre></div>
+<p>Demo、Session 与 Amazon 数据分区隔离。保存、比较或导出不会把 Session / Amazon 数据写入冻结 Demo 文件。</p>
+<p>标准已分析 CSV 的主要字段包括：</p>
+<div class="code-block"><div class="code-label">text</div><pre><code>review_id, rating, title,
+original_content, cleaned_content,
+analysis_status, summary,
+aspects, unique_aspects,
+positive_points, negative_points,
+error_message, analysis_time_seconds</code></pre></div>
+<p><code>aspects</code> 与 <code>unique_aspects</code> 在 CSV 中保存为合法 JSON 字符串，以便下游稳定读取。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="appendix-c">Appendix C — v1.0 Release Validation</h2>
+<h3 id="c-1-发布状态">C.1 发布状态</h3>
+<div class="table-wrap"><table><thead><tr><th>验证项</th><th>结果</th></tr></thead><tbody><tr><td>Product Release Acceptance</td><td>PASS</td></tr><tr><td>Automated Tests</td><td>1077 / 1077 passed</td></tr><tr><td>Release Health Check</td><td>PASS</td></tr><tr><td>BLOCKER</td><td>0</td></tr><tr><td>MAJOR</td><td>0</td></tr><tr><td>Demo Dataset</td><td>15 total / 14 success / 93.3% coverage</td></tr><tr><td>Runtime</td><td>Stable / 1 worker</td></tr></tbody></table></div>
+<p>自动测试覆盖软件行为、数据契约、UI 边界、Amazon 状态处理、完整性、Comparison 与 Reports。它们使用 mock 与本地 fixture，不访问真实 Ollama、OpenAI 或 Amazon。测试数量不是模型质量指标。</p>
+<h3 id="c-2-frozen-blind-v2-摘要">C.2 Frozen Blind V2 摘要</h3>
+<div class="table-wrap"><table><thead><tr><th>评估项</th><th>结果</th></tr></thead><tbody><tr><td>Dataset</td><td>150 frozen cases</td></tr><tr><td>Aspect + Sentiment F1</td><td>85.66%</td></tr><tr><td>Aspect-only F1</td><td>87.11%</td></tr><tr><td>Sentiment Accuracy</td><td>98.33%</td></tr><tr><td>Evidence Validity</td><td>100.00%</td></tr><tr><td>Evidence Match</td><td>100.00%</td></tr><tr><td>Strict Exact</td><td>66.67%</td></tr></tbody></table></div>
+<p>这些数字只描述该冻结 evaluation set，不与开发数据合并，不代表通用准确率、统计置信区间或商业结果保证。</p>
+<h3 id="c-3-离线健康检查">C.3 离线健康检查</h3>
+<p>需要发布前自检时，可在虚拟环境中运行：</p>
+<div class="code-block"><div class="code-label">bash</div><pre><code>python main.py --release-health-check
+python -m unittest discover -s tests -v</code></pre></div>
+<p>Release Health Check 只读取本地 release metadata、配置契约、翻译覆盖、冻结资产 hash、Saved Analysis 和报告模板；它不访问网络、不打开 Amazon、不调用模型。</p>
+<hr class="section-rule">
+</section>
+<section class="doc-section"><h2 id="文档说明">文档说明</h2>
+<p>本文档以 Amazon Review Analyzer v1.0.0 的当前代码、配置、冻结评估、性能基准和发布验收状态为依据。功能名称、指标与限制均按实际实现描述。若未来版本更新，应重新核对界面标签、schema、taxonomy、阈值和评估资产后再修订本文档。</p>
+</section>
+      <footer class="footer">Amazon Review Analyzer v1.0.0 · 中文系统说明书 · Stable Release</footer>
+    </article>
+  </main>
+  <a class="back-top" href="#top" aria-label="返回顶部">↑ 返回顶部</a>
+</body>
+</html>

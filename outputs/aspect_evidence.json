@@ -1,0 +1,269 @@
+{
+  "Build Quality": {
+    "positive": [
+      {
+        "source_row_id": 6,
+        "review_id": "R007",
+        "evidence": "sturdy"
+      }
+    ],
+    "negative": [
+      {
+        "source_row_id": 1,
+        "review_id": "R002",
+        "evidence": "plastic frame feels poorly made"
+      },
+      {
+        "source_row_id": 9,
+        "review_id": "R009",
+        "evidence": "casing creaks"
+      },
+      {
+        "source_row_id": 9,
+        "review_id": "R009",
+        "evidence": "buttons feel loose"
+      }
+    ],
+    "neutral": []
+  },
+  "Delivery": {
+    "positive": [
+      {
+        "source_row_id": 4,
+        "review_id": "R005",
+        "evidence": "Delivery arrived on time"
+      },
+      {
+        "source_row_id": 14,
+        "review_id": "R015",
+        "evidence": "package arrived sealed and undamaged"
+      }
+    ],
+    "negative": [
+      {
+        "source_row_id": 3,
+        "review_id": "R004",
+        "evidence": "delivery was four days late"
+      },
+      {
+        "source_row_id": 3,
+        "review_id": "R004",
+        "evidence": "the box arrived damaged"
+      }
+    ],
+    "neutral": []
+  },
+  "Design": {
+    "positive": [
+      {
+        "source_row_id": 8,
+        "review_id": "R009",
+        "evidence": "design looks modern"
+      },
+      {
+        "source_row_id": 13,
+        "review_id": "R014",
+        "evidence": "the slim design fits the room well"
+      }
+    ],
+    "negative": [],
+    "neutral": []
+  },
+  "Ease of Use": {
+    "positive": [
+      {
+        "source_row_id": 3,
+        "review_id": "R004",
+        "evidence": "easy to set up"
+      }
+    ],
+    "negative": [
+      {
+        "source_row_id": 4,
+        "review_id": "R005",
+        "evidence": "makes the product hard to use"
+      }
+    ],
+    "neutral": []
+  },
+  "Other": {
+    "positive": [
+      {
+        "source_row_id": 3,
+        "review_id": "R004",
+        "evidence": "excellent"
+      }
+    ],
+    "negative": [],
+    "neutral": []
+  },
+  "Packaging": {
+    "positive": [
+      {
+        "source_row_id": 4,
+        "review_id": "R005",
+        "evidence": "the package was intact"
+      }
+    ],
+    "negative": [
+      {
+        "source_row_id": 9,
+        "review_id": "R009",
+        "evidence": "included cable is too short"
+      }
+    ],
+    "neutral": []
+  },
+  "Picture Quality": {
+    "positive": [
+      {
+        "source_row_id": 0,
+        "review_id": "R001",
+        "evidence": "The picture is sharp"
+      },
+      {
+        "source_row_id": 0,
+        "review_id": "R001",
+        "evidence": "the colors are accurate"
+      },
+      {
+        "source_row_id": 0,
+        "review_id": "R001",
+        "evidence": "the screen looks excellent in a bright room"
+      },
+      {
+        "source_row_id": 2,
+        "review_id": "R003",
+        "evidence": "picture quality is excellent"
+      },
+      {
+        "source_row_id": 8,
+        "review_id": "R009",
+        "evidence": "picture quality"
+      },
+      {
+        "source_row_id": 13,
+        "review_id": "R014",
+        "evidence": "Movies look crisp with deep colors"
+      }
+    ],
+    "negative": [
+      {
+        "source_row_id": 4,
+        "review_id": "R005",
+        "evidence": "the screen flickers every few minutes"
+      }
+    ],
+    "neutral": [
+      {
+        "source_row_id": 12,
+        "review_id": "R013",
+        "evidence": "display is fine for casual viewing"
+      }
+    ]
+  },
+  "Price / Value": {
+    "positive": [
+      {
+        "source_row_id": 8,
+        "review_id": "R009",
+        "evidence": "price is reasonable"
+      }
+    ],
+    "negative": [
+      {
+        "source_row_id": 12,
+        "review_id": "R013",
+        "evidence": "price feels slightly high"
+      }
+    ],
+    "neutral": []
+  },
+  "Reliability": {
+    "positive": [],
+    "negative": [
+      {
+        "source_row_id": 14,
+        "review_id": "R015",
+        "evidence": "device overheats after an hour"
+      },
+      {
+        "source_row_id": 14,
+        "review_id": "R015",
+        "evidence": "restarts without warning"
+      }
+    ],
+    "neutral": []
+  },
+  "Remote Control": {
+    "positive": [],
+    "negative": [
+      {
+        "source_row_id": 2,
+        "review_id": "R003",
+        "evidence": "remote feels cheap"
+      },
+      {
+        "source_row_id": 13,
+        "review_id": "R014",
+        "evidence": "remote buttons are difficult to identify in the dark"
+      }
+    ],
+    "neutral": []
+  },
+  "Setup / Installation": {
+    "positive": [
+      {
+        "source_row_id": 6,
+        "review_id": "R007",
+        "evidence": "installation took less than ten minutes"
+      },
+      {
+        "source_row_id": 13,
+        "review_id": "R014",
+        "evidence": "Setup instructions were clear"
+      }
+    ],
+    "negative": [],
+    "neutral": []
+  },
+  "Sound Quality": {
+    "positive": [
+      {
+        "source_row_id": 13,
+        "review_id": "R014",
+        "evidence": "dialogue is easy to understand at medium volume"
+      }
+    ],
+    "negative": [
+      {
+        "source_row_id": 1,
+        "review_id": "R002",
+        "evidence": "speakers distort at normal volume"
+      }
+    ],
+    "neutral": [
+      {
+        "source_row_id": 12,
+        "review_id": "R013",
+        "evidence": "sound is average"
+      }
+    ]
+  },
+  "System Performance": {
+    "positive": [],
+    "negative": [
+      {
+        "source_row_id": 2,
+        "review_id": "R003",
+        "evidence": "menu is slow"
+      },
+      {
+        "source_row_id": 13,
+        "review_id": "R014",
+        "evidence": "switching between apps sometimes pauses for several seconds"
+      }
+    ],
+    "neutral": []
+  }
+}

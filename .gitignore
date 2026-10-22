@@ -1,0 +1,90 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+.streamlit/secrets.toml
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# Operating-system and editor state
+.DS_Store
+.AppleDouble
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs, PIDs, locks, and temporary runtime state
+*.log
+*.pid
+launch.lock
+logs/
+.logs/
+tmp/
+.tmp/
+
+# Browser automation state, cookies, and authenticated sessions
+.playwright/
+playwright/.auth/
+.auth/
+browser_profiles/
+.browser_profiles/
+browser_data/
+.browser_data/
+cookies*.json
+storage_state*.json
+
+# User-provided review data and transient analysis outputs
+uploads/
+user_uploads/
+data/uploads/
+data/user_*
+data/*.csv
+!data/raw_reviews.csv
+outputs/*
+!outputs/.gitkeep
+
+# Frozen synthetic Demo outputs required by the offline dashboard.
+!outputs/analyzed_reviews.csv
+!outputs/aspect_evidence.json
+!outputs/aspect_keywords.json
+!outputs/aspect_summary.csv
+!outputs/business_summary.json
+!outputs/keyword_summary.csv
+!outputs/sentiment_keywords.json
+
+# Historical generated evaluation reports that contain local output paths.
+# Frozen datasets/manifests remain available; these reports stay local.
+evaluation/baseline_generalization_dev_qwen3_8b.json
+evaluation/evaluation_generalization_dev_qwen3_8b.json
+evaluation/evaluation_step8_5_qwen3_8b.json
+
+# Local model payloads (Ollama itself stores models outside this repository)
+.ollama/
+models/
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+
+# Generated build and distribution binaries
+build/
+dist/
+release/*.zip
+release/**/Amazon Review Analyzer.app/

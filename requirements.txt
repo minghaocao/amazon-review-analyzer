@@ -1,0 +1,17 @@
+# 当前项目依赖。后续阶段只在实际需要时追加依赖。
+pandas>=2.2
+python-dotenv>=1.0
+# Project-level trusted CA bundle for verified urllib HTTPS requests.
+certifi>=2024.8.30
+pytest>=8.0
+# Step 4 单条评论分析；所有 API 调用只出现在 llm_client.py。
+openai>=2.0
+# 默认本地 provider 及 Structured Output 验证。
+ollama>=0.6.2,<1
+pydantic>=2.9
+# Step 9 read-only interview dashboard and interactive charts.
+streamlit>=1.50,<2
+plotly>=6.0,<7
+# Step 10B.4 ordinary visible Chromium import. Install its runtime separately:
+#   playwright install chromium
+playwright>=1.49,<2

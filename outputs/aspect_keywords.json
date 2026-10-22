@@ -1,0 +1,2013 @@
+{
+  "Build Quality": [
+    {
+      "term": "buttons",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "casing",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "creaks",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "frame",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "loose",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "made",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "plastic",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "poorly",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "sturdy",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 6,
+          "review_id": "R007"
+        }
+      ]
+    },
+    {
+      "term": "casing creaks",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "feel loose",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "plastic frame",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "poorly made",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "buttons feel loose",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "feels poorly made",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    }
+  ],
+  "Delivery": [
+    {
+      "term": "delivery",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        },
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "box",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "damaged",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "late",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "package",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "sealed",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "time",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "undamaged",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "arrived damaged",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "arrived sealed",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "days late",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "four days",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "arrived on time",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "box arrived damaged",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "four days late",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "package arrived sealed",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    }
+  ],
+  "Design": [
+    {
+      "term": "design",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        },
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "fits",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "modern",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "slim",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "well",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "looks modern",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "slim design",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "design looks modern",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "fits the room",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    }
+  ],
+  "Ease of Use": [
+    {
+      "term": "easy",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "hard",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "makes",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "set",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    },
+    {
+      "term": "hard to use",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    }
+  ],
+  "Other": [
+    {
+      "term": "excellent",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 3,
+          "review_id": "R004"
+        }
+      ]
+    }
+  ],
+  "Packaging": [
+    {
+      "term": "cable",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "included",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "intact",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "package",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "short",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "included cable",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 9,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "package was intact",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    }
+  ],
+  "Picture Quality": [
+    {
+      "term": "picture",
+      "term_type": "unigram",
+      "count": 3,
+      "review_count": 3,
+      "review_share": 21.4286,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        },
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        },
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "colors",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        },
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "excellent",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        },
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        }
+      ]
+    },
+    {
+      "term": "quality",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        },
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "screen",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        },
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "picture quality",
+      "term_type": "bigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        },
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "accurate",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        }
+      ]
+    },
+    {
+      "term": "bright",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        }
+      ]
+    },
+    {
+      "term": "casual",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "crisp",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "deep",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "display",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "every",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "fine",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "flickers",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "movies",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "sharp",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        }
+      ]
+    },
+    {
+      "term": "viewing",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "bright room",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        }
+      ]
+    },
+    {
+      "term": "casual viewing",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "deep colors",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "look crisp",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "looks excellent",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        }
+      ]
+    },
+    {
+      "term": "screen flickers",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "colors are accurate",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        }
+      ]
+    },
+    {
+      "term": "display is fine",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "every few minutes",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 4,
+          "review_id": "R005"
+        }
+      ]
+    },
+    {
+      "term": "fine for casual",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "movies look crisp",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "picture is sharp",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        }
+      ]
+    },
+    {
+      "term": "quality is excellent",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        }
+      ]
+    },
+    {
+      "term": "screen looks excellent",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 0,
+          "review_id": "R001"
+        }
+      ]
+    }
+  ],
+  "Price / Value": [
+    {
+      "term": "price",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        },
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "high",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "reasonable",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        }
+      ]
+    },
+    {
+      "term": "slightly",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "slightly high",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "feels slightly high",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "price is reasonable",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 8,
+          "review_id": "R009"
+        }
+      ]
+    }
+  ],
+  "Reliability": [
+    {
+      "term": "device",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "overheats",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "restarts",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "warning",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "without",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "device overheats",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "restarts without",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "without warning",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    },
+    {
+      "term": "restarts without warning",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 14,
+          "review_id": "R015"
+        }
+      ]
+    }
+  ],
+  "Remote Control": [
+    {
+      "term": "remote",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        },
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "buttons",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "cheap",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        }
+      ]
+    },
+    {
+      "term": "dark",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "difficult",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "identify",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "feels cheap",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        }
+      ]
+    },
+    {
+      "term": "remote buttons",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "buttons are difficult",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "difficult to identify",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "remote feels cheap",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        }
+      ]
+    }
+  ],
+  "Setup / Installation": [
+    {
+      "term": "clear",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "installation",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 6,
+          "review_id": "R007"
+        }
+      ]
+    },
+    {
+      "term": "instructions",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "less",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 6,
+          "review_id": "R007"
+        }
+      ]
+    },
+    {
+      "term": "setup",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "took",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 6,
+          "review_id": "R007"
+        }
+      ]
+    },
+    {
+      "term": "setup instructions",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "ten minutes",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 6,
+          "review_id": "R007"
+        }
+      ]
+    },
+    {
+      "term": "instructions were clear",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    }
+  ],
+  "Sound Quality": [
+    {
+      "term": "volume",
+      "term_type": "unigram",
+      "count": 2,
+      "review_count": 2,
+      "review_share": 14.2857,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        },
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "average",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "dialogue",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "distort",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "easy",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "medium",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "normal",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "sound",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    },
+    {
+      "term": "speakers",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "understand",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "medium volume",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "normal volume",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "speakers distort",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 1,
+          "review_id": "R002"
+        }
+      ]
+    },
+    {
+      "term": "dialogue is easy",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "easy to understand",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "sound is average",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 12,
+          "review_id": "R013"
+        }
+      ]
+    }
+  ],
+  "System Performance": [
+    {
+      "term": "apps",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "menu",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        }
+      ]
+    },
+    {
+      "term": "pauses",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "several",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "slow",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        }
+      ]
+    },
+    {
+      "term": "sometimes",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "switching",
+      "term_type": "unigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "several seconds",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "sometimes pauses",
+      "term_type": "bigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "apps sometimes pauses",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    },
+    {
+      "term": "menu is slow",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 2,
+          "review_id": "R003"
+        }
+      ]
+    },
+    {
+      "term": "switching between apps",
+      "term_type": "trigram",
+      "count": 1,
+      "review_count": 1,
+      "review_share": 7.1429,
+      "review_refs": [
+        {
+          "source_row_id": 13,
+          "review_id": "R014"
+        }
+      ]
+    }
+  ]
+}

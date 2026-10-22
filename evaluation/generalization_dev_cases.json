@@ -1,0 +1,1635 @@
+[
+  {
+    "case_id": "G001",
+    "review": "The shipping carton had a deep dent, but the television cabinet inside had tight seams and no flex.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "The shipping carton had a deep dent"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "the television cabinet inside had tight seams and no flex"
+      }
+    ],
+    "notes": "Separates damage to the shipping container from the construction of the product itself.",
+    "tags": [
+      "boundary",
+      "packaging-vs-build-quality",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G002",
+    "review": "The box and corner pads were immaculate; the rear casing, however, gives a hollow creak when touched.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "positive",
+        "evidence": "The box and corner pads were immaculate"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "negative",
+        "evidence": "the rear casing, however, gives a hollow creak when touched"
+      }
+    ],
+    "notes": "Good packing materials must not mask a negative judgment about the product casing.",
+    "tags": [
+      "boundary",
+      "packaging-vs-build-quality",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G003",
+    "review": "The carrier came two afternoons after the promised date, although the sealed carton reached me without a mark.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "The carrier came two afternoons after the promised date"
+      },
+      {
+        "aspect": "Packaging",
+        "sentiment": "positive",
+        "evidence": "the sealed carton reached me without a mark"
+      }
+    ],
+    "notes": "Late arrival and package condition are independent shopping-experience judgments.",
+    "tags": [
+      "boundary",
+      "delivery-vs-packaging",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G004",
+    "review": "It showed up the next morning, but loose foam let the panel slide around inside the carton.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "It showed up the next morning"
+      },
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "loose foam let the panel slide around inside the carton"
+      }
+    ],
+    "notes": "Fast delivery should not make inadequate internal protection positive.",
+    "tags": [
+      "boundary",
+      "delivery-vs-packaging",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G005",
+    "review": "The settings panel opens the instant I press the key, yet every color on the display looks faded.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "The settings panel opens the instant I press the key"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "negative",
+        "evidence": "every color on the display looks faded"
+      }
+    ],
+    "notes": "A display-related noun in the review must not pull software responsiveness into Picture Quality.",
+    "tags": [
+      "boundary",
+      "system-performance-vs-picture-quality",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G006",
+    "review": "The image stays bright beside our windows, while jumping between streaming apps takes several seconds.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The image stays bright beside our windows"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "jumping between streaming apps takes several seconds"
+      }
+    ],
+    "notes": "Distinguishes a visible image attribute from slow application switching.",
+    "tags": [
+      "boundary",
+      "system-performance-vs-picture-quality",
+      "multi-aspect"
+    ]
+  },
+  {
+    "case_id": "G007",
+    "review": "Input names and settings are scattered through confusing submenus, although every menu reacts immediately to a click.",
+    "expected_aspects": [
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "negative",
+        "evidence": "Input names and settings are scattered through confusing submenus"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "every menu reacts immediately to a click"
+      }
+    ],
+    "notes": "Confusing organization is usability; immediate response is performance.",
+    "tags": [
+      "boundary",
+      "ease-of-use-vs-system-performance",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G008",
+    "review": "The daily controls make sense after one glance, but the channel guide stutters whenever I scroll.",
+    "expected_aspects": [
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "The daily controls make sense after one glance"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "the channel guide stutters whenever I scroll"
+      }
+    ],
+    "notes": "Straightforward operation and software lag carry different labels.",
+    "tags": [
+      "boundary",
+      "ease-of-use-vs-system-performance",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G009",
+    "review": "The remote's volume key needs a hard press, while audio remains clean even at a high listening level.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "negative",
+        "evidence": "The remote's volume key needs a hard press"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "audio remains clean even at a high listening level"
+      }
+    ],
+    "notes": "A volume key is remote hardware, whereas clean high-level audio is Sound Quality.",
+    "tags": [
+      "boundary",
+      "remote-control-vs-sound-quality",
+      "multi-aspect"
+    ]
+  },
+  {
+    "case_id": "G010",
+    "review": "The built-in speakers sound thin, but the remote changes volume on the first press.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "The built-in speakers sound thin"
+      },
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "the remote changes volume on the first press"
+      }
+    ],
+    "notes": "Sound output and the remote control action should remain separate.",
+    "tags": [
+      "boundary",
+      "remote-control-vs-sound-quality",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G011",
+    "review": "The driver left it at my door ahead of schedule, and the set has run steadily every evening for a month.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "The driver left it at my door ahead of schedule"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "the set has run steadily every evening for a month"
+      }
+    ],
+    "notes": "Arrival timing and sustained operation are distinct positive claims.",
+    "tags": [
+      "boundary",
+      "reliability-vs-delivery",
+      "multi-aspect"
+    ]
+  },
+  {
+    "case_id": "G012",
+    "review": "The order reached me on the scheduled day, but the unit began rebooting at random during its first week.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "The order reached me on the scheduled day"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "the unit began rebooting at random during its first week"
+      }
+    ],
+    "notes": "A timely order does not make subsequent operational instability a delivery issue.",
+    "tags": [
+      "boundary",
+      "reliability-vs-delivery",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G013",
+    "review": "Faces have natural skin tones. Fine lettering in the credits also stays razor sharp.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "Faces have natural skin tones"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "Fine lettering in the credits also stays razor sharp"
+      }
+    ],
+    "notes": "Two independent positive Picture Quality mentions must remain atomic.",
+    "tags": [
+      "multi-mention",
+      "same-aspect",
+      "positive-positive"
+    ]
+  },
+  {
+    "case_id": "G014",
+    "review": "Spoken dialogue is crisp and centered. Deep bass, on the other hand, loses definition and turns boomy.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "Spoken dialogue is crisp and centered"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "Deep bass, on the other hand, loses definition and turns boomy"
+      }
+    ],
+    "notes": "The same Aspect contains separate positive and negative judgments.",
+    "tags": [
+      "multi-mention",
+      "same-aspect",
+      "opposite-sentiment"
+    ]
+  },
+  {
+    "case_id": "G015",
+    "review": "The directional pad has a pleasant click. The power key beside it sticks every few uses.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "The directional pad has a pleasant click"
+      },
+      {
+        "aspect": "Remote Control",
+        "sentiment": "negative",
+        "evidence": "The power key beside it sticks every few uses"
+      }
+    ],
+    "notes": "Two distinct remote hardware judgments should not be merged into one mention.",
+    "tags": [
+      "multi-mention",
+      "same-aspect",
+      "opposite-sentiment"
+    ]
+  },
+  {
+    "case_id": "G016",
+    "review": "The matte frame looks refined, but the rear shell flexes around the ports. The feet clicked into place without trouble, Wi-Fi drops during long movies, and the app carousel scrolls smoothly.",
+    "expected_aspects": [
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "The matte frame looks refined"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "negative",
+        "evidence": "the rear shell flexes around the ports"
+      },
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "The feet clicked into place without trouble"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "negative",
+        "evidence": "Wi-Fi drops during long movies"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "the app carousel scrolls smoothly"
+      }
+    ],
+    "notes": "Long review with five independent attributes and both sentiment polarities.",
+    "tags": [
+      "multi-aspect",
+      "long-review",
+      "five-aspects",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G017",
+    "review": "The panel handles shadows beautifully, while voices sound muffled. Considering the discounted price, the overall feature set is a bargain, although shipping took twelve days.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The panel handles shadows beautifully"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "voices sound muffled"
+      },
+      {
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "Considering the discounted price, the overall feature set is a bargain"
+      },
+      {
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "shipping took twelve days"
+      }
+    ],
+    "notes": "Long review combines product quality, value, and shopping experience.",
+    "tags": [
+      "multi-aspect",
+      "long-review",
+      "four-aspects",
+      "price-value"
+    ]
+  },
+  {
+    "case_id": "G018",
+    "review": "Its narrow profile looks tasteful, and the metal stand feels firmly constructed.",
+    "expected_aspects": [
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "Its narrow profile looks tasteful"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "the metal stand feels firmly constructed"
+      }
+    ],
+    "notes": "One sentence supports separate appearance and construction judgments.",
+    "tags": [
+      "boundary",
+      "design-vs-build-quality",
+      "same-sentence"
+    ]
+  },
+  {
+    "case_id": "G019",
+    "review": "The set powered up every day during the first month. Yesterday it switched itself off twice without warning.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "The set powered up every day during the first month"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "Yesterday it switched itself off twice without warning"
+      }
+    ],
+    "notes": "Reliability changes over time and requires two separate mentions.",
+    "tags": [
+      "multi-mention",
+      "same-aspect",
+      "opposite-sentiment",
+      "time-shift"
+    ]
+  },
+  {
+    "case_id": "G020",
+    "review": "Ethernet has remained stable, Wi-Fi loses the router each evening, and my headphones pair over Bluetooth on the first attempt.",
+    "expected_aspects": [
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "Ethernet has remained stable"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "negative",
+        "evidence": "Wi-Fi loses the router each evening"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "my headphones pair over Bluetooth on the first attempt"
+      }
+    ],
+    "notes": "Three connection methods form three atomic mentions under one Aspect.",
+    "tags": [
+      "multi-mention",
+      "same-aspect",
+      "three-mentions",
+      "connectivity"
+    ]
+  },
+  {
+    "case_id": "G021",
+    "review": "No regrets here.",
+    "expected_aspects": [],
+    "notes": "Overall approval without a supported product attribute should not trigger a guessed Aspect.",
+    "tags": [
+      "extra-aspect-prevention",
+      "no-aspect",
+      "generic-praise"
+    ]
+  },
+  {
+    "case_id": "G022",
+    "review": "There is nothing remarkable about it.",
+    "expected_aspects": [],
+    "notes": "A vague overall impression does not identify a taxonomy attribute.",
+    "tags": [
+      "extra-aspect-prevention",
+      "no-aspect",
+      "ambiguous"
+    ]
+  },
+  {
+    "case_id": "G023",
+    "review": "A $40 coupon reduced the checkout total to $428.",
+    "expected_aspects": [],
+    "notes": "A price fact without worth, affordability, or cost-benefit judgment is not Price / Value.",
+    "tags": [
+      "extra-aspect-prevention",
+      "no-aspect",
+      "price-fact"
+    ]
+  },
+  {
+    "case_id": "G024",
+    "review": "The supplied power cord is too short to reach the outlet behind my cabinet.",
+    "expected_aspects": [
+      {
+        "aspect": "Other",
+        "sentiment": "negative",
+        "evidence": "The supplied power cord is too short to reach the outlet behind my cabinet"
+      }
+    ],
+    "notes": "A specific product complaint outside the standard named attributes can use Other.",
+    "tags": [
+      "other",
+      "unsupported-attribute",
+      "precision"
+    ]
+  },
+  {
+    "case_id": "G025",
+    "review": "Inside the carton are two foam end caps and a plastic sleeve.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "neutral",
+        "evidence": "Inside the carton are two foam end caps and a plastic sleeve"
+      }
+    ],
+    "notes": "A factual package description supports Packaging but no polarity beyond neutral.",
+    "tags": [
+      "packaging",
+      "neutral-fact",
+      "sentiment-boundary"
+    ]
+  },
+  {
+    "case_id": "G026",
+    "review": "I have nothing specific to praise or criticize.",
+    "expected_aspects": [],
+    "notes": "An explicitly nonspecific opinion should not produce Other or a guessed named Aspect.",
+    "tags": [
+      "extra-aspect-prevention",
+      "no-aspect",
+      "ambiguous"
+    ]
+  },
+  {
+    "case_id": "G027",
+    "review": "At this price, the included features make it a notably good buy.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "At this price, the included features make it a notably good buy"
+      }
+    ],
+    "notes": "Explicit cost-benefit language is a positive Price / Value judgment.",
+    "tags": [
+      "price-value",
+      "positive",
+      "cost-benefit"
+    ]
+  },
+  {
+    "case_id": "G028",
+    "review": "The asking price feels unreasonable for such a limited feature set.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "negative",
+        "evidence": "The asking price feels unreasonable for such a limited feature set"
+      }
+    ],
+    "notes": "Explicitly compares cost with benefits and therefore expresses negative value.",
+    "tags": [
+      "price-value",
+      "negative",
+      "cost-benefit"
+    ]
+  },
+  {
+    "case_id": "G029",
+    "review": "Three stars overall.",
+    "expected_aspects": [],
+    "notes": "A rating without an attribute is insufficient evidence for any Aspect.",
+    "tags": [
+      "extra-aspect-prevention",
+      "no-aspect",
+      "rating-only"
+    ]
+  },
+  {
+    "case_id": "G030",
+    "review": "The image is good rather than spectacular, and I am satisfied with it.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The image is good rather than spectacular, and I am satisfied with it"
+      }
+    ],
+    "notes": "Qualified praise remains positive rather than neutral or negative.",
+    "tags": [
+      "sentiment-hard",
+      "weak-positive",
+      "qualification"
+    ]
+  },
+  {
+    "case_id": "G031",
+    "review": "The bass is not bad once the television is moved away from the wall.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "The bass is not bad once the television is moved away from the wall"
+      }
+    ],
+    "notes": "Negated negative wording conveys a modest positive Sound Quality judgment.",
+    "tags": [
+      "sentiment-hard",
+      "negation",
+      "weak-positive"
+    ]
+  },
+  {
+    "case_id": "G032",
+    "review": "It powers on every time, but the program guide occasionally freezes.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "It powers on every time"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "the program guide occasionally freezes"
+      }
+    ],
+    "notes": "Reliable physical operation can coexist with intermittent software freezing.",
+    "tags": [
+      "boundary",
+      "reliability-vs-system-performance",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G033",
+    "review": "I expected the remote to be worse, but its buttons are actually easy to distinguish by touch.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "its buttons are actually easy to distinguish by touch"
+      }
+    ],
+    "notes": "The realized positive experience, not the prior negative expectation, determines sentiment.",
+    "tags": [
+      "sentiment-hard",
+      "expectation-reversal",
+      "remote-control"
+    ]
+  },
+  {
+    "case_id": "G034",
+    "review": "The app tray hesitates for a moment, but the controls are still easy to follow.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "The app tray hesitates for a moment"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "the controls are still easy to follow"
+      }
+    ],
+    "notes": "Still usable despite lag preserves a positive usability judgment alongside negative performance.",
+    "tags": [
+      "boundary",
+      "ease-of-use-vs-system-performance",
+      "sentiment-hard"
+    ]
+  },
+  {
+    "case_id": "G035",
+    "review": "The television has four HDMI ports and dual-band Wi-Fi.",
+    "expected_aspects": [
+      {
+        "aspect": "Connectivity",
+        "sentiment": "neutral",
+        "evidence": "The television has four HDMI ports and dual-band Wi-Fi"
+      }
+    ],
+    "notes": "Connection capabilities are stated as facts without approval or complaint.",
+    "tags": [
+      "connectivity",
+      "neutral-fact",
+      "sentiment-boundary"
+    ]
+  },
+  {
+    "case_id": "G036",
+    "review": "Mounting required the two supplied screws and took twenty minutes.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "neutral",
+        "evidence": "Mounting required the two supplied screws and took twenty minutes"
+      }
+    ],
+    "notes": "Installation details and duration are factual because no ease or difficulty is expressed.",
+    "tags": [
+      "setup-installation",
+      "neutral-fact",
+      "sentiment-boundary"
+    ]
+  },
+  {
+    "case_id": "G037",
+    "review": "The picture is not washed out, even with sunlight filling the room.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The picture is not washed out, even with sunlight filling the room"
+      }
+    ],
+    "notes": "Negating an undesirable image trait produces a positive judgment.",
+    "tags": [
+      "sentiment-hard",
+      "negation",
+      "picture-quality"
+    ]
+  },
+  {
+    "case_id": "G038",
+    "review": "The thin border is attractive. The wide feet, though, look clumsy on a narrow table.",
+    "expected_aspects": [
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "The thin border is attractive"
+      },
+      {
+        "aspect": "Design",
+        "sentiment": "negative",
+        "evidence": "The wide feet, though, look clumsy on a narrow table"
+      }
+    ],
+    "notes": "Two aesthetic components express opposite Design sentiments and remain separate mentions.",
+    "tags": [
+      "multi-mention",
+      "same-aspect",
+      "opposite-sentiment",
+      "design"
+    ]
+  },
+  {
+    "case_id": "G039",
+    "review": "The parcel reached me on the scheduled morning, but support closed my ticket without answering the question.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "The parcel reached me on the scheduled morning"
+      },
+      {
+        "aspect": "Customer Service",
+        "sentiment": "negative",
+        "evidence": "support closed my ticket without answering the question"
+      }
+    ],
+    "notes": "Two shopping-experience Aspects carry opposing sentiments.",
+    "tags": [
+      "multi-aspect",
+      "shopping-experience",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G040",
+    "review": "The molded padding held the panel securely, and the first movie looked wonderfully detailed. On day three the television refused to start; support approved an exchange during one short call.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "positive",
+        "evidence": "The molded padding held the panel securely"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "the first movie looked wonderfully detailed"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "On day three the television refused to start"
+      },
+      {
+        "aspect": "Customer Service",
+        "sentiment": "positive",
+        "evidence": "support approved an exchange during one short call"
+      }
+    ],
+    "notes": "Long review spans package protection, image quality, failure, and service response.",
+    "tags": [
+      "multi-aspect",
+      "long-review",
+      "four-aspects",
+      "shopping-experience"
+    ]
+  },
+  {
+    "case_id": "G041",
+    "review": "Protective tape had split and the carton lid was partly open; by contrast, the metal stand locks firmly with no wobble.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "Protective tape had split and the carton lid was partly open"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "the metal stand locks firmly with no wobble"
+      }
+    ],
+    "notes": "Separates damage to the shipping container from positive construction of the product itself.",
+    "tags": [
+      "multiple_aspects",
+      "packaging_build_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G042",
+    "review": "An air-filled sleeve cushioned every edge, whereas the base plate twists slightly under the television's weight.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "positive",
+        "evidence": "An air-filled sleeve cushioned every edge"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "negative",
+        "evidence": "the base plate twists slightly under the television's weight"
+      }
+    ],
+    "notes": "Protective packing is positive while the television enclosure feels poorly constructed.",
+    "tags": [
+      "multiple_aspects",
+      "packaging_build_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G043",
+    "review": "The carrier delivered it before lunch on the promised date, although rain had soaked one end of the box.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "The carrier delivered it before lunch on the promised date"
+      },
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "rain had soaked one end of the box"
+      }
+    ],
+    "notes": "On-time delivery and poor box condition are independent shopping-experience observations.",
+    "tags": [
+      "multiple_aspects",
+      "delivery_packaging_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G044",
+    "review": "Tracking stalled for a week, though each component was individually wrapped and separated by cardboard dividers.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "Tracking stalled for a week"
+      },
+      {
+        "aspect": "Packaging",
+        "sentiment": "positive",
+        "evidence": "each component was individually wrapped and separated by cardboard dividers"
+      }
+    ],
+    "notes": "Late arrival must not contaminate the positive assessment of protective packing.",
+    "tags": [
+      "multiple_aspects",
+      "delivery_packaging_boundary"
+    ]
+  },
+  {
+    "case_id": "G045",
+    "review": "The panel was packed against bare cardboard with no corner guards, though it happened to arrive scratch-free.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "The panel was packed against bare cardboard with no corner guards"
+      }
+    ],
+    "notes": "The unmarked product is an outcome, not evidence of superior Build Quality; only inadequate packing is evaluated.",
+    "tags": [
+      "single_aspect",
+      "packaging_build_boundary",
+      "extra_aspect_prevention",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G046",
+    "review": "The quick-settings overlay hangs for ten seconds; black levels in movies remain impressively deep.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "The quick-settings overlay hangs for ten seconds"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "black levels in movies remain impressively deep"
+      }
+    ],
+    "notes": "The word screen occurs in a software-speed complaint, while the separate image clause evaluates picture quality.",
+    "tags": [
+      "multiple_aspects",
+      "system_picture_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G047",
+    "review": "Channel menus appear immediately, but skin tones look orange and shadow detail disappears.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "Channel menus appear immediately"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "negative",
+        "evidence": "skin tones look orange"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "negative",
+        "evidence": "shadow detail disappears"
+      }
+    ],
+    "notes": "One performance observation is followed by two independent picture defects that should remain separate mentions.",
+    "tags": [
+      "multiple_aspects",
+      "same_aspect_multiple_mentions",
+      "system_picture_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G048",
+    "review": "The display's app launcher locks up whenever I return from a streaming service.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "The display's app launcher locks up whenever I return from a streaming service"
+      }
+    ],
+    "notes": "Display refers to the device context, but the evaluated behavior is software freezing rather than image quality.",
+    "tags": [
+      "single_aspect",
+      "system_picture_boundary",
+      "extra_aspect_prevention"
+    ]
+  },
+  {
+    "case_id": "G049",
+    "review": "The cursor keeps pace with every command, yet deciphering the unlabeled shortcuts requires constant guessing.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "The cursor keeps pace with every command"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "negative",
+        "evidence": "deciphering the unlabeled shortcuts requires constant guessing"
+      }
+    ],
+    "notes": "Fast response and confusing navigation are different aspects despite both referring to menus.",
+    "tags": [
+      "multiple_aspects",
+      "system_ease_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G050",
+    "review": "I found the sleep timer without opening the manual; saving the change makes the interface spin for ages.",
+    "expected_aspects": [
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "I found the sleep timer without opening the manual"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "saving the change makes the interface spin for ages"
+      }
+    ],
+    "notes": "Logical placement is usability, while slow page changes are system performance.",
+    "tags": [
+      "multiple_aspects",
+      "system_ease_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G051",
+    "review": "Adjusting loudness is frustrating because the remote button ignores most taps; audio from the set itself stays balanced during both speech and music.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "negative",
+        "evidence": "Adjusting loudness is frustrating because the remote button ignores most taps"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "audio from the set itself stays balanced during both speech and music"
+      }
+    ],
+    "notes": "A volume key complaint belongs to Remote Control, not Sound Quality; actual speaker output is separately positive.",
+    "tags": [
+      "multiple_aspects",
+      "remote_sound_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G052",
+    "review": "The mute key on the handset reacts immediately, yet spoken news carries a constant echo through the built-in speakers.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "The mute key on the handset reacts immediately"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "spoken news carries a constant echo through the built-in speakers"
+      }
+    ],
+    "notes": "Responsive remote hardware contrasts with defective audio output.",
+    "tags": [
+      "multiple_aspects",
+      "remote_sound_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G053",
+    "review": "The courier placed it on my porch exactly when promised, but the television has powered itself off on four evenings.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "The courier placed it on my porch exactly when promised"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "the television has powered itself off on four evenings"
+      }
+    ],
+    "notes": "Prompt delivery and recurring product shutdowns must not be conflated.",
+    "tags": [
+      "multiple_aspects",
+      "reliability_delivery_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G054",
+    "review": "It reached me well after the estimated window, yet the unit has run every night for two months without a fault.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "It reached me well after the estimated window"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "the unit has run every night for two months without a fault"
+      }
+    ],
+    "notes": "Late shipping is negative Delivery; continued fault-free operation is positive Reliability.",
+    "tags": [
+      "multiple_aspects",
+      "reliability_delivery_boundary",
+      "negation",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G055",
+    "review": "The first-time wizard completed configuration in one pass, but changing inputs during daily use is confusing.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "The first-time wizard completed configuration in one pass"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "negative",
+        "evidence": "changing inputs during daily use is confusing"
+      }
+    ],
+    "notes": "Successful initial configuration is distinct from confusing routine operation.",
+    "tags": [
+      "multiple_aspects",
+      "setup_ease_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G056",
+    "review": "The mounting guide skips two steps and made attaching the feet frustrating, although everyday navigation is simple.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "negative",
+        "evidence": "The mounting guide skips two steps and made attaching the feet frustrating"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "everyday navigation is simple"
+      }
+    ],
+    "notes": "Poor installation guidance and easy ongoing use receive separate labels.",
+    "tags": [
+      "multiple_aspects",
+      "setup_ease_boundary",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G057",
+    "review": "The receipt lists the television at $479.",
+    "expected_aspects": [],
+    "notes": "A bare transaction amount contains no value, affordability, or cost-benefit judgment and should not trigger Price / Value.",
+    "tags": [
+      "no_aspect",
+      "price_fact",
+      "extra_aspect_prevention"
+    ]
+  },
+  {
+    "case_id": "G058",
+    "review": "Paying $50 more than the basic version still feels worthwhile overall.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "Paying $50 more than the basic version still feels worthwhile overall"
+      }
+    ],
+    "notes": "Explicit positive cost-benefit judgment supports Price / Value.",
+    "tags": [
+      "single_aspect",
+      "price_value",
+      "positive"
+    ]
+  },
+  {
+    "case_id": "G059",
+    "review": "I paid a premium, and the limited feature set simply is not worth that cost.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "negative",
+        "evidence": "I paid a premium, and the limited feature set simply is not worth that cost"
+      }
+    ],
+    "notes": "The price is explicitly judged against received benefits.",
+    "tags": [
+      "single_aspect",
+      "price_value",
+      "negation",
+      "negative"
+    ]
+  },
+  {
+    "case_id": "G060",
+    "review": "Really impressive.",
+    "expected_aspects": [],
+    "notes": "Generic praise does not identify a supported taxonomy aspect.",
+    "tags": [
+      "no_aspect",
+      "generic_praise",
+      "extra_aspect_prevention"
+    ]
+  },
+  {
+    "case_id": "G061",
+    "review": "It behaves just as I assumed it would.",
+    "expected_aspects": [],
+    "notes": "Meeting an unspecified expectation is too vague to infer Reliability or another concrete aspect.",
+    "tags": [
+      "no_aspect",
+      "vague_statement",
+      "extra_aspect_prevention"
+    ]
+  },
+  {
+    "case_id": "G062",
+    "review": "The carton was brown and rectangular.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "neutral",
+        "evidence": "The carton was brown and rectangular"
+      }
+    ],
+    "notes": "A factual package description supports Packaging but carries no positive or negative evaluation.",
+    "tags": [
+      "single_aspect",
+      "packaging",
+      "neutral_fact"
+    ]
+  },
+  {
+    "case_id": "G063",
+    "review": "I'm satisfied so far.",
+    "expected_aspects": [],
+    "notes": "Overall satisfaction without a named attribute should not be converted into a specific product aspect.",
+    "tags": [
+      "no_aspect",
+      "generic_praise",
+      "extra_aspect_prevention"
+    ]
+  },
+  {
+    "case_id": "G064",
+    "review": "A solid four-star purchase.",
+    "expected_aspects": [],
+    "notes": "A rating-like overall verdict offers no aspect-level evidence.",
+    "tags": [
+      "no_aspect",
+      "rating_only",
+      "extra_aspect_prevention"
+    ]
+  },
+  {
+    "case_id": "G065",
+    "review": "For $529, the overall deal feels neither generous nor unfair.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "neutral",
+        "evidence": "For $529, the overall deal feels neither generous nor unfair"
+      }
+    ],
+    "notes": "An explicit but balanced value judgment is neutral Price / Value rather than a bare price fact.",
+    "tags": [
+      "single_aspect",
+      "price_value",
+      "neutral",
+      "weak_sentiment"
+    ]
+  },
+  {
+    "case_id": "G066",
+    "review": "Fast-moving players remain clearly outlined, and gradients across a sunset change smoothly without visible bands.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "Fast-moving players remain clearly outlined"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "gradients across a sunset change smoothly without visible bands"
+      }
+    ],
+    "notes": "Two distinct positive image observations should be preserved as two mentions.",
+    "tags": [
+      "same_aspect_multiple_mentions",
+      "picture_quality",
+      "positive"
+    ]
+  },
+  {
+    "case_id": "G067",
+    "review": "Colors are rich in cinema mode, but faces turn pale when viewed from the side.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "Colors are rich in cinema mode"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "negative",
+        "evidence": "faces turn pale when viewed from the side"
+      }
+    ],
+    "notes": "One aspect has independent positive and negative observations that must not be collapsed.",
+    "tags": [
+      "same_aspect_multiple_mentions",
+      "picture_quality",
+      "sentiment_change",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G068",
+    "review": "Whispered lines vanish beneath background music, and cymbals acquire a piercing hiss.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "Whispered lines vanish beneath background music"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "cymbals acquire a piercing hiss"
+      }
+    ],
+    "notes": "Two different audio defects should remain separate Sound Quality mentions.",
+    "tags": [
+      "same_aspect_multiple_mentions",
+      "sound_quality",
+      "negative"
+    ]
+  },
+  {
+    "case_id": "G069",
+    "review": "The thin copper-colored border looks stylish, the stand wobbles on a level table, Wi-Fi joined immediately, the home page scrolls smoothly, and the remote keys are cramped.",
+    "expected_aspects": [
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "The thin copper-colored border looks stylish"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "negative",
+        "evidence": "the stand wobbles on a level table"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "Wi-Fi joined immediately"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "the home page scrolls smoothly"
+      },
+      {
+        "aspect": "Remote Control",
+        "sentiment": "negative",
+        "evidence": "the remote keys are cramped"
+      }
+    ],
+    "notes": "Five independent product attributes test broad recall without inventing cross-aspect labels.",
+    "tags": [
+      "long_review",
+      "five_aspects",
+      "multi_mention"
+    ]
+  },
+  {
+    "case_id": "G070",
+    "review": "Delivery beat the estimate, the inner sleeve was ripped, the setup instructions were clear, and customer support answered my warranty question in one message.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "Delivery beat the estimate"
+      },
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "the inner sleeve was ripped"
+      },
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "the setup instructions were clear"
+      },
+      {
+        "aspect": "Customer Service",
+        "sentiment": "positive",
+        "evidence": "customer support answered my warranty question in one message"
+      }
+    ],
+    "notes": "Four experience and setup observations test long-review recall and category separation.",
+    "tags": [
+      "long_review",
+      "four_aspects",
+      "shopping_experience",
+      "multi_mention"
+    ]
+  },
+  {
+    "case_id": "G071",
+    "review": "The speakers are not bad at ordinary listening levels.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "The speakers are not bad at ordinary listening levels"
+      }
+    ],
+    "notes": "The negated negative phrase 'not bad' expresses weak positive sentiment.",
+    "tags": [
+      "single_aspect",
+      "sound_quality",
+      "negation",
+      "weak_positive"
+    ]
+  },
+  {
+    "case_id": "G072",
+    "review": "The remote does its job well, even if the surface could feel a little nicer.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "The remote does its job well, even if the surface could feel a little nicer"
+      }
+    ],
+    "notes": "Clear positive sentiment remains positive despite a mild material-quality caveat; no separate Build Quality aspect is warranted.",
+    "tags": [
+      "single_aspect",
+      "remote_control",
+      "weak_positive",
+      "extra_aspect_prevention",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G073",
+    "review": "After six months the television remains dependable; only the animated weather app drops back to the home screen.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "After six months the television remains dependable"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "the animated weather app drops back to the home screen"
+      }
+    ],
+    "notes": "General product operation and intermittent software freezing are separate Reliability and System Performance claims.",
+    "tags": [
+      "multiple_aspects",
+      "reliability_system_boundary",
+      "mixed_statement",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G074",
+    "review": "The chassis is not nearly as flimsy as the showroom unit made me expect.",
+    "expected_aspects": [
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "The chassis is not nearly as flimsy as the showroom unit made me expect"
+      }
+    ],
+    "notes": "Negating an anticipated weakness expresses positive Build Quality.",
+    "tags": [
+      "single_aspect",
+      "build_quality",
+      "negation",
+      "comparison",
+      "positive"
+    ]
+  },
+  {
+    "case_id": "G075",
+    "review": "I can still use every feature, despite a menu structure that makes simple tasks confusing.",
+    "expected_aspects": [
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "negative",
+        "evidence": "a menu structure that makes simple tasks confusing"
+      }
+    ],
+    "notes": "Continued usability does not reverse the explicit negative judgment about confusing operation.",
+    "tags": [
+      "single_aspect",
+      "ease_of_use",
+      "still_usable",
+      "negative"
+    ]
+  },
+  {
+    "case_id": "G076",
+    "review": "The pedestal attaches with four screws.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "neutral",
+        "evidence": "The pedestal attaches with four screws"
+      }
+    ],
+    "notes": "A factual installation statement has neutral sentiment.",
+    "tags": [
+      "single_aspect",
+      "setup_installation",
+      "neutral_fact"
+    ]
+  },
+  {
+    "case_id": "G077",
+    "review": "The rear panel provides three HDMI inputs and one Ethernet jack.",
+    "expected_aspects": [
+      {
+        "aspect": "Connectivity",
+        "sentiment": "neutral",
+        "evidence": "The rear panel provides three HDMI inputs and one Ethernet jack"
+      }
+    ],
+    "notes": "Port availability is a neutral Connectivity fact, not Build Quality or Design.",
+    "tags": [
+      "single_aspect",
+      "connectivity",
+      "neutral_fact",
+      "extra_aspect_prevention"
+    ]
+  },
+  {
+    "case_id": "G078",
+    "review": "The carton was sealed with reinforced tape, but the representative transferred me four times and disconnected the call.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "positive",
+        "evidence": "The carton was sealed with reinforced tape"
+      },
+      {
+        "aspect": "Customer Service",
+        "sentiment": "negative",
+        "evidence": "the representative transferred me four times and disconnected the call"
+      }
+    ],
+    "notes": "Positive package handling contrasts with an unresolved service interaction.",
+    "tags": [
+      "multiple_aspects",
+      "shopping_experience",
+      "contrast"
+    ]
+  },
+  {
+    "case_id": "G079",
+    "review": "The power supply stayed stable through several long gaming weekends; this morning, however, the unit needed three attempts before it would start.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "The power supply stayed stable through several long gaming weekends"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "this morning, however, the unit needed three attempts before it would start"
+      }
+    ],
+    "notes": "Separate earlier positive and later negative Reliability periods should remain two mentions.",
+    "tags": [
+      "same_aspect_multiple_mentions",
+      "reliability",
+      "sentiment_change",
+      "time_shift"
+    ]
+  },
+  {
+    "case_id": "G080",
+    "review": "The sale price is lower than comparable sets, yet the included features still feel too limited to call it a good deal.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "The sale price is lower than comparable sets"
+      },
+      {
+        "aspect": "Price / Value",
+        "sentiment": "negative",
+        "evidence": "the included features still feel too limited to call it a good deal"
+      }
+    ],
+    "notes": "A favorable comparative price and an unfavorable benefit judgment are independent Price / Value mentions.",
+    "tags": [
+      "same_aspect_multiple_mentions",
+      "price_value",
+      "comparison",
+      "sentiment_change",
+      "contrast"
+    ]
+  }
+]

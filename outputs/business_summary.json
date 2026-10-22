@@ -1,0 +1,187 @@
+{
+  "data_quality": {
+    "total_input_rows": 15,
+    "successful_reviews": 14,
+    "failed_reviews": 0,
+    "skipped_reviews": 1,
+    "analysis_coverage": 0.9333333333333333,
+    "invalid_json_rows": 0,
+    "invalid_json_details": []
+  },
+  "ranking_rules": {
+    "minimum_aspect_reviews": 3,
+    "top_n": 5,
+    "customer_concerns_order": "aspect_review_count descending",
+    "product_selling_eligibility": "PRODUCT with positive_review_count greater than negative_review_count",
+    "product_selling_order": "positive_review_count descending",
+    "product_pain_eligibility": "PRODUCT with negative_review_count greater than positive_review_count",
+    "product_pain_order": "negative_review_count descending",
+    "shopping_experience_eligibility": "EXPERIENCE with the directional review count greater than the opposite review count",
+    "minimum_sample_applies_to": "product and shopping-experience directional rankings"
+  },
+  "top_customer_concerns": [
+    {
+      "aspect": "Picture Quality",
+      "business_category": "PRODUCT",
+      "aspect_review_count": 6,
+      "mention_count": 8,
+      "positive_review_count": 4,
+      "negative_review_count": 1,
+      "neutral_review_count": 1,
+      "mixed_review_count": 0,
+      "positive_rate": 66.66666666666666,
+      "negative_rate": 16.666666666666664,
+      "neutral_rate": 16.666666666666664,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 42.857142857142854
+    },
+    {
+      "aspect": "Build Quality",
+      "business_category": "PRODUCT",
+      "aspect_review_count": 3,
+      "mention_count": 4,
+      "positive_review_count": 1,
+      "negative_review_count": 2,
+      "neutral_review_count": 0,
+      "mixed_review_count": 0,
+      "positive_rate": 33.33333333333333,
+      "negative_rate": 66.66666666666666,
+      "neutral_rate": 0.0,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 21.428571428571427
+    },
+    {
+      "aspect": "Delivery",
+      "business_category": "EXPERIENCE",
+      "aspect_review_count": 3,
+      "mention_count": 4,
+      "positive_review_count": 2,
+      "negative_review_count": 1,
+      "neutral_review_count": 0,
+      "mixed_review_count": 0,
+      "positive_rate": 66.66666666666666,
+      "negative_rate": 33.33333333333333,
+      "neutral_rate": 0.0,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 21.428571428571427
+    },
+    {
+      "aspect": "Sound Quality",
+      "business_category": "PRODUCT",
+      "aspect_review_count": 3,
+      "mention_count": 3,
+      "positive_review_count": 1,
+      "negative_review_count": 1,
+      "neutral_review_count": 1,
+      "mixed_review_count": 0,
+      "positive_rate": 33.33333333333333,
+      "negative_rate": 33.33333333333333,
+      "neutral_rate": 33.33333333333333,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 21.428571428571427
+    },
+    {
+      "aspect": "Design",
+      "business_category": "PRODUCT",
+      "aspect_review_count": 2,
+      "mention_count": 2,
+      "positive_review_count": 2,
+      "negative_review_count": 0,
+      "neutral_review_count": 0,
+      "mixed_review_count": 0,
+      "positive_rate": 100.0,
+      "negative_rate": 0.0,
+      "neutral_rate": 0.0,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 14.285714285714285
+    }
+  ],
+  "product_selling_points": [
+    {
+      "aspect": "Picture Quality",
+      "business_category": "PRODUCT",
+      "aspect_review_count": 6,
+      "mention_count": 8,
+      "positive_review_count": 4,
+      "negative_review_count": 1,
+      "neutral_review_count": 1,
+      "mixed_review_count": 0,
+      "positive_rate": 66.66666666666666,
+      "negative_rate": 16.666666666666664,
+      "neutral_rate": 16.666666666666664,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 42.857142857142854
+    }
+  ],
+  "product_pain_points": [
+    {
+      "aspect": "Build Quality",
+      "business_category": "PRODUCT",
+      "aspect_review_count": 3,
+      "mention_count": 4,
+      "positive_review_count": 1,
+      "negative_review_count": 2,
+      "neutral_review_count": 0,
+      "mixed_review_count": 0,
+      "positive_rate": 33.33333333333333,
+      "negative_rate": 66.66666666666666,
+      "neutral_rate": 0.0,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 21.428571428571427
+    }
+  ],
+  "shopping_experience": {
+    "positive": [
+      {
+        "aspect": "Delivery",
+        "business_category": "EXPERIENCE",
+        "aspect_review_count": 3,
+        "mention_count": 4,
+        "positive_review_count": 2,
+        "negative_review_count": 1,
+        "neutral_review_count": 0,
+        "mixed_review_count": 0,
+        "positive_rate": 66.66666666666666,
+        "negative_rate": 33.33333333333333,
+        "neutral_rate": 0.0,
+        "mixed_rate": 0.0,
+        "aspect_share_of_reviews": 21.428571428571427
+      }
+    ],
+    "negative": []
+  },
+  "top_selling_points": [
+    {
+      "aspect": "Picture Quality",
+      "business_category": "PRODUCT",
+      "aspect_review_count": 6,
+      "mention_count": 8,
+      "positive_review_count": 4,
+      "negative_review_count": 1,
+      "neutral_review_count": 1,
+      "mixed_review_count": 0,
+      "positive_rate": 66.66666666666666,
+      "negative_rate": 16.666666666666664,
+      "neutral_rate": 16.666666666666664,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 42.857142857142854
+    }
+  ],
+  "top_pain_points": [
+    {
+      "aspect": "Build Quality",
+      "business_category": "PRODUCT",
+      "aspect_review_count": 3,
+      "mention_count": 4,
+      "positive_review_count": 1,
+      "negative_review_count": 2,
+      "neutral_review_count": 0,
+      "mixed_review_count": 0,
+      "positive_rate": 33.33333333333333,
+      "negative_rate": 66.66666666666666,
+      "neutral_rate": 0.0,
+      "mixed_rate": 0.0,
+      "aspect_share_of_reviews": 21.428571428571427
+    }
+  ]
+}

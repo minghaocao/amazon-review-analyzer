@@ -1,0 +1,161 @@
+[
+  {
+    "case_id": "M001",
+    "review_text": "The picture quality is excellent.",
+    "expected_summary": "Excellent picture quality.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "picture quality",
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The picture quality is excellent"
+      }
+    ]
+  },
+  {
+    "case_id": "M002",
+    "review_text": "The screen looks great but the speakers sound terrible.",
+    "expected_summary": "Great screen quality, but terrible speaker sound.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "screen",
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The screen looks great"
+      },
+      {
+        "raw_aspect": "speakers",
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "the speakers sound terrible"
+      }
+    ]
+  },
+  {
+    "case_id": "M003",
+    "review_text": "The remote feels cheap and the buttons sometimes do not respond.",
+    "expected_summary": "The remote feels cheap and can be unresponsive.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "remote",
+        "aspect": "Remote Control",
+        "sentiment": "negative",
+        "evidence": "The remote feels cheap and the buttons sometimes do not respond"
+      }
+    ]
+  },
+  {
+    "case_id": "M004",
+    "review_text": "Delivery was slow, but the TV itself works perfectly.",
+    "expected_summary": "Slow delivery, but the TV works perfectly.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "Delivery",
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "Delivery was slow"
+      },
+      {
+        "raw_aspect": "TV itself",
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "the TV itself works perfectly"
+      }
+    ]
+  },
+  {
+    "case_id": "M005",
+    "review_text": "The menu is slow and apps take several seconds to open.",
+    "expected_summary": "The menu and apps respond slowly.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "menu",
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "The menu is slow"
+      },
+      {
+        "raw_aspect": "apps",
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "apps take several seconds to open"
+      }
+    ]
+  },
+  {
+    "case_id": "M006",
+    "review_text": "For this price, the picture quality is fantastic.",
+    "expected_summary": "Fantastic picture quality for the price.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "price",
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "For this price, the picture quality is fantastic"
+      },
+      {
+        "raw_aspect": "picture quality",
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "the picture quality is fantastic"
+      }
+    ]
+  },
+  {
+    "case_id": "M007",
+    "review_text": "Setup took less than ten minutes and was very easy.",
+    "expected_summary": "Setup was quick and easy.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "Setup",
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "Setup took less than ten minutes"
+      },
+      {
+        "raw_aspect": "easy",
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "was very easy"
+      }
+    ]
+  },
+  {
+    "case_id": "M008",
+    "review_text": "The TV looks beautiful and feels very solid.",
+    "expected_summary": "The TV looks beautiful and feels solid.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "looks",
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "The TV looks beautiful"
+      },
+      {
+        "raw_aspect": "solid",
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "feels very solid"
+      }
+    ]
+  },
+  {
+    "case_id": "M009",
+    "review_text": "The Wi-Fi disconnects every few hours.",
+    "expected_summary": "The Wi-Fi disconnects frequently.",
+    "expected_aspects": [
+      {
+        "raw_aspect": "Wi-Fi",
+        "aspect": "Connectivity",
+        "sentiment": "negative",
+        "evidence": "The Wi-Fi disconnects every few hours"
+      }
+    ]
+  },
+  {
+    "case_id": "M010",
+    "review_text": "Great!",
+    "expected_summary": "The customer expresses a positive overall opinion.",
+    "expected_aspects": []
+  }
+]

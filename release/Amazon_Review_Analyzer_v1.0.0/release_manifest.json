@@ -1,0 +1,168 @@
+{
+  "schema": "amazon-review-analyzer.release.v1",
+  "product_name": "Amazon Review Analyzer",
+  "version": "1.0.0",
+  "release_status": "PASS",
+  "release_type": "Stable Release",
+  "build_date": "2026-10-19T17:10:00+08:00",
+  "provider": "Ollama",
+  "model": "qwen3:8b",
+  "runtime_mode": {
+    "profile": "stable",
+    "workers": 1,
+    "request_strategy": "serial"
+  },
+  "language_support": [
+    "English",
+    "Simplified Chinese"
+  ],
+  "automated_tests": {
+    "passed": 1077,
+    "total": 1077,
+    "status": "PASS",
+    "scope": "offline automated test suite; no real Amazon, OpenAI, or Ollama calls"
+  },
+  "release_gate": {
+    "product_release_acceptance": "PASS",
+    "release_health_check": "PASS",
+    "frozen_asset_integrity": {
+      "status": "PASS",
+      "verified_hashes": 53
+    },
+    "blocker": 0,
+    "major": 0
+  },
+  "blind_v2_metrics": {
+    "dataset_status": "frozen",
+    "case_count": 150,
+    "evaluation_artifact_sha256": "3a0985d2b9f22842074b31b516b8c235f0c459a47092d7420e277da73ee10831",
+    "aspect_sentiment": {
+      "precision": 0.8428571428571429,
+      "recall": 0.8708487084870848,
+      "f1": 0.8566243194192379,
+      "tp": 236,
+      "fp": 44,
+      "fn": 35
+    },
+    "aspect_only": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8856088560885609,
+      "f1": 0.8711433756805806,
+      "tp": 240,
+      "fp": 40,
+      "fn": 31
+    },
+    "sentiment_accuracy": {
+      "value": 0.9833333333333333,
+      "correct": 236,
+      "total": 240
+    },
+    "evidence_validity": {
+      "value": 1.0,
+      "valid": 280,
+      "total": 280
+    },
+    "evidence_match": {
+      "value": 1.0,
+      "matched": 240,
+      "total": 240
+    },
+    "strict_exact_case_accuracy": {
+      "value": 0.6666666666666666,
+      "exact": 100,
+      "total": 150
+    },
+    "display_percentages": {
+      "aspect_sentiment_f1": "85.66%",
+      "aspect_only_f1": "87.11%",
+      "sentiment_accuracy": "98.33%",
+      "evidence_validity": "100%",
+      "evidence_match": "100%",
+      "strict_exact_case_accuracy": "66.67%"
+    },
+    "interpretation": "Metrics apply only to the frozen Blind V2 set and documented v1.0 configuration; they are not universal accuracy claims."
+  },
+  "documentation_files": [
+    "README.md",
+    "QUICK_START_CN.md",
+    "QUICK_START_EN.md",
+    "CHANGELOG.md",
+    "RELEASE_NOTES.md",
+    "SYSTEM_OVERVIEW.md",
+    "PORTFOLIO_SUMMARY.md",
+    "docs/Amazon_Review_Analyzer_v1.0_User_Guide_CN.md",
+    "docs/Amazon_Review_Analyzer_v1.0_User_Guide_CN.html"
+  ],
+  "screenshot_files": [
+    "screenshots/01_overview.png",
+    "screenshots/02_product_insights.png",
+    "screenshots/03_customer_language.png",
+    "screenshots/04_aspect_deep_dive.png",
+    "screenshots/05_review_explorer.png",
+    "screenshots/06_bilingual_cn.png",
+    "screenshots/07_saved_analyses.png",
+    "screenshots/08_competitor_comparison.png",
+    "screenshots/09_single_report.png",
+    "screenshots/10_comparison_report.png"
+  ],
+  "sample_report_files": [
+    "sample_reports/single_product_report_en.html",
+    "sample_reports/single_product_report_zh_CN.html",
+    "sample_reports/competitor_comparison_report_en.html",
+    "sample_reports/competitor_comparison_report_zh_CN.html"
+  ],
+  "sample_data_files": [
+    "sample_data/demo_reviews.csv",
+    "sample_data/README.md"
+  ],
+  "supporting_files": [
+    "SHA256SUMS.txt",
+    "sample_reports/README.md"
+  ],
+  "package_exclusions": [
+    ".venv",
+    "Ollama model files",
+    ".env and credentials",
+    "cookies and browser profiles",
+    "caches",
+    "temporary outputs",
+    "private logs",
+    "Git history"
+  ],
+  "license_status": "LICENSE not yet defined",
+  "integrity": {
+    "algorithm": "SHA-256",
+    "manifest_hash_scope": "artifact_hashes_sha256 covers every regular package file except release_manifest.json. release_manifest.json is intentionally excluded to avoid a circular self-hash.",
+    "checksums_hash_scope": "SHA256SUMS.txt covers the 26 payload files that preceded both SHA256SUMS.txt and release_manifest.json.",
+    "checksums_file": "SHA256SUMS.txt",
+    "artifact_hashes_sha256": {
+      "CHANGELOG.md": "b30b368253498b7121d9e51785115b3a7306408cbc60c082ef0275c995afa152",
+      "PORTFOLIO_SUMMARY.md": "0733b527bce9ebdcf5b5f59e8d09665e58c44c8fbd912c1f52b6ef1afdb39a56",
+      "QUICK_START_CN.md": "30c54f5911aad29cd9553f3b377f86fc60b2d605a72506287ddba4186c5f71c8",
+      "QUICK_START_EN.md": "d9a948779045b6ec4d6f50bdad91cbb6f7ee012690148adf03d90fcf950b533a",
+      "README.md": "8515ed0e6fcf0d05f90735bf694f6059f366f6fafaa1c00959b0c5f3d4bef27a",
+      "RELEASE_NOTES.md": "d545a372e48ff825eb9b06bdd51417011d6ee54150349c58b82f7c41209bfc6a",
+      "SHA256SUMS.txt": "1e84cd12529c5bdae27e3f5f322f72670eef05e77fb5b77091de440ea75c6d82",
+      "SYSTEM_OVERVIEW.md": "637d389f193226762cfe278191ec537c15afa40202e7dd837812e60e1cdbcb84",
+      "docs/Amazon_Review_Analyzer_v1.0_User_Guide_CN.html": "9a6f46424977ba3545d110d19d84107d27d380ecb2b31896205f7a336fa24c72",
+      "docs/Amazon_Review_Analyzer_v1.0_User_Guide_CN.md": "a3bb63f4a1afd5a4e8e08cd59ea15261ef771a7ea69045add560f631f0337ce7",
+      "sample_data/README.md": "46eafffd2d58d9a983438976d134de5f9f468a1d6f183fa0db4f0f7ea71cc529",
+      "sample_data/demo_reviews.csv": "26e810e73c8f9175c95de086d8fd8892ea3ae9af3d6ff703e259c31315dd0ec8",
+      "sample_reports/README.md": "0c30d7522a772e0b0ea9ef40a67d865e3a4d6545eb06e3ed872ebd75010f60d4",
+      "sample_reports/competitor_comparison_report_en.html": "f104c5e083f3090f3b70f11183bd697bce0033e400a18818a6cc273b0226529e",
+      "sample_reports/competitor_comparison_report_zh_CN.html": "dd9b4158bb9139a47ed2a460f611447d790c5cdc2ebf41fa9edf357705bb4f40",
+      "sample_reports/single_product_report_en.html": "c3ecddd8d0db8b224577c78e0ced985ba7d5bdc83ab9b2630092c354072b6558",
+      "sample_reports/single_product_report_zh_CN.html": "4afaf196ee68b641c24b771183196ef5c62451e7da0a5a300b67039acd68c5b6",
+      "screenshots/01_overview.png": "75a52dec663151bcff71cc1ec579d50d2c37a0dddf50d5f34613650d5a830eb6",
+      "screenshots/02_product_insights.png": "4ae87c60957825e2fcb4123a0ed016a3bd1d8f5d6a67f25bbdf89f55fda1271a",
+      "screenshots/03_customer_language.png": "587a4f20c06a11a237d8e1e37a7c5794c6483436c2f0f98bc8e933a7faadeb71",
+      "screenshots/04_aspect_deep_dive.png": "53f34a19bd00d95b7a448c797721d28015cdb4a4f7176ee3bc80a03c96becac8",
+      "screenshots/05_review_explorer.png": "5ac0f5212b7ba5e12965a14441afca533939c304ae0867d76dc60937ca1bcb0f",
+      "screenshots/06_bilingual_cn.png": "2f01592f198c9ad1b2d0520dc9d05235175b3eb99b215b0fecbb20acc7896233",
+      "screenshots/07_saved_analyses.png": "a1675a3b4921fd855add26e92f60ef58ae68d39167f6c3efec87618cf91040b1",
+      "screenshots/08_competitor_comparison.png": "65c6c0bd58a44dc12fa1113c4ee745dcbc047068d0c9eadbbeea9829fddc962f",
+      "screenshots/09_single_report.png": "77c0175481f34665274e2d7560e028e760b77eae196b973b78ea92ca0944de56",
+      "screenshots/10_comparison_report.png": "009486024f86ef9041d7750ef4940c9af54f61ba4f00fd86847c0d4e83de4283"
+    }
+  }
+}

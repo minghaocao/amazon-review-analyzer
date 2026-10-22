@@ -1,0 +1,6 @@
+{
+  "dataset": "generalization_dev_cases.json",
+  "case_count": 80,
+  "sha256": "d1864655cc95d5fa82546ed29bb4af11626b7723c57a4b705e690614e330ac87",
+  "created_before_baseline": true
+}

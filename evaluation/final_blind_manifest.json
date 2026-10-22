@@ -1,0 +1,46 @@
+{
+  "analysis_file_sha256": {
+    "aspect_taxonomy.py": "e3d5577df11c4b3087672bae5dffe1339a216d44e0faece1b6b90b96d9cea778",
+    "config.py": "c357c0bc9c23b4fd6ca0df2d2c78f530ce8343cce433b3002c49fb0810ba940a",
+    "evaluator.py": "310b29fa1952cb61e1d246c842e94c0ba1cad097c6d6e95541063c9cbd51cad2",
+    "llm_client.py": "158d9ecfa66847807f9bb48f1b7db1ee0a5f6c8fda3537c820a7a8543f6f365f",
+    "review_analyzer.py": "7b9f457b70ccb97291a7b408ca988995531b1ae16d92707ef8912879d2263fff"
+  },
+  "analysis_fingerprint": "95aeddc1f1d04d38a7adf44a49bd399a0ece7d1d5917415ef692c70dc7b9249f",
+  "case_count": 100,
+  "created_at": "2026-09-27T05:07:52.983997+00:00",
+  "created_before_evaluation": true,
+  "dataset": "final_blind_cases.json",
+  "leakage_check": {
+    "closest_source": {
+      "final_case_id": "F035",
+      "similarity": 0.5487804878048781,
+      "source": "raw_reviews.csv",
+      "source_id": "R003"
+    },
+    "exact_duplicate_count": 0,
+    "exact_duplicates": [],
+    "maximum_similarity": 0.5487804878048781,
+    "normalized_duplicate_count": 0,
+    "normalized_duplicates": [],
+    "passed": true,
+    "similarity_threshold": 0.75,
+    "source_corpus_fingerprint": "0389cf0afff66e7c0224e839275d87814a0eea8ab9f7393f1e4b3b54ba1457ed",
+    "source_file_sha256": {
+      "data/raw_reviews.csv": "26e810e73c8f9175c95de086d8fd8892ea3ae9af3d6ff703e259c31315dd0ec8",
+      "evaluation/generalization_dev_cases.json": "d1864655cc95d5fa82546ed29bb4af11626b7723c57a4b705e690614e330ac87",
+      "evaluation/gold_cases.json": "be361d8d3cb0bfaef6f0a4c70b9cb1c5fdac07d23b1a6f67456cfa01ab36f120",
+      "evaluation/holdout_cases.json": "a368c34b48bf5e6dfcbdb3afa521e2bd7fbd3ab08a85a53c0f1b2b9837d5862a"
+    },
+    "source_review_count": 174
+  },
+  "runtime_config": {
+    "model": "qwen3:8b",
+    "ollama_keep_alive": "30m",
+    "ollama_num_ctx": 4096,
+    "provider": "ollama",
+    "taxonomy_version": "step8.8-frozen"
+  },
+  "sha256": "3bfced46011b2fe0e8c4d1ce4ae271e2cd8f0916e9ef9e92eaca4299c16d66f9",
+  "taxonomy_version": "step8.8-frozen"
+}

@@ -1,0 +1,3599 @@
+{
+  "cases": [
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "picture quality",
+          "raw_aspect": "picture quality",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 11.809056958998553,
+      "case_id": "E001",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "picture quality",
+          "raw_aspect": "picture quality",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Picture Quality",
+          "evidence": "picture quality",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "picture quality",
+          "aspect": "Picture Quality",
+          "expected_evidence": "The picture quality is excellent, with natural colors that stay clear even in a dark room",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "The picture quality is excellent, with natural colors that stay clear even in a dark room",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The picture quality is excellent, with natural colors that stay clear even in a dark room.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "evidence": "sound is not good",
+          "raw_aspect": "sound",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "dialogue is thin and hard to hear",
+          "raw_aspect": "dialogue",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 5.222665874985978,
+      "case_id": "E002",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 2,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 2,
+        "evidence_compared": 2,
+        "evidence_matched": 2,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 2,
+        "sentiment_correct": 2,
+        "sentiment_total": 2
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "evidence": "sound is not good",
+          "raw_aspect": "sound",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "dialogue is thin and hard to hear",
+          "raw_aspect": "dialogue",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Sound Quality",
+          "evidence": "sound is not good",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Sound Quality",
+          "evidence": "dialogue is thin and hard to hear",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "sound is not good",
+          "aspect": "Sound Quality",
+          "expected_evidence": "The sound is not good",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "dialogue is thin and hard to hear",
+          "aspect": "Sound Quality",
+          "expected_evidence": "dialogue is thin and hard to hear even after I raise the volume",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "evidence": "The sound is not good",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "dialogue is thin and hard to hear even after I raise the volume",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The sound is not good; dialogue is thin and hard to hear even after I raise the volume.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "Setup was not difficult",
+          "raw_aspect": "Setup was not difficult",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "I finished the installation in under ten minutes",
+          "raw_aspect": "I finished the installation in under ten minutes",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 5.981445457902737,
+      "case_id": "E003",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 1,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 1,
+        "exact_fp": 1,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [
+        {
+          "error_type": "MISS_ASPECT",
+          "expected_aspect": "Ease of Use",
+          "expected_evidence": "Setup was not difficult",
+          "expected_sentiment": "positive",
+          "message": "Expected aspect mention was not predicted."
+        },
+        {
+          "actual_aspect": "Setup / Installation",
+          "actual_evidence": "I finished the installation in under ten minutes",
+          "actual_sentiment": "positive",
+          "error_type": "EXTRA_ASPECT",
+          "message": "Predicted aspect mention has no gold match."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "Setup was not difficult",
+          "raw_aspect": "Setup was not difficult",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "I finished the installation in under ten minutes",
+          "raw_aspect": "I finished the installation in under ten minutes",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Setup / Installation",
+          "evidence": "Setup was not difficult",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Setup / Installation",
+          "evidence": "I finished the installation in under ten minutes",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "Setup was not difficult",
+          "aspect": "Setup / Installation",
+          "expected_evidence": "Setup was not difficult, and I finished the installation in under ten minutes",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "Setup was not difficult, and I finished the installation in under ten minutes",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Ease of Use",
+          "evidence": "Setup was not difficult",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [
+        "Setup / Installation"
+      ],
+      "missing_aspects": [
+        "Ease of Use"
+      ],
+      "review": "Setup was not difficult, and I finished the installation in under ten minutes without calling support.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Connectivity",
+          "evidence": "Wi-Fi stayed linked upstairs",
+          "raw_aspect": "Wi-Fi stayed linked upstairs",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "Bluetooth paired on the first try",
+          "raw_aspect": "Bluetooth paired on the first try",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 5.1687036249786615,
+      "case_id": "E004",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 2
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 1,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 2,
+        "evidence_compared": 2,
+        "evidence_matched": 2,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 1,
+        "exact_fp": 0,
+        "exact_tp": 2,
+        "sentiment_correct": 2,
+        "sentiment_total": 2
+      },
+      "errors": [
+        {
+          "error_type": "MISS_ASPECT",
+          "expected_aspect": "Connectivity",
+          "expected_evidence": "I never had connection problems",
+          "expected_sentiment": "positive",
+          "message": "Expected aspect mention was not predicted."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Connectivity",
+          "evidence": "Wi-Fi stayed linked upstairs",
+          "raw_aspect": "Wi-Fi stayed linked upstairs",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "Bluetooth paired on the first try",
+          "raw_aspect": "Bluetooth paired on the first try",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Connectivity",
+          "evidence": "Wi-Fi stayed linked upstairs",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Connectivity",
+          "evidence": "Bluetooth paired on the first try",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "Wi-Fi stayed linked upstairs",
+          "aspect": "Connectivity",
+          "expected_evidence": "Wi-Fi stayed linked upstairs",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "Bluetooth paired on the first try",
+          "aspect": "Connectivity",
+          "expected_evidence": "Bluetooth paired on the first try",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Connectivity",
+          "evidence": "I never had connection problems",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "Wi-Fi stayed linked upstairs",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "Bluetooth paired on the first try",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [
+        "Connectivity"
+      ],
+      "review": "I never had connection problems; Wi-Fi stayed linked upstairs and Bluetooth paired on the first try.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "picture is excellent",
+          "raw_aspect": "picture",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Remote Control",
+          "evidence": "remote feels cheap",
+          "raw_aspect": "remote",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "volume button often sticks",
+          "raw_aspect": "volume button",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 7.156088208081201,
+      "case_id": "E005",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 2,
+        "evidence_compared": 2,
+        "evidence_matched": 2,
+        "evidence_total": 3,
+        "evidence_valid": 3,
+        "exact_fn": 0,
+        "exact_fp": 1,
+        "exact_tp": 2,
+        "sentiment_correct": 2,
+        "sentiment_total": 2
+      },
+      "errors": [
+        {
+          "actual_aspect": "Sound Quality",
+          "actual_evidence": "volume button often sticks",
+          "actual_sentiment": "negative",
+          "error_type": "EXTRA_ASPECT",
+          "message": "Predicted aspect mention has no gold match."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "picture is excellent",
+          "raw_aspect": "picture",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Remote Control",
+          "evidence": "remote feels cheap",
+          "raw_aspect": "remote",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "volume button often sticks",
+          "raw_aspect": "volume button",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Picture Quality",
+          "evidence": "picture is excellent",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Remote Control",
+          "evidence": "remote feels cheap",
+          "valid": true
+        },
+        {
+          "actual_index": 2,
+          "aspect": "Sound Quality",
+          "evidence": "volume button often sticks",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "picture is excellent",
+          "aspect": "Picture Quality",
+          "expected_evidence": "The picture is excellent in bright rooms",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "remote feels cheap",
+          "aspect": "Remote Control",
+          "expected_evidence": "the remote feels cheap and its volume button often sticks",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "The picture is excellent in bright rooms",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Remote Control",
+          "evidence": "the remote feels cheap and its volume button often sticks",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [
+        "Sound Quality"
+      ],
+      "missing_aspects": [],
+      "review": "The picture is excellent in bright rooms, but the remote feels cheap and its volume button often sticks.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Delivery",
+          "evidence": "Delivery took a full week",
+          "raw_aspect": "Delivery",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Delivery",
+          "evidence": "the television itself has worked perfectly every day since it arrived",
+          "raw_aspect": "the television itself has worked perfectly every day since it arrived",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 5.428974875016138,
+      "case_id": "E006",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 1,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 1,
+        "exact_fp": 1,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [
+        {
+          "actual_aspect": "Delivery",
+          "actual_evidence": "the television itself has worked perfectly every day since it arrived",
+          "actual_sentiment": "positive",
+          "error_type": "WRONG_ASPECT",
+          "expected_aspect": "Reliability",
+          "expected_evidence": "the television itself has worked perfectly every day since it arrived",
+          "expected_sentiment": "positive",
+          "message": "Strong evidence match indicates a taxonomy classification error.",
+          "similarity": 1.0
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Delivery",
+          "evidence": "Delivery took a full week",
+          "raw_aspect": "Delivery",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Delivery",
+          "evidence": "the television itself has worked perfectly every day since it arrived",
+          "raw_aspect": "the television itself has worked perfectly every day since it arrived",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Delivery",
+          "evidence": "Delivery took a full week",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Delivery",
+          "evidence": "the television itself has worked perfectly every day since it arrived",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "Delivery took a full week",
+          "aspect": "Delivery",
+          "expected_evidence": "Delivery took a full week",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Delivery",
+          "evidence": "Delivery took a full week",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Reliability",
+          "evidence": "the television itself has worked perfectly every day since it arrived",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "Delivery took a full week, but the television itself has worked perfectly every day since it arrived.",
+      "wrong_aspects": [
+        {
+          "actual": "Delivery",
+          "actual_evidence": "the television itself has worked perfectly every day since it arrived",
+          "actual_sentiment": "positive",
+          "expected": "Reliability",
+          "expected_evidence": "the television itself has worked perfectly every day since it arrived",
+          "expected_sentiment": "positive",
+          "similarity": 1.0
+        }
+      ],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Design",
+          "evidence": "elegant",
+          "raw_aspect": "elegant",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Build Quality",
+          "evidence": "plastic frame bends",
+          "raw_aspect": "plastic frame bends",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 4.576457165996544,
+      "case_id": "E007",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 2,
+        "evidence_compared": 2,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 2,
+        "sentiment_correct": 2,
+        "sentiment_total": 2
+      },
+      "errors": [
+        {
+          "actual_aspect": "Design",
+          "actual_evidence": "elegant",
+          "error_type": "WEAK_EVIDENCE_MATCH",
+          "expected_aspect": "Design",
+          "expected_evidence": "The television looks elegant on the wall",
+          "message": "Evidence similarity is below 60%.",
+          "similarity": 0.14285714285714285
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Design",
+          "evidence": "elegant",
+          "raw_aspect": "elegant",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Build Quality",
+          "evidence": "plastic frame bends",
+          "raw_aspect": "plastic frame bends",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Design",
+          "evidence": "elegant",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Build Quality",
+          "evidence": "plastic frame bends",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 0.5,
+      "evidence_matches": [
+        {
+          "actual_evidence": "plastic frame bends",
+          "aspect": "Build Quality",
+          "expected_evidence": "the plastic frame bends when I attach the stand",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "elegant",
+          "aspect": "Design",
+          "expected_evidence": "The television looks elegant on the wall",
+          "matched": false,
+          "similarity": 0.14285714285714285
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Design",
+          "evidence": "The television looks elegant on the wall",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Build Quality",
+          "evidence": "the plastic frame bends when I attach the stand",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The television looks elegant on the wall, yet the plastic frame bends when I attach the stand.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "evidence": "Music sounds full and detailed",
+          "raw_aspect": "Music sounds full and detailed",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Picture Quality",
+          "evidence": "the home screen lags whenever I switch between apps",
+          "raw_aspect": "the home screen lags whenever I switch between apps",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 5.560788374976255,
+      "case_id": "E008",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 1,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 1,
+        "exact_fp": 1,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [
+        {
+          "actual_aspect": "Picture Quality",
+          "actual_evidence": "the home screen lags whenever I switch between apps",
+          "actual_sentiment": "negative",
+          "error_type": "WRONG_ASPECT",
+          "expected_aspect": "System Performance",
+          "expected_evidence": "the home screen lags whenever I switch between apps",
+          "expected_sentiment": "negative",
+          "message": "Strong evidence match indicates a taxonomy classification error.",
+          "similarity": 1.0
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "evidence": "Music sounds full and detailed",
+          "raw_aspect": "Music sounds full and detailed",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Picture Quality",
+          "evidence": "the home screen lags whenever I switch between apps",
+          "raw_aspect": "the home screen lags whenever I switch between apps",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Sound Quality",
+          "evidence": "Music sounds full and detailed",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Picture Quality",
+          "evidence": "the home screen lags whenever I switch between apps",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "Music sounds full and detailed",
+          "aspect": "Sound Quality",
+          "expected_evidence": "Music sounds full and detailed",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "evidence": "Music sounds full and detailed",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "System Performance",
+          "evidence": "the home screen lags whenever I switch between apps",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "Music sounds full and detailed, however the home screen lags whenever I switch between apps.",
+      "wrong_aspects": [
+        {
+          "actual": "Picture Quality",
+          "actual_evidence": "the home screen lags whenever I switch between apps",
+          "actual_sentiment": "negative",
+          "expected": "System Performance",
+          "expected_evidence": "the home screen lags whenever I switch between apps",
+          "expected_sentiment": "negative",
+          "similarity": 1.0
+        }
+      ],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "screen is bright and crisp in daylight",
+          "raw_aspect": "screen is bright and crisp in daylight",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Design",
+          "evidence": "dark scenes look washed out at night",
+          "raw_aspect": "dark scenes look washed out at night",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 5.979238542029634,
+      "case_id": "E009",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 1,
+        "exact_fp": 2,
+        "exact_tp": 0,
+        "sentiment_correct": 0,
+        "sentiment_total": 1
+      },
+      "errors": [
+        {
+          "actual_aspect": "Picture Quality",
+          "actual_evidence": "screen is bright and crisp in daylight",
+          "actual_sentiment": "positive",
+          "error_type": "WRONG_SENTIMENT",
+          "expected_aspect": "Picture Quality",
+          "expected_evidence": [
+            "The screen is bright and crisp in daylight",
+            "dark scenes look washed out at night"
+          ],
+          "expected_sentiment": "mixed",
+          "message": "Aspect matched but sentiment did not."
+        },
+        {
+          "actual_aspect": "Design",
+          "actual_evidence": "dark scenes look washed out at night",
+          "actual_sentiment": "negative",
+          "error_type": "EXTRA_ASPECT",
+          "message": "Predicted aspect mention has no gold match."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "screen is bright and crisp in daylight",
+          "raw_aspect": "screen is bright and crisp in daylight",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Design",
+          "evidence": "dark scenes look washed out at night",
+          "raw_aspect": "dark scenes look washed out at night",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Picture Quality",
+          "evidence": "screen is bright and crisp in daylight",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Design",
+          "evidence": "dark scenes look washed out at night",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "screen is bright and crisp in daylight",
+          "aspect": "Picture Quality",
+          "expected_evidence": [
+            "The screen is bright and crisp in daylight",
+            "dark scenes look washed out at night"
+          ],
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": [
+            "The screen is bright and crisp in daylight",
+            "dark scenes look washed out at night"
+          ],
+          "sentiment": "mixed"
+        }
+      ],
+      "extra_aspects": [
+        "Design"
+      ],
+      "missing_aspects": [],
+      "review": "The screen is bright and crisp in daylight, but dark scenes look washed out at night.",
+      "wrong_aspects": [],
+      "wrong_sentiments": [
+        {
+          "actual": "positive",
+          "actual_evidence": "screen is bright and crisp in daylight",
+          "aspect": "Picture Quality",
+          "expected": "mixed",
+          "expected_evidence": [
+            "The screen is bright and crisp in daylight",
+            "dark scenes look washed out at night"
+          ]
+        }
+      ]
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Remote Control",
+          "evidence": "The remote is okay",
+          "raw_aspect": "remote",
+          "sentiment": "neutral"
+        },
+        {
+          "aspect": "Design",
+          "evidence": "its layout is ordinary",
+          "raw_aspect": "layout",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis_time_seconds": 5.513254667050205,
+      "case_id": "E010",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 1,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 1,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [
+        {
+          "actual_aspect": "Design",
+          "actual_evidence": "its layout is ordinary",
+          "actual_sentiment": "neutral",
+          "error_type": "EXTRA_ASPECT",
+          "message": "Predicted aspect mention has no gold match."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Remote Control",
+          "evidence": "The remote is okay",
+          "raw_aspect": "remote",
+          "sentiment": "neutral"
+        },
+        {
+          "aspect": "Design",
+          "evidence": "its layout is ordinary",
+          "raw_aspect": "layout",
+          "sentiment": "neutral"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Remote Control",
+          "evidence": "The remote is okay",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Design",
+          "evidence": "its layout is ordinary",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "The remote is okay",
+          "aspect": "Remote Control",
+          "expected_evidence": "The remote is okay; its layout is ordinary and neither especially helpful nor annoying",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Remote Control",
+          "evidence": "The remote is okay; its layout is ordinary and neither especially helpful nor annoying",
+          "sentiment": "neutral"
+        }
+      ],
+      "extra_aspects": [
+        "Design"
+      ],
+      "missing_aspects": [],
+      "review": "The remote is okay; its layout is ordinary and neither especially helpful nor annoying.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Packaging",
+          "evidence": "The package uses a plain cardboard box with two foam inserts.",
+          "raw_aspect": "package",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis_time_seconds": 4.168521792045794,
+      "case_id": "E011",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 1,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Packaging",
+          "evidence": "The package uses a plain cardboard box with two foam inserts.",
+          "raw_aspect": "package",
+          "sentiment": "neutral"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Packaging",
+          "evidence": "The package uses a plain cardboard box with two foam inserts.",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "The package uses a plain cardboard box with two foam inserts.",
+          "aspect": "Packaging",
+          "expected_evidence": "The package uses a plain cardboard box with two foam inserts",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Packaging",
+          "evidence": "The package uses a plain cardboard box with two foam inserts",
+          "sentiment": "neutral"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The package uses a plain cardboard box with two foam inserts.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Price / Value",
+          "evidence": "It cost $399, exactly the price listed on the product page when I ordered it.",
+          "raw_aspect": "price",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis_time_seconds": 4.525766416918486,
+      "case_id": "E012",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 1,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Price / Value",
+          "evidence": "It cost $399, exactly the price listed on the product page when I ordered it.",
+          "raw_aspect": "price",
+          "sentiment": "neutral"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Price / Value",
+          "evidence": "It cost $399, exactly the price listed on the product page when I ordered it.",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "It cost $399, exactly the price listed on the product page when I ordered it.",
+          "aspect": "Price / Value",
+          "expected_evidence": "It cost $399, exactly the price listed on the product page when I ordered it",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Price / Value",
+          "evidence": "It cost $399, exactly the price listed on the product page when I ordered it",
+          "sentiment": "neutral"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "It cost $399, exactly the price listed on the product page when I ordered it.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "picture is good",
+          "raw_aspect": "picture is good",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 3.6167383330175653,
+      "case_id": "E013",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "picture is good",
+          "raw_aspect": "picture is good",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Picture Quality",
+          "evidence": "picture is good",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "picture is good",
+          "aspect": "Picture Quality",
+          "expected_evidence": "The picture is good, but not amazing enough to justify calling it premium",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "The picture is good, but not amazing enough to justify calling it premium",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The picture is good, but not amazing enough to justify calling it premium.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "System Performance",
+          "evidence": "menus are a little sluggish",
+          "raw_aspect": "menus",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "System Performance",
+          "evidence": "they remain usable for basic streaming",
+          "raw_aspect": "menus",
+          "sentiment": "neutral"
+        }
+      ],
+      "analysis_time_seconds": 6.767085040919483,
+      "case_id": "E014",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 1,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [
+        {
+          "actual_aspect": "System Performance",
+          "actual_evidence": "they remain usable for basic streaming",
+          "actual_sentiment": "neutral",
+          "error_type": "EXTRA_ASPECT",
+          "message": "Predicted aspect mention has no gold match."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "System Performance",
+          "evidence": "menus are a little sluggish",
+          "raw_aspect": "menus",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "System Performance",
+          "evidence": "they remain usable for basic streaming",
+          "raw_aspect": "menus",
+          "sentiment": "neutral"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "System Performance",
+          "evidence": "menus are a little sluggish",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "System Performance",
+          "evidence": "they remain usable for basic streaming",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "menus are a little sluggish",
+          "aspect": "System Performance",
+          "expected_evidence": "The menus are a little sluggish",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "System Performance",
+          "evidence": "The menus are a little sluggish",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [
+        "System Performance"
+      ],
+      "missing_aspects": [],
+      "review": "The menus are a little sluggish, though they remain usable for basic streaming.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [],
+      "analysis_time_seconds": 1.0579574579605833,
+      "case_id": "E015",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 0,
+        "evidence_compared": 0,
+        "evidence_matched": 0,
+        "evidence_total": 0,
+        "evidence_valid": 0,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 0,
+        "sentiment_correct": 0,
+        "sentiment_total": 0
+      },
+      "errors": [],
+      "evaluation_aspects": [],
+      "evidence_evaluations": [],
+      "evidence_match_rate": 0.0,
+      "evidence_matches": [],
+      "evidence_validity_rate": 0.0,
+      "exact_match": true,
+      "expected_aspects": [],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "Great!",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [],
+      "analysis_time_seconds": 1.4139298750087619,
+      "case_id": "E016",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 0,
+        "evidence_compared": 0,
+        "evidence_matched": 0,
+        "evidence_total": 0,
+        "evidence_valid": 0,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 0,
+        "sentiment_correct": 0,
+        "sentiment_total": 0
+      },
+      "errors": [],
+      "evaluation_aspects": [],
+      "evidence_evaluations": [],
+      "evidence_match_rate": 0.0,
+      "evidence_matches": [],
+      "evidence_validity_rate": 0.0,
+      "exact_match": true,
+      "expected_aspects": [],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "Exactly what I expected.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Reliability",
+          "evidence": "defective",
+          "raw_aspect": "defective",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Reliability",
+          "evidence": "would not power on",
+          "raw_aspect": "would not power on",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 6.68062704091426,
+      "case_id": "E017",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 1,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [
+        {
+          "actual_aspect": "Reliability",
+          "actual_evidence": "defective",
+          "actual_sentiment": "negative",
+          "error_type": "EXTRA_ASPECT",
+          "message": "Predicted aspect mention has no gold match."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Reliability",
+          "evidence": "defective",
+          "raw_aspect": "defective",
+          "sentiment": "negative"
+        },
+        {
+          "aspect": "Reliability",
+          "evidence": "would not power on",
+          "raw_aspect": "would not power on",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Reliability",
+          "evidence": "defective",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Reliability",
+          "evidence": "would not power on",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "would not power on",
+          "aspect": "Reliability",
+          "expected_evidence": "The unit was defective out of the box and would not power on",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Reliability",
+          "evidence": "The unit was defective out of the box and would not power on",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [
+        "Reliability"
+      ],
+      "missing_aspects": [],
+      "review": "The unit was defective out of the box and would not power on, even with a different outlet.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Reliability",
+          "evidence": "It worked flawlessly",
+          "raw_aspect": "It worked flawlessly",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Reliability",
+          "evidence": "stopped turning on",
+          "raw_aspect": "stopped turning on",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 7.022338874987327,
+      "case_id": "E018",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 1,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Reliability",
+          "derived_mixed": true,
+          "evidence": [
+            "It worked flawlessly",
+            "stopped turning on"
+          ],
+          "raw_aspect": "It worked flawlessly / stopped turning on",
+          "sentiment": "mixed",
+          "source_indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Reliability",
+          "evidence": "It worked flawlessly",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Reliability",
+          "evidence": "stopped turning on",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": [
+            "It worked flawlessly",
+            "stopped turning on"
+          ],
+          "aspect": "Reliability",
+          "expected_evidence": [
+            "It worked flawlessly for six months",
+            "stopped turning on yesterday without any warning"
+          ],
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Reliability",
+          "evidence": [
+            "It worked flawlessly for six months",
+            "stopped turning on yesterday without any warning"
+          ],
+          "sentiment": "mixed"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "It worked flawlessly for six months, then stopped turning on yesterday without any warning.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Customer Service",
+          "evidence": "Customer service answered within five minutes and explained the warranty process clearly.",
+          "raw_aspect": "Customer Service",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 5.3020194579148665,
+      "case_id": "E019",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Customer Service",
+          "evidence": "Customer service answered within five minutes and explained the warranty process clearly.",
+          "raw_aspect": "Customer Service",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Customer Service",
+          "evidence": "Customer service answered within five minutes and explained the warranty process clearly.",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "Customer service answered within five minutes and explained the warranty process clearly.",
+          "aspect": "Customer Service",
+          "expected_evidence": "Customer service answered within five minutes and explained the warranty process clearly",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Customer Service",
+          "evidence": "Customer service answered within five minutes and explained the warranty process clearly",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "Customer service answered within five minutes and explained the warranty process clearly.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Delivery",
+          "evidence": "Delivery arrived on the promised day",
+          "raw_aspect": "Delivery",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Customer Service",
+          "evidence": "customer service never replied to my request for a replacement",
+          "raw_aspect": "customer service never replied to my request for a replacement",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 9.163164083962329,
+      "case_id": "E020",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 2,
+        "evidence_compared": 2,
+        "evidence_matched": 2,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 2,
+        "sentiment_correct": 2,
+        "sentiment_total": 2
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Delivery",
+          "evidence": "Delivery arrived on the promised day",
+          "raw_aspect": "Delivery",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Customer Service",
+          "evidence": "customer service never replied to my request for a replacement",
+          "raw_aspect": "customer service never replied to my request for a replacement",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Delivery",
+          "evidence": "Delivery arrived on the promised day",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Customer Service",
+          "evidence": "customer service never replied to my request for a replacement",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "Delivery arrived on the promised day",
+          "aspect": "Delivery",
+          "expected_evidence": "Delivery arrived on the promised day",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "customer service never replied to my request for a replacement",
+          "aspect": "Customer Service",
+          "expected_evidence": "customer service never replied to my request for a replacement",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Delivery",
+          "evidence": "Delivery arrived on the promised day",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Customer Service",
+          "evidence": "customer service never replied to my request for a replacement",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "Delivery arrived on the promised day, but customer service never replied to my request for a replacement.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Packaging",
+          "evidence": "outer box was crushed and one corner had split open",
+          "raw_aspect": "outer box",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 5.073701207991689,
+      "case_id": "E021",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Packaging",
+          "evidence": "outer box was crushed and one corner had split open",
+          "raw_aspect": "outer box",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Packaging",
+          "evidence": "outer box was crushed and one corner had split open",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "outer box was crushed and one corner had split open",
+          "aspect": "Packaging",
+          "expected_evidence": "The outer box was crushed and one corner had split open",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Packaging",
+          "evidence": "The outer box was crushed and one corner had split open",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The outer box was crushed and one corner had split open before the courier reached my door.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "picture is sharper",
+          "raw_aspect": "picture",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "speakers are clearer",
+          "raw_aspect": "speakers",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 8.721158582950011,
+      "case_id": "E022",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 2
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 1,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 2,
+        "evidence_compared": 2,
+        "evidence_matched": 2,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 1,
+        "exact_fp": 0,
+        "exact_tp": 2,
+        "sentiment_correct": 2,
+        "sentiment_total": 2
+      },
+      "errors": [
+        {
+          "error_type": "MISS_ASPECT",
+          "expected_aspect": "Price / Value",
+          "expected_evidence": "Compared with similar televisions at this price, the picture is sharper and the speakers are clearer",
+          "expected_sentiment": "positive",
+          "message": "Expected aspect mention was not predicted."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Picture Quality",
+          "evidence": "picture is sharper",
+          "raw_aspect": "picture",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "speakers are clearer",
+          "raw_aspect": "speakers",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Picture Quality",
+          "evidence": "picture is sharper",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Sound Quality",
+          "evidence": "speakers are clearer",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "picture is sharper",
+          "aspect": "Picture Quality",
+          "expected_evidence": "the picture is sharper",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "speakers are clearer",
+          "aspect": "Sound Quality",
+          "expected_evidence": "the speakers are clearer",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Price / Value",
+          "evidence": "Compared with similar televisions at this price, the picture is sharper and the speakers are clearer",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Picture Quality",
+          "evidence": "the picture is sharper",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "the speakers are clearer",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [
+        "Price / Value"
+      ],
+      "review": "Compared with similar televisions at this price, the picture is sharper and the speakers are clearer.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Price / Value",
+          "evidence": "It costs more than last year's model while offering the same features and no extra accessories.",
+          "raw_aspect": "costs more than last year's model",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 7.13644250005018,
+      "case_id": "E023",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Price / Value",
+          "evidence": "It costs more than last year's model while offering the same features and no extra accessories.",
+          "raw_aspect": "costs more than last year's model",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Price / Value",
+          "evidence": "It costs more than last year's model while offering the same features and no extra accessories.",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "It costs more than last year's model while offering the same features and no extra accessories.",
+          "aspect": "Price / Value",
+          "expected_evidence": "It costs more than last year's model while offering the same features and no extra accessories",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Price / Value",
+          "evidence": "It costs more than last year's model while offering the same features and no extra accessories",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "It costs more than last year's model while offering the same features and no extra accessories.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Ease of Use",
+          "evidence": "controls easier to use",
+          "raw_aspect": "controls",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 6.300041500013322,
+      "case_id": "E024",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 1
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Ease of Use",
+          "evidence": "controls easier to use",
+          "raw_aspect": "controls",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Ease of Use",
+          "evidence": "controls easier to use",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "controls easier to use",
+          "aspect": "Ease of Use",
+          "expected_evidence": "My parents found the controls easier to use than those on their previous television",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Ease of Use",
+          "evidence": "My parents found the controls easier to use than those on their previous television",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "My parents found the controls easier to use than those on their previous television.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "Installation took over an hour because the stand screws would not align with the mounting holes",
+          "raw_aspect": "Installation took over an hour because the stand screws would not align with the mounting holes",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 8.498962167068385,
+      "case_id": "E025",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 1,
+        "evidence_valid": 1,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "Installation took over an hour because the stand screws would not align with the mounting holes",
+          "raw_aspect": "Installation took over an hour because the stand screws would not align with the mounting holes",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Setup / Installation",
+          "evidence": "Installation took over an hour because the stand screws would not align with the mounting holes",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "Installation took over an hour because the stand screws would not align with the mounting holes",
+          "aspect": "Setup / Installation",
+          "expected_evidence": "Installation took over an hour because the stand screws would not align with the mounting holes",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "Installation took over an hour because the stand screws would not align with the mounting holes",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "Installation took over an hour because the stand screws would not align with the mounting holes.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Reliability",
+          "evidence": "reliably",
+          "raw_aspect": "reliably",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "drops the connection",
+          "raw_aspect": "drops the connection",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 10.559670291957445,
+      "case_id": "E026",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 1,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 1,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [
+        {
+          "actual_aspect": "Reliability",
+          "actual_evidence": "reliably",
+          "actual_sentiment": "positive",
+          "error_type": "EXTRA_ASPECT",
+          "message": "Predicted aspect mention has no gold match."
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Reliability",
+          "evidence": "reliably",
+          "raw_aspect": "reliably",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "drops the connection",
+          "raw_aspect": "drops the connection",
+          "sentiment": "negative"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Reliability",
+          "evidence": "reliably",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Connectivity",
+          "evidence": "drops the connection",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "drops the connection",
+          "aspect": "Connectivity",
+          "expected_evidence": "this one drops the connection whenever a video starts",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Connectivity",
+          "evidence": "this one drops the connection whenever a video starts",
+          "sentiment": "negative"
+        }
+      ],
+      "extra_aspects": [
+        "Reliability"
+      ],
+      "missing_aspects": [],
+      "review": "The old television held Wi-Fi reliably, whereas this one drops the connection whenever a video starts.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Remote Control",
+          "evidence": "The remote fits comfortably in my hand",
+          "raw_aspect": "remote",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Remote Control",
+          "evidence": "the buttons are clearly labeled even in low light",
+          "raw_aspect": "buttons are clearly labeled",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 10.228320499998517,
+      "case_id": "E027",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 2
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 2,
+        "evidence_compared": 2,
+        "evidence_matched": 2,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 2,
+        "sentiment_correct": 2,
+        "sentiment_total": 2
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Remote Control",
+          "evidence": "The remote fits comfortably in my hand",
+          "raw_aspect": "remote",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Remote Control",
+          "evidence": "the buttons are clearly labeled even in low light",
+          "raw_aspect": "buttons are clearly labeled",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Remote Control",
+          "evidence": "The remote fits comfortably in my hand",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Remote Control",
+          "evidence": "the buttons are clearly labeled even in low light",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "The remote fits comfortably in my hand",
+          "aspect": "Remote Control",
+          "expected_evidence": "The remote fits comfortably in my hand",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "the buttons are clearly labeled even in low light",
+          "aspect": "Remote Control",
+          "expected_evidence": "the buttons are clearly labeled even in low light",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Remote Control",
+          "evidence": "The remote fits comfortably in my hand",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Remote Control",
+          "evidence": "the buttons are clearly labeled even in low light",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The remote fits comfortably in my hand, and the buttons are clearly labeled even in low light.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "evidence": "Voices are clear at normal volume",
+          "raw_aspect": "Voices are clear",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Sound Quality",
+          "evidence": "the bass becomes muddy during action scenes",
+          "raw_aspect": "bass becomes muddy",
+          "sentiment": "negative"
+        }
+      ],
+      "analysis_time_seconds": 12.855289458995685,
+      "case_id": "E028",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 1,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 1,
+        "evidence_compared": 1,
+        "evidence_matched": 1,
+        "evidence_total": 2,
+        "evidence_valid": 2,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 1,
+        "sentiment_correct": 1,
+        "sentiment_total": 1
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "derived_mixed": true,
+          "evidence": [
+            "Voices are clear at normal volume",
+            "the bass becomes muddy during action scenes"
+          ],
+          "raw_aspect": "Voices are clear / bass becomes muddy",
+          "sentiment": "mixed",
+          "source_indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Sound Quality",
+          "evidence": "Voices are clear at normal volume",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Sound Quality",
+          "evidence": "the bass becomes muddy during action scenes",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": [
+            "Voices are clear at normal volume",
+            "the bass becomes muddy during action scenes"
+          ],
+          "aspect": "Sound Quality",
+          "expected_evidence": [
+            "Voices are clear at normal volume",
+            "the bass becomes muddy during action scenes"
+          ],
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Sound Quality",
+          "evidence": [
+            "Voices are clear at normal volume",
+            "the bass becomes muddy during action scenes"
+          ],
+          "sentiment": "mixed"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "Voices are clear at normal volume, but the bass becomes muddy during action scenes.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Build Quality",
+          "evidence": "solid",
+          "raw_aspect": "solid",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Ease of Use",
+          "evidence": "responds instantly",
+          "raw_aspect": "responds instantly",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "connect on the first try",
+          "raw_aspect": "connect on the first try",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 15.533603957970627,
+      "case_id": "E029",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 2
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 1,
+        "aspect_only_fp": 1,
+        "aspect_only_tp": 2,
+        "evidence_compared": 2,
+        "evidence_matched": 1,
+        "evidence_total": 3,
+        "evidence_valid": 3,
+        "exact_fn": 1,
+        "exact_fp": 1,
+        "exact_tp": 2,
+        "sentiment_correct": 2,
+        "sentiment_total": 2
+      },
+      "errors": [
+        {
+          "actual_aspect": "Build Quality",
+          "actual_evidence": "solid",
+          "error_type": "WEAK_EVIDENCE_MATCH",
+          "expected_aspect": "Build Quality",
+          "expected_evidence": "The stand feels solid",
+          "message": "Evidence similarity is below 60%.",
+          "similarity": 0.25
+        },
+        {
+          "actual_aspect": "Ease of Use",
+          "actual_evidence": "responds instantly",
+          "actual_sentiment": "positive",
+          "error_type": "WRONG_ASPECT",
+          "expected_aspect": "System Performance",
+          "expected_evidence": "the interface responds instantly",
+          "expected_sentiment": "positive",
+          "message": "Strong evidence match indicates a taxonomy classification error.",
+          "similarity": 1.0
+        }
+      ],
+      "evaluation_aspects": [
+        {
+          "aspect": "Build Quality",
+          "evidence": "solid",
+          "raw_aspect": "solid",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Ease of Use",
+          "evidence": "responds instantly",
+          "raw_aspect": "responds instantly",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "connect on the first try",
+          "raw_aspect": "connect on the first try",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Build Quality",
+          "evidence": "solid",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Ease of Use",
+          "evidence": "responds instantly",
+          "valid": true
+        },
+        {
+          "actual_index": 2,
+          "aspect": "Connectivity",
+          "evidence": "connect on the first try",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 0.5,
+      "evidence_matches": [
+        {
+          "actual_evidence": "connect on the first try",
+          "aspect": "Connectivity",
+          "expected_evidence": "HDMI devices connect on the first try",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "solid",
+          "aspect": "Build Quality",
+          "expected_evidence": "The stand feels solid",
+          "matched": false,
+          "similarity": 0.25
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": false,
+      "expected_aspects": [
+        {
+          "aspect": "Build Quality",
+          "evidence": "The stand feels solid",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "System Performance",
+          "evidence": "the interface responds instantly",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Connectivity",
+          "evidence": "HDMI devices connect on the first try",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The stand feels solid, the interface responds instantly, and HDMI devices connect on the first try.",
+      "wrong_aspects": [
+        {
+          "actual": "Ease of Use",
+          "actual_evidence": "responds instantly",
+          "actual_sentiment": "positive",
+          "expected": "System Performance",
+          "expected_evidence": "the interface responds instantly",
+          "expected_sentiment": "positive",
+          "similarity": 1.0
+        }
+      ],
+      "wrong_sentiments": []
+    },
+    {
+      "actual_aspects": [
+        {
+          "aspect": "Design",
+          "evidence": "slim design",
+          "raw_aspect": "slim design",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "setup took only ten minutes",
+          "raw_aspect": "setup took only ten minutes",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Ease of Use",
+          "evidence": "daily controls are intuitive",
+          "raw_aspect": "daily controls are intuitive",
+          "sentiment": "positive"
+        }
+      ],
+      "analysis_time_seconds": 16.742524292087182,
+      "case_id": "E030",
+      "confusion_matrix": {
+        "mixed": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "negative": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "neutral": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 0
+        },
+        "positive": {
+          "mixed": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 3
+        }
+      },
+      "counts": {
+        "aspect_only_fn": 0,
+        "aspect_only_fp": 0,
+        "aspect_only_tp": 3,
+        "evidence_compared": 3,
+        "evidence_matched": 3,
+        "evidence_total": 3,
+        "evidence_valid": 3,
+        "exact_fn": 0,
+        "exact_fp": 0,
+        "exact_tp": 3,
+        "sentiment_correct": 3,
+        "sentiment_total": 3
+      },
+      "errors": [],
+      "evaluation_aspects": [
+        {
+          "aspect": "Design",
+          "evidence": "slim design",
+          "raw_aspect": "slim design",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "setup took only ten minutes",
+          "raw_aspect": "setup took only ten minutes",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Ease of Use",
+          "evidence": "daily controls are intuitive",
+          "raw_aspect": "daily controls are intuitive",
+          "sentiment": "positive"
+        }
+      ],
+      "evidence_evaluations": [
+        {
+          "actual_index": 0,
+          "aspect": "Design",
+          "evidence": "slim design",
+          "valid": true
+        },
+        {
+          "actual_index": 1,
+          "aspect": "Setup / Installation",
+          "evidence": "setup took only ten minutes",
+          "valid": true
+        },
+        {
+          "actual_index": 2,
+          "aspect": "Ease of Use",
+          "evidence": "daily controls are intuitive",
+          "valid": true
+        }
+      ],
+      "evidence_match_rate": 1.0,
+      "evidence_matches": [
+        {
+          "actual_evidence": "slim design",
+          "aspect": "Design",
+          "expected_evidence": "The slim design looks elegant",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "setup took only ten minutes",
+          "aspect": "Setup / Installation",
+          "expected_evidence": "setup took only ten minutes",
+          "matched": true,
+          "similarity": 1.0
+        },
+        {
+          "actual_evidence": "daily controls are intuitive",
+          "aspect": "Ease of Use",
+          "expected_evidence": "the daily controls are intuitive",
+          "matched": true,
+          "similarity": 1.0
+        }
+      ],
+      "evidence_validity_rate": 1.0,
+      "exact_match": true,
+      "expected_aspects": [
+        {
+          "aspect": "Design",
+          "evidence": "The slim design looks elegant",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Setup / Installation",
+          "evidence": "setup took only ten minutes",
+          "sentiment": "positive"
+        },
+        {
+          "aspect": "Ease of Use",
+          "evidence": "the daily controls are intuitive",
+          "sentiment": "positive"
+        }
+      ],
+      "extra_aspects": [],
+      "missing_aspects": [],
+      "review": "The slim design looks elegant, setup took only ten minutes, and the daily controls are intuitive.",
+      "wrong_aspects": [],
+      "wrong_sentiments": []
+    }
+  ],
+  "confusion_matrix": {
+    "mixed": {
+      "mixed": 2,
+      "negative": 0,
+      "neutral": 0,
+      "positive": 1
+    },
+    "negative": {
+      "mixed": 0,
+      "negative": 12,
+      "neutral": 0,
+      "positive": 0
+    },
+    "neutral": {
+      "mixed": 0,
+      "negative": 0,
+      "neutral": 3,
+      "positive": 0
+    },
+    "positive": {
+      "mixed": 0,
+      "negative": 0,
+      "neutral": 0,
+      "positive": 20
+    }
+  },
+  "error_counts": {
+    "EXTRA_ASPECT": 7,
+    "MISS_ASPECT": 3,
+    "WEAK_EVIDENCE_MATCH": 2,
+    "WRONG_ASPECT": 3,
+    "WRONG_SENTIMENT": 1
+  },
+  "summary": {
+    "aspect_f1": 0.8043478260869567,
+    "aspect_false_negatives": 7,
+    "aspect_false_positives": 11,
+    "aspect_only_f1": 0.8260869565217391,
+    "aspect_only_false_negatives": 6,
+    "aspect_only_false_positives": 10,
+    "aspect_only_precision": 0.7916666666666666,
+    "aspect_only_recall": 0.8636363636363636,
+    "aspect_only_true_positives": 38,
+    "aspect_precision": 0.7708333333333334,
+    "aspect_recall": 0.8409090909090909,
+    "aspect_true_positives": 37,
+    "average_analysis_time": 7.12548455275828,
+    "cases_with_errors": 13,
+    "confusion_matrix": {
+      "mixed": {
+        "mixed": 2,
+        "negative": 0,
+        "neutral": 0,
+        "positive": 1
+      },
+      "negative": {
+        "mixed": 0,
+        "negative": 12,
+        "neutral": 0,
+        "positive": 0
+      },
+      "neutral": {
+        "mixed": 0,
+        "negative": 0,
+        "neutral": 3,
+        "positive": 0
+      },
+      "positive": {
+        "mixed": 0,
+        "negative": 0,
+        "neutral": 0,
+        "positive": 20
+      }
+    },
+    "evidence_compared": 38,
+    "evidence_match_rate": 0.9473684210526315,
+    "evidence_matched": 36,
+    "evidence_total": 50,
+    "evidence_valid": 50,
+    "evidence_validity_rate": 1.0,
+    "exact_case_accuracy": 0.6,
+    "exact_matches": 18,
+    "failed_cases": 0,
+    "median_analysis_time": 6.140743478958029,
+    "model": "qwen3:8b",
+    "sentiment_accuracy": 0.9736842105263158,
+    "sentiment_correct": 37,
+    "sentiment_total": 38,
+    "successful_cases": 30,
+    "timestamp": "2026-09-25T14:26:20.466179+00:00",
+    "total_analysis_time": 213.7645365827484,
+    "total_cases": 30
+  }
+}

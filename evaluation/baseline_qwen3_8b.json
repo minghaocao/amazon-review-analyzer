@@ -1,0 +1,10 @@
+{
+  "aspect_f1": 0.8043478260869567,
+  "aspect_only_f1": 0.8260869565217391,
+  "evidence_match_rate": 0.9473684210526315,
+  "evidence_validity_rate": 1.0,
+  "exact_case_accuracy": 0.6,
+  "model": "qwen3:8b",
+  "sentiment_accuracy": 0.9736842105263158,
+  "timestamp": "2026-09-25T14:26:20.466179+00:00"
+}

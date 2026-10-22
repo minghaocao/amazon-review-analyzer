@@ -1,0 +1,900 @@
+[
+  {
+    "case_id": "H001",
+    "review": "The colors look lifelike and fine details stay visible when the room is dim.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The colors look lifelike and fine details stay visible when the room is dim"
+      }
+    ],
+    "notes": "A single clearly positive Picture Quality observation.",
+    "tags": ["single_aspect", "picture_quality", "positive"]
+  },
+  {
+    "case_id": "H002",
+    "review": "Dialogue stays crisp across the room, and the low notes have a satisfying weight.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "Dialogue stays crisp across the room"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "the low notes have a satisfying weight"
+      }
+    ],
+    "notes": "Two independent positive Sound Quality observations should both be retained.",
+    "tags": ["same_aspect_multiple_mentions", "sound_quality", "positive"]
+  },
+  {
+    "case_id": "H003",
+    "review": "It is pricier than the competing models and does not include anything that explains the difference.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "negative",
+        "evidence": "It is pricier than the competing models and does not include anything that explains the difference"
+      }
+    ],
+    "notes": "A comparative complaint about price and value.",
+    "tags": ["single_aspect", "price_value", "comparison", "negative"]
+  },
+  {
+    "case_id": "H004",
+    "review": "The remote is average, with a standard shape and ordinary button spacing.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "neutral",
+        "evidence": "The remote is average, with a standard shape and ordinary button spacing"
+      }
+    ],
+    "notes": "Average, standard, and ordinary indicate a neutral Remote Control assessment.",
+    "tags": ["single_aspect", "remote_control", "neutral", "weak_sentiment"]
+  },
+  {
+    "case_id": "H005",
+    "review": "The home screen responds quickly, yet the settings are buried under labels that make no sense.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "The home screen responds quickly"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "negative",
+        "evidence": "the settings are buried under labels that make no sense"
+      }
+    ],
+    "notes": "Software speed and navigation clarity are separate Aspects.",
+    "tags": ["multiple_aspects", "system_ease_boundary", "system_performance", "ease_of_use", "contrast"]
+  },
+  {
+    "case_id": "H006",
+    "review": "Learning the controls was not difficult, even for someone who rarely uses smart devices.",
+    "expected_aspects": [
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "Learning the controls was not difficult"
+      }
+    ],
+    "notes": "Negated difficulty expresses positive Ease of Use.",
+    "tags": ["single_aspect", "ease_of_use", "negation", "positive"]
+  },
+  {
+    "case_id": "H007",
+    "review": "The curved base looks distinctive, but the plastic neck flexes whenever the television is nudged.",
+    "expected_aspects": [
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "The curved base looks distinctive"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "negative",
+        "evidence": "the plastic neck flexes whenever the television is nudged"
+      }
+    ],
+    "notes": "Visual styling is positive while physical construction is weak.",
+    "tags": ["multiple_aspects", "build_design_boundary", "design", "build_quality", "contrast"]
+  },
+  {
+    "case_id": "H008",
+    "review": "It worked perfectly right out of the box and has not crashed once in three months.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "It worked perfectly right out of the box"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "has not crashed once in three months"
+      }
+    ],
+    "notes": "The idiom out of the box concerns operation, not Packaging; both statements support Reliability.",
+    "tags": ["same_aspect_multiple_mentions", "packaging_reliability_boundary", "reliability", "negation"]
+  },
+  {
+    "case_id": "H009",
+    "review": "Ethernet connected immediately, Bluetooth pairing took three tries, and Wi-Fi reconnects by itself after brief dropouts.",
+    "expected_aspects": [
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "Ethernet connected immediately"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "negative",
+        "evidence": "Bluetooth pairing took three tries"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "negative",
+        "evidence": "Wi-Fi reconnects by itself after brief dropouts"
+      }
+    ],
+    "notes": "Three independent Connectivity observations test mention-level recall.",
+    "tags": ["same_aspect_multiple_mentions", "connectivity", "ethernet", "bluetooth", "wifi", "sentiment_change"]
+  },
+  {
+    "case_id": "H010",
+    "review": "Attaching the feet took five minutes and the on-screen guide made every option easy to understand.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "Attaching the feet took five minutes"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "the on-screen guide made every option easy to understand"
+      }
+    ],
+    "notes": "One sentence distinguishes physical setup from general usability.",
+    "tags": ["multiple_aspects", "same_sentence_multiple_aspects", "setup_ease_boundary", "setup_installation", "ease_of_use"]
+  },
+  {
+    "case_id": "H011",
+    "review": "The courier missed the scheduled date, but movies look crisp with convincing black levels.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "The courier missed the scheduled date"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "movies look crisp with convincing black levels"
+      }
+    ],
+    "notes": "A negative shopping experience is separate from positive product performance.",
+    "tags": ["multiple_aspects", "product_vs_shopping_experience", "delivery", "picture_quality", "contrast"]
+  },
+  {
+    "case_id": "H012",
+    "review": "One side of the carton was torn open, although the set started normally and continues to run without problems.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "One side of the carton was torn open"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "the set started normally"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "continues to run without problems"
+      }
+    ],
+    "notes": "Damaged Packaging is distinct from two positive Reliability observations.",
+    "tags": ["multiple_aspects", "same_aspect_multiple_mentions", "packaging_reliability_boundary", "packaging", "reliability", "contrast"]
+  },
+  {
+    "case_id": "H013",
+    "review": "The support representative followed the standard return checklist and the call lasted twelve minutes.",
+    "expected_aspects": [
+      {
+        "aspect": "Customer Service",
+        "sentiment": "neutral",
+        "evidence": "The support representative followed the standard return checklist and the call lasted twelve minutes"
+      }
+    ],
+    "notes": "A factual account of support without praise or criticism is neutral.",
+    "tags": ["single_aspect", "customer_service", "neutral"]
+  },
+  {
+    "case_id": "H014",
+    "review": "Two weeks in, my overall reaction is mostly disappointment.",
+    "expected_aspects": [],
+    "notes": "Generic disappointment contains no identifiable product or shopping Aspect.",
+    "tags": ["no_explicit_aspect", "generic_complaint", "empty_expected"]
+  },
+  {
+    "case_id": "H015",
+    "review": "The image is acceptable for regular television, but nothing about it stands out.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "neutral",
+        "evidence": "The image is acceptable for regular television, but nothing about it stands out"
+      }
+    ],
+    "notes": "Acceptable and nothing special indicate neutral Picture Quality.",
+    "tags": ["single_aspect", "picture_quality", "neutral", "weak_sentiment"]
+  },
+  {
+    "case_id": "H016",
+    "review": "The checkout total was $612 before tax.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "neutral",
+        "evidence": "The checkout total was $612 before tax"
+      }
+    ],
+    "notes": "A bare price fact has no positive or negative evaluation.",
+    "tags": ["single_aspect", "price_value", "price_boundary", "numeric_price", "neutral"]
+  },
+  {
+    "case_id": "H017",
+    "review": "Compared with my previous screen, fast motion looks smoother and small text is easier to read.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "fast motion looks smoother"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "small text is easier to read"
+      }
+    ],
+    "notes": "Two comparative Picture Quality improvements should remain independent mentions.",
+    "tags": ["same_aspect_multiple_mentions", "picture_quality", "comparison", "positive"]
+  },
+  {
+    "case_id": "H018",
+    "review": "Shipping took nine days, the molded inserts kept the panel secure, and the seller ignored both of my messages.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "Shipping took nine days"
+      },
+      {
+        "aspect": "Packaging",
+        "sentiment": "positive",
+        "evidence": "the molded inserts kept the panel secure"
+      },
+      {
+        "aspect": "Customer Service",
+        "sentiment": "negative",
+        "evidence": "the seller ignored both of my messages"
+      }
+    ],
+    "notes": "Three shopping-experience Aspects have distinct sentiments.",
+    "tags": ["multiple_aspects", "shopping_experience", "delivery", "packaging", "customer_service"]
+  },
+  {
+    "case_id": "H019",
+    "review": "The panel is bright, dialogue sounds dull, the remote sits well in my hand, and opening the app list takes ages.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "The panel is bright"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "dialogue sounds dull"
+      },
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "the remote sits well in my hand"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "opening the app list takes ages"
+      }
+    ],
+    "notes": "A dense four-Aspect review tests recall across unrelated product features.",
+    "tags": ["four_aspects", "high_density", "picture_quality", "sound_quality", "remote_control", "system_performance"]
+  },
+  {
+    "case_id": "H020",
+    "review": "A permanent advertisement occupies part of the home screen and cannot be removed.",
+    "expected_aspects": [
+      {
+        "aspect": "Other",
+        "sentiment": "negative",
+        "evidence": "A permanent advertisement occupies part of the home screen and cannot be removed"
+      }
+    ],
+    "notes": "A concrete advertising complaint does not fit another formal Aspect and therefore uses Other.",
+    "tags": ["single_aspect", "other", "taxonomy_fallback", "negative"]
+  },
+  {
+    "case_id": "H021",
+    "review": "For the first year it never failed, but now it switches itself off several times each evening.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "For the first year it never failed"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "now it switches itself off several times each evening"
+      }
+    ],
+    "notes": "Reliability changes from positive historical performance to a current failure.",
+    "tags": ["same_aspect_multiple_mentions", "reliability", "sentiment_change", "contrast"]
+  },
+  {
+    "case_id": "H022",
+    "review": "Search results appear without delay, but I still cannot figure out where the sleep timer is hidden.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "Search results appear without delay"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "negative",
+        "evidence": "I still cannot figure out where the sleep timer is hidden"
+      }
+    ],
+    "notes": "Responsive software is distinct from confusing feature discovery.",
+    "tags": ["multiple_aspects", "system_ease_boundary", "system_performance", "ease_of_use", "contrast"]
+  },
+  {
+    "case_id": "H023",
+    "review": "Cable management during installation was awkward, although operating the television afterward has been effortless.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "negative",
+        "evidence": "Cable management during installation was awkward"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "operating the television afterward has been effortless"
+      }
+    ],
+    "notes": "Installation difficulty and everyday usability are deliberately separated.",
+    "tags": ["multiple_aspects", "setup_ease_boundary", "setup_installation", "ease_of_use", "contrast"]
+  },
+  {
+    "case_id": "H024",
+    "review": "The back panel feels dense and none of the ports shift when a cable is inserted.",
+    "expected_aspects": [
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "The back panel feels dense"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "none of the ports shift when a cable is inserted"
+      }
+    ],
+    "notes": "Two independent physical-construction observations support Build Quality.",
+    "tags": ["same_aspect_multiple_mentions", "build_quality", "negation", "positive"]
+  },
+  {
+    "case_id": "H025",
+    "review": "Colors remain accurate from the side, music lacks depth, the case looks modern, the menu opens promptly, and the price feels fair for what is included.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "Colors remain accurate from the side"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "music lacks depth"
+      },
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "the case looks modern"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "the menu opens promptly"
+      },
+      {
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "the price feels fair for what is included"
+      }
+    ],
+    "notes": "A natural five-Aspect review tests dense mention extraction.",
+    "tags": ["five_aspects", "high_density", "picture_quality", "sound_quality", "design", "system_performance", "price_value"]
+  },
+  {
+    "case_id": "H026",
+    "review": "Podcasts sound natural, but music at higher levels develops a sharp hiss.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "positive",
+        "evidence": "Podcasts sound natural"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "music at higher levels develops a sharp hiss"
+      }
+    ],
+    "notes": "Two independent Sound Quality observations with opposing sentiment.",
+    "tags": ["same_aspect_multiple_mentions", "sentiment_change", "sound_quality", "contrast"]
+  },
+  {
+    "case_id": "H027",
+    "review": "I had the stand assembled in six minutes, and afterward the menus were straightforward enough that I never opened the manual.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "I had the stand assembled in six minutes"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "the menus were straightforward enough that I never opened the manual"
+      }
+    ],
+    "notes": "Separates initial assembly from ease of everyday menu navigation.",
+    "tags": ["multiple_aspects", "same_sentence_multiple_aspects", "setup_ease_boundary", "setup_installation", "ease_of_use"]
+  },
+  {
+    "case_id": "H028",
+    "review": "After long weekend sessions it has never overheated or shut itself off, although the rear panel creaks when I move it.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "it has never overheated or shut itself off"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "negative",
+        "evidence": "the rear panel creaks when I move it"
+      }
+    ],
+    "notes": "Negated failure language is positive Reliability, while physical creaking is Build Quality.",
+    "tags": ["multiple_aspects", "negation", "reliability", "build_quality", "contrast"]
+  },
+  {
+    "case_id": "H029",
+    "review": "My receipt shows a $527 unit price and $41 in sales tax.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "neutral",
+        "evidence": "My receipt shows a $527 unit price and $41 in sales tax"
+      }
+    ],
+    "notes": "A factual price statement without praise or criticism is neutral.",
+    "tags": ["single_aspect", "price_value", "neutral", "price_boundary", "numeric_price"]
+  },
+  {
+    "case_id": "H030",
+    "review": "This set costs more than the bargain models, but the better picture makes it worth the extra money.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "negative",
+        "evidence": "costs more than the bargain models"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "the better picture"
+      },
+      {
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "worth the extra money"
+      }
+    ],
+    "notes": "Separates a negative price comparison from positive value justification and an explicit picture comparison.",
+    "tags": ["multiple_aspects", "same_aspect_multiple_mentions", "comparison", "price_value", "picture_quality", "sentiment_change", "contrast"]
+  },
+  {
+    "case_id": "H031",
+    "review": "A puncture went through the shipping carton, yet the television powered up normally and has run without a hiccup.",
+    "expected_aspects": [
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "A puncture went through the shipping carton"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "the television powered up normally"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "has run without a hiccup"
+      }
+    ],
+    "notes": "Damaged packaging is distinct from two independent positive product-operation observations.",
+    "tags": ["multiple_aspects", "same_aspect_multiple_mentions", "packaging_reliability_boundary", "packaging", "reliability", "contrast"]
+  },
+  {
+    "case_id": "H032",
+    "review": "Lowering the volume from the remote takes several attempts because the rocker barely moves.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "negative",
+        "evidence": "Lowering the volume from the remote takes several attempts because the rocker barely moves"
+      }
+    ],
+    "notes": "The complaint targets remote hardware, not audio output.",
+    "tags": ["single_aspect", "remote_sound_boundary", "remote_control", "negative"]
+  },
+  {
+    "case_id": "H033",
+    "review": "Apps open almost instantly, but finding the input settings takes far too many confusing steps.",
+    "expected_aspects": [
+      {
+        "aspect": "System Performance",
+        "sentiment": "positive",
+        "evidence": "Apps open almost instantly"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "negative",
+        "evidence": "finding the input settings takes far too many confusing steps"
+      }
+    ],
+    "notes": "Fast software response and confusing navigation belong to different Aspects.",
+    "tags": ["multiple_aspects", "system_ease_boundary", "system_performance", "ease_of_use", "contrast"]
+  },
+  {
+    "case_id": "H034",
+    "review": "Wi-Fi has stayed connected through every movie, Bluetooth drops my headphones once or twice a night, and the HDMI port sometimes fails to recognize the console.",
+    "expected_aspects": [
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "Wi-Fi has stayed connected through every movie"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "negative",
+        "evidence": "Bluetooth drops my headphones once or twice a night"
+      },
+      {
+        "aspect": "Connectivity",
+        "sentiment": "negative",
+        "evidence": "the HDMI port sometimes fails to recognize the console"
+      }
+    ],
+    "notes": "Three independent Connectivity observations must remain separate.",
+    "tags": ["same_aspect_multiple_mentions", "connectivity", "wifi", "bluetooth", "hdmi", "sentiment_change"]
+  },
+  {
+    "case_id": "H035",
+    "review": "It reached me a day earlier than promised, but there was no foam around the screen; support quickly arranged a replacement after I sent photos.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "positive",
+        "evidence": "It reached me a day earlier than promised"
+      },
+      {
+        "aspect": "Packaging",
+        "sentiment": "negative",
+        "evidence": "there was no foam around the screen"
+      },
+      {
+        "aspect": "Customer Service",
+        "sentiment": "positive",
+        "evidence": "support quickly arranged a replacement after I sent photos"
+      }
+    ],
+    "notes": "Three distinct shopping-experience Aspects appear in one review.",
+    "tags": ["multiple_aspects", "shopping_experience", "delivery", "packaging", "customer_service", "contrast"]
+  },
+  {
+    "case_id": "H036",
+    "review": "The narrow silver bezel looks classy on the wall, while reflections make the screen difficult to see beside a sunny window.",
+    "expected_aspects": [
+      {
+        "aspect": "Design",
+        "sentiment": "positive",
+        "evidence": "The narrow silver bezel looks classy on the wall"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "negative",
+        "evidence": "reflections make the screen difficult to see beside a sunny window"
+      }
+    ],
+    "notes": "Exterior aesthetics are separated from screen visibility.",
+    "tags": ["multiple_aspects", "picture_design_boundary", "design", "picture_quality", "contrast"]
+  },
+  {
+    "case_id": "H037",
+    "review": "The metal stand doesn't feel cheap at all, though its oversized feet make the television look awkward on a small cabinet.",
+    "expected_aspects": [
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "The metal stand doesn't feel cheap at all"
+      },
+      {
+        "aspect": "Design",
+        "sentiment": "negative",
+        "evidence": "its oversized feet make the television look awkward on a small cabinet"
+      }
+    ],
+    "notes": "Negated cheapness describes construction quality; awkward appearance describes Design.",
+    "tags": ["multiple_aspects", "negation", "build_design_boundary", "build_quality", "design", "contrast"]
+  },
+  {
+    "case_id": "H038",
+    "review": "Five stars—I'm happy with it.",
+    "expected_aspects": [],
+    "notes": "Generic overall praise does not identify a concrete product Aspect.",
+    "tags": ["no_explicit_aspect", "generic_praise", "empty_expected"]
+  },
+  {
+    "case_id": "H039",
+    "review": "The built-in speakers are average and nothing about them stands out.",
+    "expected_aspects": [
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "neutral",
+        "evidence": "The built-in speakers are average and nothing about them stands out"
+      }
+    ],
+    "notes": "Average and nothing special indicate neutral rather than positive Sound Quality.",
+    "tags": ["single_aspect", "sound_quality", "neutral", "weak_sentiment"]
+  },
+  {
+    "case_id": "H040",
+    "review": "Sports look sharp, dialogue is muffled, the remote keys are nicely spaced, streaming apps stutter, and the feature set feels generous for the price.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "Sports look sharp"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "dialogue is muffled"
+      },
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "the remote keys are nicely spaced"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "streaming apps stutter"
+      },
+      {
+        "aspect": "Price / Value",
+        "sentiment": "positive",
+        "evidence": "the feature set feels generous for the price"
+      }
+    ],
+    "notes": "A dense five-Aspect review testing complete recall without duplication.",
+    "tags": ["five_aspects", "high_density", "picture_quality", "sound_quality", "remote_control", "system_performance", "price_value"]
+  },
+  {
+    "case_id": "H041",
+    "review": "It still powers on every morning, but twice this week it rebooted in the middle of a movie.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "positive",
+        "evidence": "It still powers on every morning"
+      },
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "twice this week it rebooted in the middle of a movie"
+      }
+    ],
+    "notes": "The same Reliability Aspect has distinct positive and negative operating observations.",
+    "tags": ["same_aspect_multiple_mentions", "reliability", "sentiment_change", "contrast"]
+  },
+  {
+    "case_id": "H042",
+    "review": "The wall-mount instructions skip an important step, yet once installed the controls are straightforward enough for my kids.",
+    "expected_aspects": [
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "negative",
+        "evidence": "The wall-mount instructions skip an important step"
+      },
+      {
+        "aspect": "Ease of Use",
+        "sentiment": "positive",
+        "evidence": "once installed the controls are straightforward enough for my kids"
+      }
+    ],
+    "notes": "Poor installation guidance is distinct from simple everyday operation.",
+    "tags": ["multiple_aspects", "setup_ease_boundary", "setup_installation", "ease_of_use", "contrast"]
+  },
+  {
+    "case_id": "H043",
+    "review": "Four-day shipping felt neither fast nor slow to me.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "neutral",
+        "evidence": "Four-day shipping felt neither fast nor slow to me"
+      }
+    ],
+    "notes": "The buyer explicitly evaluates delivery speed as neutral.",
+    "tags": ["single_aspect", "delivery", "neutral", "weak_sentiment"]
+  },
+  {
+    "case_id": "H044",
+    "review": "The unit has begun restarting by itself, and the service agent only repeated the manual instead of helping me troubleshoot.",
+    "expected_aspects": [
+      {
+        "aspect": "Reliability",
+        "sentiment": "negative",
+        "evidence": "The unit has begun restarting by itself"
+      },
+      {
+        "aspect": "Customer Service",
+        "sentiment": "negative",
+        "evidence": "the service agent only repeated the manual instead of helping me troubleshoot"
+      }
+    ],
+    "notes": "Separates a product failure from the quality of support received.",
+    "tags": ["multiple_aspects", "product_vs_shopping_experience", "reliability", "customer_service", "negative"]
+  },
+  {
+    "case_id": "H045",
+    "review": "A strong chemical smell lingered around the television for the first week.",
+    "expected_aspects": [
+      {
+        "aspect": "Other",
+        "sentiment": "negative",
+        "evidence": "A strong chemical smell lingered around the television for the first week"
+      }
+    ],
+    "notes": "Odor is a concrete product complaint not represented by another formal Aspect.",
+    "tags": ["single_aspect", "other", "negative", "taxonomy_fallback"]
+  },
+  {
+    "case_id": "H046",
+    "review": "At $499 the price feels average for this size, while the screen produces rich colors without looking oversaturated.",
+    "expected_aspects": [
+      {
+        "aspect": "Price / Value",
+        "sentiment": "neutral",
+        "evidence": "At $499 the price feels average for this size"
+      },
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "positive",
+        "evidence": "the screen produces rich colors without looking oversaturated"
+      }
+    ],
+    "notes": "An explicitly average price is neutral, while color reproduction is positive.",
+    "tags": ["multiple_aspects", "price_value", "picture_quality", "neutral", "negation"]
+  },
+  {
+    "case_id": "H047",
+    "review": "The remote's volume rocker is easy to locate, but the television speakers distort when I turn the sound up.",
+    "expected_aspects": [
+      {
+        "aspect": "Remote Control",
+        "sentiment": "positive",
+        "evidence": "The remote's volume rocker is easy to locate"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "negative",
+        "evidence": "the television speakers distort when I turn the sound up"
+      }
+    ],
+    "notes": "Two uses of volume-related language refer to different evaluation targets.",
+    "tags": ["multiple_aspects", "remote_sound_boundary", "remote_control", "sound_quality", "contrast"]
+  },
+  {
+    "case_id": "H048",
+    "review": "Even with the router two rooms away, this set streams over Wi-Fi without a single disconnect.",
+    "expected_aspects": [
+      {
+        "aspect": "Connectivity",
+        "sentiment": "positive",
+        "evidence": "this set streams over Wi-Fi without a single disconnect"
+      }
+    ],
+    "notes": "Absence of disconnections is a positive Connectivity evaluation.",
+    "tags": ["single_aspect", "connectivity", "negation", "wifi", "positive"]
+  },
+  {
+    "case_id": "H049",
+    "review": "The picture is acceptable, the sound is average, and the stand feels sturdy.",
+    "expected_aspects": [
+      {
+        "aspect": "Picture Quality",
+        "sentiment": "neutral",
+        "evidence": "The picture is acceptable"
+      },
+      {
+        "aspect": "Sound Quality",
+        "sentiment": "neutral",
+        "evidence": "the sound is average"
+      },
+      {
+        "aspect": "Build Quality",
+        "sentiment": "positive",
+        "evidence": "the stand feels sturdy"
+      }
+    ],
+    "notes": "Tests weak neutral language across two Aspects alongside a clearly positive construction opinion.",
+    "tags": ["multiple_aspects", "weak_sentiment", "neutral", "picture_quality", "sound_quality", "build_quality"]
+  },
+  {
+    "case_id": "H050",
+    "review": "The order arrived two days late, the box still protected every corner, initial setup was painless, and then the app store froze twice.",
+    "expected_aspects": [
+      {
+        "aspect": "Delivery",
+        "sentiment": "negative",
+        "evidence": "The order arrived two days late"
+      },
+      {
+        "aspect": "Packaging",
+        "sentiment": "positive",
+        "evidence": "the box still protected every corner"
+      },
+      {
+        "aspect": "Setup / Installation",
+        "sentiment": "positive",
+        "evidence": "initial setup was painless"
+      },
+      {
+        "aspect": "System Performance",
+        "sentiment": "negative",
+        "evidence": "the app store froze twice"
+      }
+    ],
+    "notes": "A four-Aspect review spanning shopping experience and product experience.",
+    "tags": ["four_aspects", "product_vs_shopping_experience", "delivery", "packaging", "setup_installation", "system_performance"]
+  }
+]

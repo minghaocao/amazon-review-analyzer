@@ -1,0 +1,83 @@
+{
+  "schema_version": "step13.fixture.v1",
+  "products": {
+    "fixture_a": {
+      "product_id": "aurora-view-tv",
+      "product_name": "Aurora View TV",
+      "source_type": "synthetic_fixture",
+      "analysis_run_id": "fixture-a-v1",
+      "analysis_candidate": "generalization_v2_candidate",
+      "taxonomy_version": "generalization_v2_candidate",
+      "total_reviews": 100,
+      "successful_reviews": 100,
+      "coverage": 1.0,
+      "sample_level": "full_insight",
+      "aspect_metrics": [
+        {"aspect": "Picture Quality", "business_category": "PRODUCT", "review_count": 62, "review_share": 62.0, "positive_rate": 84.0, "negative_rate": 10.0, "neutral_rate": 6.0, "mixed_rate": 0.0, "avg_rating": 4.5, "evidence_level": "High"},
+        {"aspect": "Sound Quality", "business_category": "PRODUCT", "review_count": 38, "review_share": 38.0, "positive_rate": 58.0, "negative_rate": 29.0, "neutral_rate": 13.0, "mixed_rate": 0.0, "avg_rating": 3.8, "evidence_level": "High"},
+        {"aspect": "Price / Value", "business_category": "PRODUCT", "review_count": 45, "review_share": 45.0, "positive_rate": 55.0, "negative_rate": 35.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 3.9, "evidence_level": "High"},
+        {"aspect": "Remote Control", "business_category": "PRODUCT", "review_count": 33, "review_share": 33.0, "positive_rate": 42.0, "negative_rate": 48.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 3.4, "evidence_level": "High"},
+        {"aspect": "System Performance", "business_category": "PRODUCT", "review_count": 40, "review_share": 40.0, "positive_rate": 35.0, "negative_rate": 55.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 3.2, "evidence_level": "High"},
+        {"aspect": "Reliability", "business_category": "PRODUCT", "review_count": 35, "review_share": 35.0, "positive_rate": 78.0, "negative_rate": 14.0, "neutral_rate": 8.0, "mixed_rate": 0.0, "avg_rating": 4.4, "evidence_level": "High"},
+        {"aspect": "Design", "business_category": "PRODUCT", "review_count": 30, "review_share": 30.0, "positive_rate": 80.0, "negative_rate": 10.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 4.5, "evidence_level": "High"},
+        {"aspect": "Setup / Installation", "business_category": "PRODUCT", "review_count": 20, "review_share": 20.0, "positive_rate": 75.0, "negative_rate": 15.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 4.2, "evidence_level": "High"},
+        {"aspect": "Delivery", "business_category": "EXPERIENCE", "review_count": 22, "review_share": 22.0, "positive_rate": 45.0, "negative_rate": 45.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 3.5, "evidence_level": "High"},
+        {"aspect": "Packaging", "business_category": "EXPERIENCE", "review_count": 15, "review_share": 15.0, "positive_rate": 60.0, "negative_rate": 20.0, "neutral_rate": 20.0, "mixed_rate": 0.0, "avg_rating": 4.0, "evidence_level": "High"},
+        {"aspect": "Customer Service", "business_category": "EXPERIENCE", "review_count": 4, "review_share": 4.0, "positive_rate": 50.0, "negative_rate": 25.0, "neutral_rate": 25.0, "mixed_rate": 0.0, "avg_rating": 3.8, "evidence_level": "Medium"},
+        {"aspect": "Other", "business_category": "OTHER", "review_count": 5, "review_share": 5.0, "positive_rate": 60.0, "negative_rate": 20.0, "neutral_rate": 20.0, "mixed_rate": 0.0, "avg_rating": 4.0, "evidence_level": "Medium"}
+      ],
+      "aspect_evidence": {
+        "Picture Quality": {"positive": [{"review_id": "A001", "evidence": "the deep blacks make movies look fantastic"}, {"review_id": "A002", "evidence": "sharp picture even in daylight"}], "negative": [{"review_id": "A003", "evidence": "some motion blur during sports"}], "neutral": [], "mixed": []},
+        "Remote Control": {"positive": [{"review_id": "A004", "evidence": "voice search works well"}], "negative": [{"review_id": "A005", "evidence": "remote buttons feel cramped"}, {"review_id": "A006", "evidence": "the remote misses key presses"}], "neutral": [], "mixed": []},
+        "System Performance": {"positive": [{"review_id": "A007", "evidence": "apps open quickly after startup"}], "negative": [{"review_id": "A008", "evidence": "menus lag after a few days"}, {"review_id": "A009", "evidence": "streaming apps freeze too often"}], "neutral": [], "mixed": []},
+        "Reliability": {"positive": [{"review_id": "A010", "evidence": "has worked flawlessly for a year"}, {"review_id": "A011", "evidence": "never randomly shuts down"}], "negative": [{"review_id": "A012", "evidence": "needed one restart this month"}], "neutral": [], "mixed": []}
+      },
+      "language_by_aspect": {
+        "Picture Quality": {"positive": [{"term": "sharp picture", "term_type": "bigram", "review_count": 12, "review_share": 12.0}, {"term": "deep blacks", "term_type": "bigram", "review_count": 9, "review_share": 9.0}], "negative": [{"term": "motion blur", "term_type": "bigram", "review_count": 5, "review_share": 5.0}]},
+        "Remote Control": {"positive": [{"term": "voice search", "term_type": "bigram", "review_count": 4, "review_share": 4.0}], "negative": [{"term": "cramped buttons", "term_type": "bigram", "review_count": 7, "review_share": 7.0}, {"term": "misses presses", "term_type": "bigram", "review_count": 5, "review_share": 5.0}]},
+        "System Performance": {"positive": [{"term": "apps open", "term_type": "bigram", "review_count": 3, "review_share": 3.0}], "negative": [{"term": "slow menus", "term_type": "bigram", "review_count": 8, "review_share": 8.0}, {"term": "apps freeze", "term_type": "bigram", "review_count": 6, "review_share": 6.0}]},
+        "Reliability": {"positive": [{"term": "works flawlessly", "term_type": "bigram", "review_count": 8, "review_share": 8.0}, {"term": "keeps working", "term_type": "bigram", "review_count": 5, "review_share": 5.0}], "negative": [{"term": "random restart", "term_type": "bigram", "review_count": 2, "review_share": 2.0}]}
+      },
+      "rating_summary": {"available": true, "rated_reviews": 100, "average_rating": 4.2, "distribution": [{"rating": 1, "count": 4, "share": 4.0}, {"rating": 2, "count": 6, "share": 6.0}, {"rating": 3, "count": 10, "share": 10.0}, {"rating": 4, "count": 30, "share": 30.0}, {"rating": 5, "count": 50, "share": 50.0}]}
+    },
+    "fixture_b": {
+      "product_id": "nimbus-smart-tv",
+      "product_name": "Nimbus Smart TV",
+      "source_type": "synthetic_fixture",
+      "analysis_run_id": "fixture-b-v1",
+      "analysis_candidate": "generalization_v2_candidate",
+      "taxonomy_version": "generalization_v2_candidate",
+      "total_reviews": 80,
+      "successful_reviews": 80,
+      "coverage": 1.0,
+      "sample_level": "full_insight",
+      "aspect_metrics": [
+        {"aspect": "Picture Quality", "business_category": "PRODUCT", "review_count": 44, "review_share": 55.0, "positive_rate": 68.0, "negative_rate": 24.0, "neutral_rate": 8.0, "mixed_rate": 0.0, "avg_rating": 4.0, "evidence_level": "High"},
+        {"aspect": "Sound Quality", "business_category": "PRODUCT", "review_count": 42, "review_share": 52.5, "positive_rate": 72.0, "negative_rate": 18.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 4.3, "evidence_level": "High"},
+        {"aspect": "Price / Value", "business_category": "PRODUCT", "review_count": 50, "review_share": 62.5, "positive_rate": 76.0, "negative_rate": 14.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 4.4, "evidence_level": "High"},
+        {"aspect": "Remote Control", "business_category": "PRODUCT", "review_count": 30, "review_share": 37.5, "positive_rate": 60.0, "negative_rate": 30.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 4.0, "evidence_level": "High"},
+        {"aspect": "System Performance", "business_category": "PRODUCT", "review_count": 36, "review_share": 45.0, "positive_rate": 32.0, "negative_rate": 58.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 3.1, "evidence_level": "High"},
+        {"aspect": "Reliability", "business_category": "PRODUCT", "review_count": 28, "review_share": 35.0, "positive_rate": 61.0, "negative_rate": 25.0, "neutral_rate": 14.0, "mixed_rate": 0.0, "avg_rating": 3.9, "evidence_level": "High"},
+        {"aspect": "Design", "business_category": "PRODUCT", "review_count": 25, "review_share": 31.25, "positive_rate": 70.0, "negative_rate": 18.0, "neutral_rate": 12.0, "mixed_rate": 0.0, "avg_rating": 4.2, "evidence_level": "High"},
+        {"aspect": "Setup / Installation", "business_category": "PRODUCT", "review_count": 18, "review_share": 22.5, "positive_rate": 70.0, "negative_rate": 20.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 4.1, "evidence_level": "High"},
+        {"aspect": "Delivery", "business_category": "EXPERIENCE", "review_count": 20, "review_share": 25.0, "positive_rate": 70.0, "negative_rate": 20.0, "neutral_rate": 10.0, "mixed_rate": 0.0, "avg_rating": 4.2, "evidence_level": "High"},
+        {"aspect": "Packaging", "business_category": "EXPERIENCE", "review_count": 12, "review_share": 15.0, "positive_rate": 55.0, "negative_rate": 25.0, "neutral_rate": 20.0, "mixed_rate": 0.0, "avg_rating": 3.9, "evidence_level": "High"},
+        {"aspect": "Customer Service", "business_category": "EXPERIENCE", "review_count": 2, "review_share": 2.5, "positive_rate": 50.0, "negative_rate": 50.0, "neutral_rate": 0.0, "mixed_rate": 0.0, "avg_rating": 3.0, "evidence_level": "Low"},
+        {"aspect": "Other", "business_category": "OTHER", "review_count": 6, "review_share": 7.5, "positive_rate": 50.0, "negative_rate": 33.0, "neutral_rate": 17.0, "mixed_rate": 0.0, "avg_rating": 3.7, "evidence_level": "Medium"}
+      ],
+      "aspect_evidence": {
+        "Picture Quality": {"positive": [{"review_id": "B001", "evidence": "the bright screen handles sunny rooms"}, {"review_id": "B002", "evidence": "sharp picture after calibration"}], "negative": [{"review_id": "B003", "evidence": "black scenes look washed out"}], "neutral": [], "mixed": []},
+        "Remote Control": {"positive": [{"review_id": "B004", "evidence": "remote buttons are easy to find"}, {"review_id": "B005", "evidence": "the remote responds immediately"}], "negative": [{"review_id": "B006", "evidence": "voice search sometimes misunderstands me"}], "neutral": [], "mixed": []},
+        "System Performance": {"positive": [{"review_id": "B007", "evidence": "home screen is simple"}], "negative": [{"review_id": "B008", "evidence": "slow menus interrupt navigation"}, {"review_id": "B009", "evidence": "apps freeze during updates"}], "neutral": [], "mixed": []},
+        "Reliability": {"positive": [{"review_id": "B010", "evidence": "keeps working without a reset"}], "negative": [{"review_id": "B011", "evidence": "randomly restarted twice"}], "neutral": [], "mixed": []}
+      },
+      "language_by_aspect": {
+        "Picture Quality": {"positive": [{"term": "sharp picture", "term_type": "bigram", "review_count": 8, "review_share": 10.0}, {"term": "bright screen", "term_type": "bigram", "review_count": 10, "review_share": 12.5}], "negative": [{"term": "washed out", "term_type": "bigram", "review_count": 6, "review_share": 7.5}]},
+        "Remote Control": {"positive": [{"term": "easy buttons", "term_type": "bigram", "review_count": 7, "review_share": 8.75}, {"term": "quick response", "term_type": "bigram", "review_count": 5, "review_share": 6.25}], "negative": [{"term": "voice search", "term_type": "bigram", "review_count": 3, "review_share": 3.75}]},
+        "System Performance": {"positive": [{"term": "simple home", "term_type": "bigram", "review_count": 3, "review_share": 3.75}], "negative": [{"term": "slow menus", "term_type": "bigram", "review_count": 7, "review_share": 8.75}, {"term": "apps freeze", "term_type": "bigram", "review_count": 5, "review_share": 6.25}]},
+        "Reliability": {"positive": [{"term": "keeps working", "term_type": "bigram", "review_count": 4, "review_share": 5.0}], "negative": [{"term": "random restart", "term_type": "bigram", "review_count": 5, "review_share": 6.25}]}
+      },
+      "rating_summary": {"available": true, "rated_reviews": 80, "average_rating": 4.0, "distribution": [{"rating": 1, "count": 4, "share": 5.0}, {"rating": 2, "count": 6, "share": 7.5}, {"rating": 3, "count": 10, "share": 12.5}, {"rating": 4, "count": 28, "share": 35.0}, {"rating": 5, "count": 32, "share": 40.0}]}
+    }
+  }
+}

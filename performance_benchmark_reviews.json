@@ -1,0 +1,162 @@
+[
+  {
+    "review_id": "PB001",
+    "rating": 4,
+    "title": "Great screen, fussy remote",
+    "content": "The screen stays bright enough for our sunny living room, and movies look sharp without much adjustment. Setup was straightforward, although the remote sometimes needs two presses before the television responds.",
+    "date": "2026-01-08",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB002",
+    "rating": 3,
+    "title": "Comfortable for long calls",
+    "content": "I can wear these headphones through a full afternoon of meetings without sore ears. Bluetooth has remained steady, but music sounds a little thin when I raise the volume.",
+    "date": "2026-01-14",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB003",
+    "rating": 5,
+    "title": "Makes a reliably hot cup",
+    "content": "The coffee maker heats quickly each morning and the carafe pours without dripping on the counter. The removable water tank also makes refilling much easier than it was with my old machine.",
+    "date": "2026-01-22",
+    "verified_purchase": false
+  },
+  {
+    "review_id": "PB004",
+    "rating": 3,
+    "title": "Strong suction, short runtime",
+    "content": "This vacuum picks up pet hair from the rug in one pass and is light enough to carry upstairs. On the maximum setting, however, the battery is nearly empty before I finish three rooms.",
+    "date": "2026-02-03",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB005",
+    "rating": 2,
+    "title": "Easy assembly but not sturdy",
+    "content": "The numbered parts and clear drawings helped me assemble the chair in about twenty minutes. After a week, the right armrest began rattling and the seat creaks whenever I lean back.",
+    "date": "2026-02-11",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB006",
+    "rating": 4,
+    "title": "Lightweight and pleasantly quiet",
+    "content": "It dries my thick hair faster than the dryer it replaced, and the motor is quiet enough that I can still hear the radio. I only wish the power cord were another foot longer.",
+    "date": "2026-02-18",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB007",
+    "rating": 3,
+    "title": "Lamp survived a rough delivery",
+    "content": "The shipping box arrived late with one corner crushed, but the shade and base inside were undamaged. Once assembled, the lamp looks elegant beside the sofa and gives a warm, even light.",
+    "date": "2026-02-24",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB008",
+    "rating": 2,
+    "title": "Wireless connection keeps dropping",
+    "content": "The keys have a satisfying feel, yet the keyboard disconnects from my laptop several times a day. It also takes a few seconds to wake up after sitting idle, which interrupts my typing.",
+    "date": "2026-03-02",
+    "verified_purchase": false
+  },
+  {
+    "review_id": "PB009",
+    "rating": 3,
+    "title": "Convenient cleanup, uneven results",
+    "content": "The air fryer basket washes clean with very little scrubbing and the controls are simple to understand. Fries near the back brown much faster than the ones at the front, so I have to shake the basket twice.",
+    "date": "2026-03-10",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB010",
+    "rating": 4,
+    "title": "Good coverage after a quick setup",
+    "content": "The app guided me through installation in roughly ten minutes, and Wi-Fi now reaches the bedroom at the far end of our apartment. The router has needed a manual restart twice this month, so long-term stability is my only concern.",
+    "date": "2026-03-17",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB011",
+    "rating": 2,
+    "title": "Solid jar, leaking lid",
+    "content": "The glass jar feels substantial and the blades crush frozen fruit without stalling. Unfortunately, liquid seeps around the lid seal during large batches. Customer support answered the same day and offered a replacement seal, but it has not arrived yet.",
+    "date": "2026-03-25",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB012",
+    "rating": 3,
+    "title": "Smooth wheels, troublesome handle",
+    "content": "The suitcase rolled quietly through two airports and the shell came back with only minor scuffs. During the second trip, the telescoping handle started sticking halfway up and required both hands to release.",
+    "date": "2026-04-01",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB013",
+    "rating": 4,
+    "title": "Full sound from a small speaker",
+    "content": "Voices are clear and the bass has more weight than I expected from something this compact. The tiny buttons along the top all feel alike in the dark, making volume changes harder than necessary.",
+    "date": "2026-04-09",
+    "verified_purchase": false
+  },
+  {
+    "review_id": "PB014",
+    "rating": 4,
+    "title": "A capable monitor for the price",
+    "content": "Colors looked accurate after a brief calibration, text is crisp at normal desk distance, and the two input ports switch quickly. The included stand wobbles if the desk is bumped, but at this price the overall package still feels worthwhile.",
+    "date": "2026-04-16",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB015",
+    "rating": 2,
+    "title": "Useful app when it stays online",
+    "content": "Mounting the thermostat and following the wiring guide were easier than expected. The app is responsive while connected, but the unit has dropped off our home network four times in six days and missed two scheduled temperature changes.",
+    "date": "2026-04-23",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB016",
+    "rating": 3,
+    "title": "Soft but warmer than expected",
+    "content": "The mattress pad adds enough cushioning to soften a firm guest bed, and the fitted corners have not slipped. It holds noticeably more heat than the description suggested, so I probably will not use it during summer.",
+    "date": "2026-05-05",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB017",
+    "rating": 5,
+    "title": "Dependable travel charger",
+    "content": "Both USB-C ports charge my phone and tablet at the same time without getting unusually hot. I have packed it for three trips, and it has worked every day without a disconnect or warning message.",
+    "date": "2026-05-12",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB018",
+    "rating": 3,
+    "title": "Fine at night, washed out by daylight",
+    "content": "In a dark room the projector produces a detailed image and readable subtitles across our blank wall. Afternoon light makes the picture look faded, and the built-in fan becomes distracting during quiet scenes.",
+    "date": "2026-05-20",
+    "verified_purchase": false
+  },
+  {
+    "review_id": "PB019",
+    "rating": 1,
+    "title": "One earbud stopped charging",
+    "content": "Pairing was quick and calls initially sounded clear. Ten days later, the left earbud stopped taking a charge even after I cleaned the contacts and reset the case, while the right one still works normally.",
+    "date": "2026-05-28",
+    "verified_purchase": true
+  },
+  {
+    "review_id": "PB020",
+    "rating": 4,
+    "title": "Practical cabinet with one cosmetic flaw",
+    "content": "Assembly took just over an hour because every panel and screw bag was labeled clearly. The finished cabinet feels stable and the drawers glide smoothly. There is a small patch of uneven paint inside the lower door, although it is hidden when the door is closed.",
+    "date": "2026-06-06",
+    "verified_purchase": true
+  }
+]

@@ -1,0 +1,14 @@
+aspect,business_category,aspect_review_count,mention_count,aspect_share_of_reviews,positive_review_count,negative_review_count,neutral_review_count,mixed_review_count,positive_rate,negative_rate,neutral_rate,mixed_rate,include_in_business_metrics
+Picture Quality,PRODUCT,6,8,42.857142857142854,4,1,1,0,66.66666666666666,16.666666666666664,16.666666666666664,0.0,True
+Build Quality,PRODUCT,3,4,21.428571428571427,1,2,0,0,33.33333333333333,66.66666666666666,0.0,0.0,True
+Delivery,EXPERIENCE,3,4,21.428571428571427,2,1,0,0,66.66666666666666,33.33333333333333,0.0,0.0,True
+Sound Quality,PRODUCT,3,3,21.428571428571427,1,1,1,0,33.33333333333333,33.33333333333333,33.33333333333333,0.0,True
+Design,PRODUCT,2,2,14.285714285714285,2,0,0,0,100.0,0.0,0.0,0.0,True
+Ease of Use,PRODUCT,2,2,14.285714285714285,1,1,0,0,50.0,50.0,0.0,0.0,True
+Packaging,EXPERIENCE,2,2,14.285714285714285,1,1,0,0,50.0,50.0,0.0,0.0,True
+Price / Value,PRODUCT,2,2,14.285714285714285,1,1,0,0,50.0,50.0,0.0,0.0,True
+Remote Control,PRODUCT,2,2,14.285714285714285,0,2,0,0,0.0,100.0,0.0,0.0,True
+Setup / Installation,PRODUCT,2,2,14.285714285714285,2,0,0,0,100.0,0.0,0.0,0.0,True
+System Performance,PRODUCT,2,2,14.285714285714285,0,2,0,0,0.0,100.0,0.0,0.0,True
+Reliability,PRODUCT,1,2,7.142857142857142,0,1,0,0,0.0,100.0,0.0,0.0,True
+Other,OTHER,1,1,7.142857142857142,1,0,0,0,100.0,0.0,0.0,0.0,False
